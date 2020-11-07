@@ -1,0 +1,75 @@
+.main {
+  position: relative;
+}
+
+.portfolio-section {
+  padding: 0;
+
+  &__title {
+    text-align: left;
+    transform: translateX(180px) translateY(-40px);
+
+    &--bold {
+      color: $text-gray;
+      font-family: $second-font;
+      font-weight: $body-fw-md;
+      line-height: 1.66;
+      margin-bottom: 15px;
+      text-transform: inherit;
+    }
+  }
+
+  &__text {
+    color: $text-gray;
+    font-family: $second-font;
+    font-size: 1.8rem;
+    font-weight: $body-fw;
+    line-height: 1.66;
+    max-width: 385px;
+    width: 100%;
+  }
+}
+
+.portfolio-content {
+  padding: 0;
+
+  &__box {
+    width: 385px;
+
+    &-title {
+      margin-bottom: 20px;
+
+      &--second {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--menu {
+      color: $text-gray-4;
+      font-family: $second-font;
+      line-height: 1.66;
+      text-transform: inherit;
+    }
+
+    &--second {
+      margin-left: 105px;
+      width: 400px;
+    }
+  }
+}
+
+.next-image {
+  color: $text-black;
+  font-family: $main-font;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  margin-top: 15px;
+
+  &--right {
+    float: right;
+  }
+
+  &--left {
+    float: left;
+  }
+}

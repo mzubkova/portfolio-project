@@ -1,0 +1,9 @@
+.title-line {
+  border-top: 2px solid #4e6655;
+  height: 0;
+  width: 50px;
+
+  &--item {
+    transform: translateX(-65px) translateY(25px);
+  }
+}

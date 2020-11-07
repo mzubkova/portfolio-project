@@ -1,0 +1,48 @@
+.profit-section {
+  background-color: $text-gray-3;
+  padding: 40px 0 50px;
+  position: relative;
+
+  .container {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    color: $text-white;
+    letter-spacing: 1px;
+    line-height: 1.36;
+    transform: translateX(180px);
+  }
+
+  &__card {
+    margin-top: 72px;
+    width: 200px;
+
+    &-img {
+      height: 75px;
+      margin-bottom: 42px;
+      width: 75px;
+    }
+
+    &-title {
+      color: $text-white;
+      font-family: $second-font;
+      font-weight: $body-fw-md;
+      line-height: 1.4;
+    }
+
+    &-text {
+      color: $text-white;
+      font-family: $second-font;
+      font-size: 1.3rem;
+      font-weight: $body-fw;
+      line-height: 1.5;
+      margin-top: 10px;
+    }
+  }
+}
+
+.col-card {
+  flex: 1 1 auto;
+  margin: 0 5px;
+}

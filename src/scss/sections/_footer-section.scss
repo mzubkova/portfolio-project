@@ -1,0 +1,21 @@
+.footer-section {
+  background-color: $text-gray-3;
+  padding: 58px 0;
+  position: relative;
+}
+
+.footer-menu {
+  &__link {
+    color: $text-white;
+    font-family: $second-font;
+    font-size: 2rem;
+    font-weight: $body-fw;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-left: 23px;
+  }
+
+  &__social {
+    margin-right: 30px;
+  }
+}

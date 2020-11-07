@@ -1,0 +1,42 @@
+.author-section {
+  position: relative;
+
+  &__img {
+    height: 327px;
+    width: 700px;
+  }
+}
+
+.author-content {
+  padding: 0;
+  width: 685px;
+
+  &__title {
+    margin-bottom: 30px;
+    margin-top: 60px;
+    text-align: left;
+
+    &--sec {
+      color: $text-gray-4;
+      font-family: $second-font;
+      line-height: 1.66;
+      margin-bottom: 20px;
+      text-transform: initial;
+      width: 450px;
+    }
+  }
+
+  &__text {
+    color: $text-gray;
+    font-family: $second-font;
+    font-size: 1.8rem;
+    line-height: 1.66;
+  }
+}
+
+.author-image {
+  height: 650px;
+  margin-left: auto;
+  margin-right: 0;
+  width: 434px;
+}

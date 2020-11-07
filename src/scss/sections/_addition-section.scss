@@ -1,0 +1,38 @@
+.addition-section {
+  position: relative;
+
+  h2 {
+    margin-left: 15px;
+  }
+
+  &__title {
+    color: $text-gray-4;
+    font-family: $second-font;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    margin-top: 75px;
+    width: 355px;
+
+    &--middle {
+      margin-bottom: 60px;
+    }
+
+    &--long {
+      margin-bottom: 90px;
+    }
+  }
+
+  &__text {
+    color: $text-gray;
+    font-family: $second-font;
+    font-size: 1.8rem;
+    font-weight: $body-fw;
+    line-height: 1.5;
+  }
+
+  &-box {
+    height: 300px;
+    margin-bottom: 80px;
+    width: 315px;
+  }
+}

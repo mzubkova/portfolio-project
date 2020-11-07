@@ -1,0 +1,16 @@
+.charity-section {
+  position: relative;
+
+  &__desc {
+    font-family: $second-font;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    text-transform: none;
+  }
+
+  &__img {
+    margin-bottom: 24px;
+    max-height: 453px;
+    max-width: 364px;
+  }
+}
