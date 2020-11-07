@@ -7,12 +7,17 @@
 .footer-menu {
   &__link {
     color: $text-white;
+    cursor: pointer;
     font-family: $second-font;
     font-size: 2rem;
     font-weight: $body-fw;
     line-height: 1.2;
     margin-bottom: 20px;
     margin-left: 23px;
+
+    &:hover {
+      color: $text-gray-2;
+    }
   }
 
   &__social {

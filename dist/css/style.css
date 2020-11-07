@@ -785,7 +785,8 @@ li:hover {
 .title-line {
   border-top: 2px solid #4e6655;
   height: 0;
-  width: 50px; }
+  max-width: 50px;
+  width: 100%; }
   .title-line--item {
     transform: translateX(-65px) translateY(25px); }
 
@@ -800,8 +801,9 @@ li:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   height: 40px;
+  max-width: 360px;
   padding: 0 15px;
-  width: 360px; }
+  width: 100%; }
 
 .contact-form__error-name {
   color: #e93223;
@@ -1338,6 +1340,8 @@ li:hover {
 .iconify {
   height: 25px;
   width: 26px; }
+  .iconify-footer {
+    color: #fff; }
 
 .footer-section {
   background-color: #77917e;
@@ -1346,12 +1350,15 @@ li:hover {
 
 .footer-menu__link {
   color: #fff;
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 20px;
   margin-left: 23px; }
+  .footer-menu__link:hover {
+    color: #666; }
 
 .footer-menu__social {
   margin-right: 30px; }
