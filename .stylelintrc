@@ -1,9 +1,0 @@
-{
-  "extends": "stylelint-config-sass-guidelines",
-  "rules": {
-    "max-nesting-depth": 4,
-    "string-quotes": "double",
-    "function-unquote-no-unquoted-strings-inside": "true",
-    "function-url-quotes": "never"
-  }
-}
