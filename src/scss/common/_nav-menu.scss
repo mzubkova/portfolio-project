@@ -9,9 +9,19 @@
   will-change: width;
   z-index: 99;
 
+  @media (max-width: 575px) {
+    left: 0;
+    top: 0;
+  }
+
   &.is-active {
     max-width: 392px;
     width: 100%;
+
+    @media (max-width: 575px) {
+      max-width: 375px;
+      width: 100%;
+    }
   }
 }
 
@@ -22,6 +32,11 @@
   top: 50%;
   transition: 0.2s ease-in-out;
   z-index: 10;
+
+  @media (max-width: 575px) {
+    left: 320px;
+    top: 7%;
+  }
 
   .bars {
     position: relative;
@@ -34,6 +49,12 @@
       height: $bar-thickness;
       transition: 0.2s ease-in-out;
       width: $bar-length;
+
+      @media (max-width: 575px) {
+        border-radius: 2px;
+        height: 2px;
+        width: 31px;
+      }
     }
 
     &::before,
@@ -77,10 +98,19 @@
   visibility: hidden;
   width: 392px;
 
+  @media (max-width: 575px) {
+    padding: 120px 0;
+    width: 100%;
+  }
+
   &.is-active {
     opacity: 1;
     transition: 0s linear;
     visibility: visible;
+
+    @media (max-width: 575px) {
+      opacity: 0.95;
+    }
 
     .nav__item {
       a {

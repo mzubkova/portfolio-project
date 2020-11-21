@@ -90,3 +90,9 @@ p {
 li:hover {
   text-decoration: none;
 }
+
+@media (max-width: 575px) {
+  .row {
+    margin: 0;
+  }
+}

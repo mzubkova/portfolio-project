@@ -32,3 +32,12 @@ task("watch", () => {
   watch("src/assets/images/*.*", imgmin);
   watch("src/scss/**/*.scss", scss);
 });
+
+var purify = require("gulp-purifycss");
+
+gulp.task("css", function () {
+  return gulp
+    .src("./public/app/example.css")
+    .pipe(purify(["./public/app/**/*.js", "./public/**/*.html"]))
+    .pipe(gulp.dest("./dist/"));
+});

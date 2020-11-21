@@ -1,20 +1,42 @@
 .author-section {
   position: relative;
 
+  .container {
+    @media (max-width: 575px) {
+      margin-bottom: 80px;
+    }
+  }
+
   &__img {
     height: 327px;
     width: 700px;
+
+    @media (max-width: 575px) {
+      height: auto;
+      width: 344px;
+    }
   }
 }
 
 .author-content {
   padding: 0;
   width: 685px;
+  @media (max-width: 575px) {
+    width: 345px;
+
+    & > div {
+      width: 100%;
+    }
+  }
 
   &__title {
-    margin-bottom: 30px;
-    margin-top: 60px;
+    margin: 60px 0 30px;
     text-align: left;
+
+    @media (max-width: 575px) {
+      font-size: 2rem;
+      margin: 40px 0 10px;
+    }
 
     &--sec {
       color: $text-gray-4;
@@ -23,6 +45,10 @@
       margin-bottom: 20px;
       text-transform: initial;
       width: 450px;
+
+      @media (max-width: 575px) {
+        width: 345px;
+      }
     }
   }
 
@@ -37,6 +63,9 @@
 .author-image {
   height: 650px;
   margin-left: auto;
-  margin-right: 0;
   width: 434px;
+
+  @media (max-width: 575px) {
+    display: none;
+  }
 }

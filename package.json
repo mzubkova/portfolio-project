@@ -17,10 +17,12 @@
     "gulp-imagemin": "^7.1.0",
     "node-sass": "^5.0.0",
     "prettier": "2.1.2",
+    "purify-css": "^1.2.5",
     "stylelint": "^13.7.2"
   },
   "dependencies": {
     "eslint": "^7.12.1",
+    "gulp-purifycss": "^0.2.0",
     "gulp-sass": "^4.1.0",
     "stylelint-config-sass-guidelines": "^7.1.0"
   }

@@ -1,16 +1,41 @@
 .charity-section {
   position: relative;
 
+  h2 {
+    margin-left: 15px;
+
+    @media (max-width: 575px) {
+      font-size: 2rem;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+  }
+
+  &__box {
+    @media (max-width: 575px) {
+      margin: 0 auto;
+    }
+  }
+
   &__desc {
     font-family: $second-font;
     line-height: 1.5;
-    margin-bottom: 35px;
+    margin: 0 0 35px 15px;
     text-transform: none;
+
+    @media (max-width: 575px) {
+      text-align: center;
+    }
   }
 
   &__img {
     margin-bottom: 24px;
     max-height: 453px;
     max-width: 364px;
+
+    @media (max-width: 575px) {
+      height: 430px;
+      max-width: 345px;
+    }
   }
 }

@@ -5,55 +5,114 @@
 .portfolio-section {
   padding: 0;
 
+  .container {
+    @media (max-width: 575px) {
+      margin-bottom: 80px;
+    }
+  }
+
   &__title {
     text-align: left;
     transform: translateX(180px) translateY(-40px);
 
-    &--bold {
-      color: $text-gray;
-      font-family: $second-font;
-      font-weight: $body-fw-md;
-      line-height: 1.66;
-      margin-bottom: 15px;
-      text-transform: inherit;
-    }
-  }
+    @media (max-width: 575px) {
+      margin-left: 30px;
+      transform: none;
 
-  &__text {
-    color: $text-gray;
-    font-family: $second-font;
-    font-size: 1.8rem;
-    font-weight: $body-fw;
-    line-height: 1.66;
-    max-width: 385px;
-    width: 100%;
+      h2 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+    }
   }
 }
 
 .portfolio-content {
   padding: 0;
 
+  &__title {
+    color: $text-gray-4;
+    font-family: $second-font;
+    line-height: 1.66;
+    margin-bottom: 45px;
+    text-transform: inherit;
+
+    @media (max-width: 575px) {
+      margin: 25px 0 10px 65px;
+    }
+
+    &--left::after {
+      border-top: 2px solid #4e6655;
+      content: "";
+      height: 0;
+      left: -65px;
+      max-width: 50px;
+      position: absolute;
+      top: 15px;
+      width: 100%;
+
+      @media (max-width: 575px) {
+        left: 0;
+        top: 40px;
+      }
+    }
+
+    &--right::after {
+      border-top: 2px solid #4e6655;
+      content: "";
+      height: 0;
+      left: 40px;
+      max-width: 50px;
+      position: absolute;
+      top: 15px;
+      width: 100%;
+
+      @media (max-width: 575px) {
+        left: 0;
+        top: 95px;
+      }
+    }
+  }
+
+  &--right {
+    margin-left: 105px;
+    width: 400px;
+
+    @media (max-width: 575px) {
+      margin-left: 0;
+      margin-top: 80px;
+      width: 385px;
+    }
+  }
+
   &__box {
     width: 385px;
 
     &-title {
-      margin-bottom: 20px;
+      color: $text-gray;
+      font-family: $second-font;
+      font-weight: $body-fw-md;
+      line-height: 1.66;
+      margin-bottom: 15px;
+      text-transform: inherit;
 
-      &--second {
-        margin-bottom: 20px;
+      @media (max-width: 575px) {
+        letter-spacing: 0;
       }
     }
 
-    &--menu {
-      color: $text-gray-4;
+    &-text {
+      color: $text-gray;
       font-family: $second-font;
+      font-size: 1.8rem;
+      font-weight: $body-fw;
       line-height: 1.66;
-      text-transform: inherit;
-    }
+      max-width: 385px;
+      width: 100%;
 
-    &--second {
-      margin-left: 105px;
-      width: 400px;
+      @media (max-width: 575px) {
+        max-width: 345px;
+      }
     }
   }
 }
@@ -62,8 +121,7 @@
   color: $text-black;
   font-family: $main-font;
   font-size: 1.5rem;
-  margin-left: 15px;
-  margin-top: 15px;
+  margin: 15px 0 0 15px;
 
   &--right {
     float: right;

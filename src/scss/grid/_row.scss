@@ -1,4 +1,8 @@
 .row {
   @include make-row();
   width: 100%;
+
+  @media (max-width: 575px) {
+    margin-left: 0;
+  }
 }

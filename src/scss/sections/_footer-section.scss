@@ -2,9 +2,30 @@
   background-color: $text-gray-3;
   padding: 58px 0;
   position: relative;
+  @media (max-width: 575px) {
+    padding: 35px 0;
+  }
+
+  .container {
+    @media (max-width: 575px) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .footer-menu {
+  &__contacts {
+    @media (max-width: 575px) {
+      margin-right: 55px;
+    }
+
+    &--social {
+      @media (max-width: 575px) {
+        display: none;
+      }
+    }
+  }
+
   &__link {
     color: $text-white;
     cursor: pointer;
@@ -12,11 +33,14 @@
     font-size: 2rem;
     font-weight: $body-fw;
     line-height: 1.2;
-    margin-bottom: 20px;
-    margin-left: 23px;
+    margin: 0 0 20px 23px;
 
     &:hover {
       color: $text-gray-2;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 1.7rem;
     }
   }
 

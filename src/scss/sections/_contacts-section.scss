@@ -1,9 +1,26 @@
 .contacts-section {
+  padding-bottom: 120px;
   position: relative;
 
+  .container {
+    margin-bottom: 0;
+    @media (max-width: 575px) {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    margin-left: 15px;
+
+    @media (max-width: 575px) {
+      font-size: 2rem;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+  }
+
   &__list {
-    margin-bottom: 65px;
-    margin-top: 20px;
+    margin: 20px 0 65px;
     width: 400px;
 
     li {
@@ -17,6 +34,11 @@
       font-weight: $body-fw;
       line-height: 1.5;
       margin-left: 23px;
+
+      @media (max-width: 575px) {
+        font-size: 1.7rem;
+        margin-left: 20px;
+      }
     }
   }
 
@@ -25,6 +47,11 @@
     position: relative;
     width: 429px;
     z-index: 1;
+
+    @media (max-width: 575px) {
+      height: 376px;
+      width: 307px;
+    }
 
     &::before {
       background-image: url(../images/image-4.jpg);
@@ -37,16 +64,29 @@
       top: 25px;
       width: 429px;
       z-index: -2;
+
+      @media (max-width: 575px) {
+        height: 376px;
+        left: 18px;
+        top: 18px;
+        width: 307px;
+      }
     }
 
     &--first {
-      margin-left: 90px;
-      margin-top: 65px;
+      margin: 65px 0 0 90px;
+
+      @media (max-width: 575px) {
+        margin: 35px 0 0;
+      }
     }
 
     &--second {
-      margin-left: 60px;
-      margin-top: 130px;
+      margin: 130px 0 0 60px;
+
+      @media (max-width: 575px) {
+        margin: 60px 0 0;
+      }
     }
   }
 
@@ -55,17 +95,25 @@
   }
 
   &__contact-form {
-    margin-left: 100px;
-    margin-top: 90px;
+    margin: 90px 0 0 100px;
     max-width: 360px;
     position: relative;
     width: 100%;
+
+    @media (max-width: 575px) {
+      margin: 70px 0 90px;
+    }
 
     &-title {
       font-family: $second-font;
       font-size: 2.4rem;
       font-weight: 600;
       text-transform: none;
+
+      @media (max-width: 575px) {
+        font-family: $main-font;
+        font-weight: $body-fw;
+      }
     }
 
     &-text {
@@ -74,9 +122,12 @@
       font-size: 1.8rem;
       font-weight: $body-fw;
       line-height: 1.5;
-      margin-bottom: 25px;
-      margin-top: 35px;
+      margin: 35px 0 25px;
       text-align: center;
+
+      @media (max-width: 575px) {
+        font-size: 1.7rem;
+      }
 
       &--second {
         text-align: left;
@@ -85,9 +136,12 @@
   }
 
   &__social {
-    margin-left: 90px;
-    margin-top: 130px;
+    margin: 130px 0 0 90px;
     position: relative;
+
+    @media (max-width: 575px) {
+      margin: 0;
+    }
 
     &-list {
       margin-top: 35px;
@@ -106,6 +160,6 @@
   width: 26px;
 
   &-footer {
-    color: #fff;
+    color: $text-white;
   }
 }
