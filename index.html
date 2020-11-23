@@ -52,7 +52,7 @@
               просматривать их снова и снова.
             </p>
             <button
-              class="btn intro-content__btn"
+              class="btn-intro open-modal"
               type="button"
               data-toggle="modal"
               data-target="#ModalForm"
@@ -1192,8 +1192,15 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div>
+                      <button
+                        type="button"
+                        class="modal--close"
+                        data-dismiss="modal"
+                      >
+                        &times;
+                      </button>
                       <p class="contacts-section__contact-form-text">
-                        Заказать сьемку
+                        Заказать съемку
                       </p>
                     </div>
                     <div class="modal-body">
@@ -1253,13 +1260,13 @@
                           <textarea
                             name="message"
                             id="textarea"
-                            cols="30"
-                            rows="7"
+                            cols="20"
+                            rows="5"
                           ></textarea>
                         </div>
                         <button
                           type="submit"
-                          class="contact-form__button contact-form__button-modal btn"
+                          class="contact-form__button contact-form__button-modal btn-intro"
                         >
                           Отправить
                         </button>
@@ -1317,12 +1324,12 @@
                   <textarea
                     name="message"
                     id="textarea"
-                    cols="30"
-                    rows="7"
+                    cols="20"
+                    rows="5"
                     placeholder="Сообщение"
                   ></textarea>
                 </div>
-                <button type="submit" class="contact-form__button btn">
+                <button type="submit" class="contact-form__button btn-intro">
                   Отправить
                 </button>
               </form>
@@ -1562,16 +1569,6 @@
     ></script>
 
     <script>
-      $("#ModalForm").on("show.bs.modal", function (event) {
-        var button = $(event.relatedTarget);
-        var recipient = button.data("whatever");
-        var modal = $(this);
-        modal.find(".modal-title").text("New message to " + recipient);
-        modal.find(".modal-body input").val(recipient);
-      });
-    </script>
-
-    <script>
       $("#myModal").on("shown.bs.modal", function () {
         $("#myInput").trigger("focus");
       });
@@ -1583,7 +1580,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
 
-    <script src="js/index.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scrollBody.js"></script>
 
     <script>
       $(document).ready(function () {

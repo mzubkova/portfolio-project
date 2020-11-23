@@ -19,7 +19,7 @@
 		require_once($_SERVER['DOCUMENT_ROOT'] . '/mail/phpmailer/smtp.php');
 		const HOST = 'smtp.gmail.com';
 		const LOGIN = 'violamars777@gmail.com';
-		const PASS = 'JTf53aP__37hwbAMN';
+		const PASS = 'JTf53aP__37hwb';
 		const PORT = '465';
 
 	// *** /SMTP *** //
