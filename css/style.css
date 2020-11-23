@@ -918,8 +918,8 @@ li:hover {
   z-index: 10; }
   @media (max-width: 575px) {
     .nav__trigger {
-      left: 320px;
-      top: 7%; } }
+      right: 10%;
+      top: 10%; } }
   .nav__trigger .bars {
     position: relative; }
     .nav__trigger .bars, .nav__trigger .bars::before, .nav__trigger .bars::after {
@@ -1144,7 +1144,7 @@ li:hover {
         font-size: 2rem;
         line-height: 1.5;
         margin: 0;
-        padding: 30px 9px 0;
+        padding: 40px 9px 0;
         text-align: center;
         transform: translateY(430px); } }
   .intro-content__btn {
@@ -1338,7 +1338,8 @@ li:hover {
     @media (max-width: 575px) {
       .profit-section__title {
         font-size: 2rem;
-        margin: 0 0 0 30px;
+        margin: 0;
+        text-align: center;
         transform: none; } }
   .profit-section__card {
     flex: 1 1 auto;
