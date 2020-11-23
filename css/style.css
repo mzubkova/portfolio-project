@@ -9,7 +9,8 @@ html {
 
 body {
   color: #333;
-  font: 400 1rem "Prata", sans-serif; }
+  font: 400 1rem "Prata", sans-serif;
+  overflow: hidden; }
 
 ul {
   list-style: none; }
@@ -895,23 +896,18 @@ li:hover {
   bottom: 0;
   left: 20px;
   position: fixed;
+  right: 0;
   text-align: center;
   top: 0;
   transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  width: 3.75rem;
+  width: 375px;
   will-change: width;
   z-index: 99; }
   @media (max-width: 575px) {
     .nav {
-      left: 0;
-      top: 0; } }
+      left: 0; } }
   .nav.is-active {
-    max-width: 392px;
     width: 100%; }
-    @media (max-width: 575px) {
-      .nav.is-active {
-        max-width: 375px;
-        width: 100%; } }
 
 .nav__trigger {
   display: block;
@@ -957,14 +953,22 @@ li:hover {
   background-color: #77917e;
   height: 820px;
   opacity: 0;
-  padding: 179px 0 150px;
+  padding: 179px 0;
   position: absolute;
   transition: 0s linear 0.25s;
   visibility: hidden;
   width: 392px; }
   @media (max-width: 575px) {
     .nav__content {
+      left: 50%;
+      max-width: 575px;
+      opacity: 0;
       padding: 120px 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0s linear 0.25s;
+      visibility: hidden;
       width: 100%; } }
   .nav__content.is-active {
     opacity: 1;
@@ -972,6 +976,7 @@ li:hover {
     visibility: visible; }
     @media (max-width: 575px) {
       .nav__content.is-active {
+        height: auto;
         opacity: 0.95; } }
     .nav__content.is-active .nav__item a {
       opacity: 1;
@@ -1204,6 +1209,9 @@ li:hover {
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.66; }
+    @media (max-width: 575px) {
+      .author-content__text {
+        font-size: 1.4rem; } }
 
 .author-image {
   height: 650px;
@@ -1220,15 +1228,13 @@ li:hover {
   padding: 0; }
   @media (max-width: 575px) {
     .portfolio-section .container {
-      margin-bottom: 80px; } }
-  .portfolio-section__title {
-    text-align: left;
-    transform: translateX(180px) translateY(-40px); }
+      margin-bottom: 40px; } }
+  .portfolio-section__header {
+    margin: 0 15px 50px; }
     @media (max-width: 575px) {
-      .portfolio-section__title {
-        margin-left: 30px;
-        transform: none; }
-        .portfolio-section__title h2 {
+      .portfolio-section__header {
+        margin: 0 0 30px; }
+        .portfolio-section__header h2 {
           font-size: 2rem;
           letter-spacing: 2px; } }
 
@@ -1242,7 +1248,7 @@ li:hover {
     text-transform: inherit; }
     @media (max-width: 575px) {
       .portfolio-content__title {
-        margin: 25px 0 10px 65px; } }
+        display: none; } }
     .portfolio-content__title--left::after {
       border-top: 2px solid #4e6655;
       content: "";
@@ -1299,6 +1305,7 @@ li:hover {
       width: 100%; }
       @media (max-width: 575px) {
         .portfolio-content__box-text {
+          font-size: 1.4rem;
           max-width: 345px; } }
 
 .next-image {
@@ -1313,7 +1320,7 @@ li:hover {
 
 .profit-section {
   background-color: #77917e;
-  padding: 40px 0 50px;
+  padding: 40px 0;
   position: relative; }
   .profit-section .container {
     margin-bottom: 0; }
@@ -1367,7 +1374,7 @@ li:hover {
       margin-top: 10px; }
       @media (max-width: 575px) {
         .profit-section__card-text {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
           text-align: center; } }
 
 .products-section {
@@ -1375,10 +1382,10 @@ li:hover {
   position: relative; }
   @media (max-width: 575px) {
     .products-section {
-      padding: 120px 0 0; } }
+      padding: 40px 0; } }
   @media (max-width: 575px) {
     .products-section .container {
-      margin-bottom: 80px; } }
+      margin-bottom: 40px; } }
   .products-section__title {
     margin-left: 15px; }
     @media (max-width: 575px) {
@@ -1437,7 +1444,7 @@ li:hover {
   position: relative; }
   @media (max-width: 575px) {
     .addition-section .container {
-      margin-bottom: 80px; } }
+      margin-bottom: 40px; } }
   .addition-section h2 {
     margin-left: 15px; }
     @media (max-width: 575px) {
@@ -1471,6 +1478,9 @@ li:hover {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5; }
+    @media (max-width: 575px) {
+      .addition-section__text {
+        font-size: 1.4rem; } }
   .addition-section-box {
     height: 300px;
     margin-bottom: 80px;
@@ -1482,6 +1492,9 @@ li:hover {
 
 .charity-section {
   position: relative; }
+  @media (max-width: 575px) {
+    .charity-section .container {
+      margin-bottom: 40px; } }
   .charity-section h2 {
     margin-left: 15px; }
     @media (max-width: 575px) {
@@ -1538,7 +1551,7 @@ li:hover {
       margin-left: 23px; }
       @media (max-width: 575px) {
         .contacts-section__list-text {
-          font-size: 1.7rem;
+          font-size: 1.3rem;
           margin-left: 20px; } }
   .contacts-section__img {
     height: 525px;
