@@ -1276,9 +1276,8 @@
                           <div class="thanks">
                             <a class="close"></a>
                             <!-- При клике происходит закрытие всплывающего окна -->
-                            <h2 class="popup__title">Спасибо за заявку!</h2>
-                            <p>
-                              В ближайшее время с Вами свяжется наш специалист
+                            <p class="contact-form__input">
+                              Ваша заявка отправлена, в ближайшее время с Вами свяжется наш менеджер для уточнения деталей.
                             </p>
                           </div>
                           <div class="overlay"></div>
@@ -1290,7 +1289,7 @@
                 </div>
               </div>
               <!-- modal -->
-              <!-- <form class="contact-form" id="contact-form_1" method="POST">
+              <form class="contact-form" id="contact-form_2">
                 <p
                   class="contacts-section__contact-form-text--second contacts-section__contact-form-text"
                 >
@@ -1303,8 +1302,6 @@
                     name="name"
                     type="text"
                     class="contact-form__input contact-form__input-name"
-                    id="inputName"
-                    aria-describedby="nameHelp"
                     placeholder="имя"
                   />
                   <div
@@ -1316,7 +1313,6 @@
                     name="tel"
                     type="tel"
                     class="contact-form__input contact-form__input-tel"
-                    id="inputTel"
                     placeholder="телефон"
                   />
                   <div
@@ -1328,7 +1324,6 @@
                     name="email"
                     type="email"
                     class="contact-form__input contact-form__input-email"
-                    id="inputEmail"
                     placeholder="E-mail"
                   />
                   <div
@@ -1338,16 +1333,14 @@
                 <div class="contact-form__input-wrapper">
                   <textarea
                     name="message"
-                    id="textarea"
                     cols="20"
                     rows="5"
                     placeholder="Сообщение"
                   ></textarea>
                 </div>
-                <button type="submit" class="contact-form__button btn-intro">
-                  Отправить
-                </button>
-              </form> -->
+                <input type="submit" name="submit" value="Отправить" class="contact-form__button btn-intro">
+              </input>
+              </form>
             </div>
           </div>
           <!-- /.col col-6 -->
@@ -1591,7 +1584,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
-    <script src="mail/js/mail.js"></script>
 
     <script src="js/navigation.js"></script>
     <script src="js/scrollBody.js"></script>
@@ -1610,11 +1602,11 @@
 
     <script>
 	    $(document).ready(function(){
-	        $("form").submit(function() { // Событие отправки с формы
-	                var form_data = $(this).serialize(); // Собираем данные из полей
+	        $("form").submit(function() {
+	                var form_data = $(this).serialize();
 	                $.ajax({
-	                type: "POST", // Метод отправки
-	                url: "sendform.php", // Путь к PHP обработчику sendform.php
+	                type: "POST",
+	                url: "sendform.php",
 	                data: form_data,
 	                success: function() {
 	                    $('.popup').addClass('active');
