@@ -1366,6 +1366,7 @@ textarea:focus:placeholder {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  left: 0;
   opacity: 0;
   position: fixed;
   top: 0;
@@ -1383,10 +1384,20 @@ textarea:focus:placeholder {
 
 .thanks {
   background-color: #fff;
+  height: 320px;
   max-width: 100%;
   position: relative;
   text-align: center;
-  width: 360px; }
+  width: 500px; }
+  .thanks-text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    height: 40px;
+    max-width: 360px;
+    padding: 60px 70px;
+    width: 100%; }
 
 a.close {
   position: absolute;
