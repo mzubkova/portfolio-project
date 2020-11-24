@@ -2,26 +2,20 @@
   bottom: 0;
   left: 20px;
   position: fixed;
+  right: 0;
   text-align: center;
   top: 0;
   transition: 1s $ease-in-out-cubic;
-  width: $nav-width;
+  width: 35px;
   will-change: width;
   z-index: 99;
 
   @media (max-width: 575px) {
     left: 0;
-    top: 0;
   }
 
   &.is-active {
-    max-width: 392px;
     width: 100%;
-
-    @media (max-width: 575px) {
-      max-width: 375px;
-      width: 100%;
-    }
   }
 }
 
@@ -34,8 +28,8 @@
   z-index: 10;
 
   @media (max-width: 575px) {
-    left: 320px;
-    top: 7%;
+    left: 20%;
+    top: 4.5%;
   }
 
   .bars {
@@ -92,14 +86,22 @@
   background-color: $text-gray-3;
   height: 820px;
   opacity: 0;
-  padding: 179px 0 150px;
+  padding: 179px 0;
   position: absolute;
   transition: 0s linear 0.25s;
   visibility: hidden;
   width: 392px;
 
   @media (max-width: 575px) {
+    left: 50%;
+    max-width: 575px;
+    opacity: 0;
     padding: 120px 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0s linear 0.25s;
+    visibility: hidden;
     width: 100%;
   }
 
@@ -109,6 +111,7 @@
     visibility: visible;
 
     @media (max-width: 575px) {
+      height: auto;
       opacity: 0.95;
     }
 
@@ -116,24 +119,6 @@
       a {
         opacity: 1;
         transform: translateY(0);
-        transition: {
-          duration: 0.55s, 0.55s, 0.3s;
-          property: transform, opacity, color;
-          timing-function: $ease-in-out-cubic, ease-in-out, ease-in-out;
-        }
-      }
-    }
-
-    .nav__list {
-      .nav__item {
-        @for $num from 1 through 9 {
-          &:nth-of-type(#{$num}) {
-            a {
-              transition-delay: $nav-item-delay * ($num - 1),
-                $nav-item-delay * ($num - 1), 0s;
-            }
-          }
-        }
       }
     }
   }
@@ -166,7 +151,7 @@
     will-change: transform, opacity;
 
     &:hover {
-      color: white;
+      color: #fff;
       text-decoration: underline;
     }
   }

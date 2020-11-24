@@ -1,13 +1,18 @@
 .footer-section {
   background-color: $text-gray-3;
+  overflow: hidden;
   padding: 58px 0;
   position: relative;
+
+  @media (max-width: 1199px) {
+    padding: 35px 0;
+  }
   @media (max-width: 575px) {
     padding: 35px 0;
   }
 
   .container {
-    @media (max-width: 575px) {
+    @media (max-width: 1199px) {
       margin-bottom: 0;
     }
   }
@@ -37,6 +42,10 @@
 
     &:hover {
       color: $text-gray-2;
+    }
+
+    @media (max-width: 1199px) {
+      font-size: 1.5rem;
     }
 
     @media (max-width: 575px) {

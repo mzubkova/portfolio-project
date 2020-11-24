@@ -1,8 +1,24 @@
 .charity-section {
+  overflow: hidden;
   position: relative;
 
-  h2 {
+  .container {
+    margin-bottom: 36px;
+    @media (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 575px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__header {
     margin-left: 15px;
+
+    @media (max-width: 1199px) {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
 
     @media (max-width: 575px) {
       font-size: 2rem;
@@ -29,12 +45,19 @@
   }
 
   &__img {
-    margin-bottom: 24px;
+    margin-bottom: 84px;
     max-height: 453px;
     max-width: 364px;
 
+    @media (max-width: 1199px) {
+      height: 430px;
+      margin-bottom: 24px;
+      width: auto;
+    }
+
     @media (max-width: 575px) {
       height: 430px;
+      margin-bottom: 24px;
       max-width: 345px;
     }
   }

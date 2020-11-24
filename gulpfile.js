@@ -3,13 +3,6 @@ const autoprefixer = require("gulp-autoprefixer");
 const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
 
-var gulp = require("gulp");
-var ghPages = require("gulp-gh-pages");
-
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(ghPages());
-});
-
 sass.compiler = require("node-sass");
 
 function scss() {
@@ -33,6 +26,13 @@ task("watch", () => {
   watch("src/scss/**/*.scss", scss);
 });
 
+var gulp = require("gulp");
+var ghPages = require("gulp-gh-pages");
+
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+});
+
 var purify = require("gulp-purifycss");
 
 gulp.task("css", function () {
@@ -40,4 +40,10 @@ gulp.task("css", function () {
     .src("./public/app/example.css")
     .pipe(purify(["./public/app/**/*.js", "./public/**/*.html"]))
     .pipe(gulp.dest("./dist/"));
+});
+
+var postcss = require("gulp-postcss");
+
+gulp.task("css", function () {
+  return gulp.src("./src/*.css").pipe(postcss()).pipe(gulp.dest("./dest"));
 });

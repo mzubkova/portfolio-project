@@ -52,7 +52,7 @@
               просматривать их снова и снова.
             </p>
             <button
-              class="btn intro-content__btn"
+              class="btn-intro open-modal"
               type="button"
               data-toggle="modal"
               data-target="#ModalForm"
@@ -121,7 +121,7 @@
     <section class="author-section" id="author-block">
       <div class="container">
         <div class="row">
-          <div class="col col-7 col-sm-12 d-flex author-content">
+          <div class="col col-7 col-xl-6 col-sm-12 d-flex author-content">
             <div>
               <img
                 src="images/image-2.jpg"
@@ -148,7 +148,7 @@
             </div>
             <!-- /.author-content -->
           </div>
-          <div class="col col-5 col-sm-12">
+          <div class="col col-5 col-xl-6 col-sm-12">
             <div class="author-image">
               <img src="images/image-3.JPG" alt="image" />
             </div>
@@ -158,13 +158,11 @@
     </section>
     <!-- /.author-section -->
     <main class="main" id="portfolio-block">
-      <div class="portfolio-section__title">
-        <h2 class="title title--h2">Портфолио</h2>
-      </div>
       <section class="portfolio-section">
         <div class="container">
+          <h2 class="title title--h2 portfolio-section__header">Портфолио</h2>
           <div class="row">
-            <div class="col col-5 col-sm-12">
+            <div class="col col-5 col-xl-5 col-sm-12">
               <div class="portfolio-content">
                 <h4
                   class="title title--h4 portfolio-content__title portfolio-content__title--left"
@@ -191,7 +189,7 @@
               <!-- /.portfolio-content -->
             </div>
             <!-- .col col-5 -->
-            <div class="col col-7 col-sm-12">
+            <div class="col col-7 col-xl-7 col-sm-12">
               <div
                 id="carousel_1"
                 class="carousel slide carousel-fade"
@@ -851,8 +849,8 @@
     </main>
     <!-- .main -->
     <section class="profit-section">
-      <h2 class="title title--h2 profit-section__title">Мои преимущества</h2>
       <div class="container">
+        <h2 class="title title--h2 profit-section__header">Мои преимущества</h2>
         <div class="row">
           <div class="col col-2 col-sm-12">
             <div class="profit-section__card">
@@ -936,9 +934,7 @@
     <!-- /.profit-section -->
     <section class="products-section" id="products-block">
       <div class="container">
-        <div class="products-section__title">
-          <h2 class="title title--h2">Пакеты услуг</h2>
-        </div>
+        <h2 class="title title--h2 products-section__header">Пакеты услуг</h2>
         <div class="row">
           <div class="col col-4 col-sm-12">
             <div class="products-section__card flex-column align-items-center">
@@ -1024,13 +1020,16 @@
           </div>
           <!-- /.col col-4 -->
         </div>
+        <!-- .row -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.products-section -->
     <section class="addition-section">
       <div class="container">
-        <h2 class="title title--h2">Дополнительные услуги</h2>
+        <h2 class="title title--h2 addition-section__header">
+          Дополнительные услуги
+        </h2>
         <div class="row">
           <div class="col col-4 col-sm-12">
             <div class="addition-section-box">
@@ -1117,7 +1116,9 @@
     <!-- /.addition-section -->
     <section class="charity-section" id="projects-block">
       <div class="container">
-        <h2 class="title title--h2">Проект «На Крильях мечты»</h2>
+        <h2 class="title title--h2 charity-section__header">
+          Проект «На Крильях мечты»
+        </h2>
         <h4 class="title title--h4 charity-section__desc">
           «На крыльях мечты»: благотворительный проект в поддержку женщин с
           онкологией
@@ -1169,7 +1170,9 @@
     <!-- /.charity-section -->
     <section class="contacts-section" id="registration-block">
       <div class="container">
-        <h2 class="title title--h2">Связаться со мной</h2>
+        <h2 class="title title--h2 contacts-section__header">
+          Связаться со мной
+        </h2>
         <div class="row">
           <div class="col col-6 col-sm-12">
             <div class="contacts-section__img contacts-section__img--first">
@@ -1192,8 +1195,15 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div>
+                      <button
+                        type="button"
+                        class="modal--close"
+                        data-dismiss="modal"
+                      >
+                        &times;
+                      </button>
                       <p class="contacts-section__contact-form-text">
-                        Заказать сьемку
+                        Заказать съемку
                       </p>
                     </div>
                     <div class="modal-body">
@@ -1253,13 +1263,13 @@
                           <textarea
                             name="message"
                             id="textarea"
-                            cols="30"
-                            rows="7"
+                            cols="20"
+                            rows="5"
                           ></textarea>
                         </div>
                         <button
                           type="submit"
-                          class="contact-form__button contact-form__button-modal btn"
+                          class="contact-form__button contact-form__button-modal btn-intro"
                         >
                           Отправить
                         </button>
@@ -1317,12 +1327,12 @@
                   <textarea
                     name="message"
                     id="textarea"
-                    cols="30"
-                    rows="7"
+                    cols="20"
+                    rows="5"
                     placeholder="Сообщение"
                   ></textarea>
                 </div>
-                <button type="submit" class="contact-form__button btn">
+                <button type="submit" class="contact-form__button btn-intro">
                   Отправить
                 </button>
               </form>
@@ -1498,7 +1508,9 @@
                     data-icon="clarity:phone-handset-line"
                     data-inline="false"
                   ></span>
-                  <p class="footer-menu__link">Телефон: +380 66 422 50 75</p>
+                  <a href="tel:380664225075" class="footer-menu__link"
+                    >Телефон: +380 66 422 50 75</a
+                  >
                 </li>
                 <li class="d-flex">
                   <a
@@ -1560,16 +1572,6 @@
     ></script>
 
     <script>
-      $("#ModalForm").on("show.bs.modal", function (event) {
-        var button = $(event.relatedTarget);
-        var recipient = button.data("whatever");
-        var modal = $(this);
-        modal.find(".modal-title").text("New message to " + recipient);
-        modal.find(".modal-body input").val(recipient);
-      });
-    </script>
-
-    <script>
       $("#myModal").on("shown.bs.modal", function () {
         $("#myInput").trigger("focus");
       });
@@ -1581,7 +1583,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
 
-    <script src="js/index.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scrollBody.js"></script>
 
     <script>
       $(document).ready(function () {

@@ -1,25 +1,33 @@
-.btn {
+.btn-intro {
   background-color: $text-gray-3;
+  border: 0;
   color: $text-light-gray;
-  cursor: pointer;
   display: inline-block;
   font-family: $second-font;
   font-size: 1.8rem;
   height: 55px;
   line-height: 1.22;
+  margin: 25px 0 85px;
   max-width: 240px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.2s ease-in;
   width: 100%;
+
+  @media (max-width: 575px) {
+    font-size: 1.6rem;
+    height: 45px;
+    margin: 10px auto 0;
+    text-transform: inherit;
+    width: 200px;
+  }
 }
 
 .btn-product {
   background-color: #fffcf8;
   border: 1px solid $text-gray-3;
   color: $text-gray-3;
-  cursor: pointer;
   display: inline-block;
   font-family: $second-font;
   font-size: 1.8rem;

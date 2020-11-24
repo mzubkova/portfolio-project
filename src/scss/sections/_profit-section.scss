@@ -1,38 +1,39 @@
 .profit-section {
   background-color: $text-gray-3;
-  padding: 40px 0 50px;
+  overflow: hidden;
+  padding: 40px 0;
   position: relative;
 
   .container {
     margin-bottom: 0;
   }
 
-  .col-2 {
-    margin-right: 37px;
-
-    @media (max-width: 575px) {
-      margin: 0;
+  .row {
+    justify-content: space-between;
+    @media (max-width: 1199px) {
+      justify-content: space-between;
     }
   }
 
-  &__title {
+  &__header {
     color: $text-white;
     letter-spacing: 1px;
     line-height: 1.36;
-    margin-bottom: 75px;
-    transform: translateX(180px);
+    margin: 0 0 75px 15px;
+
+    @media (max-width: 1199px) {
+      font-size: 3rem;
+      margin: 0 0 40px 15px;
+    }
 
     @media (max-width: 575px) {
       font-size: 2rem;
-      margin: 0 0 0 30px;
-      transform: none;
+      margin: 0;
+      text-align: center;
     }
   }
 
   &__card {
-    flex: 1 1 auto;
-    width: 200px;
-
     @media (max-width: 575px) {
       margin: 35px auto;
       width: 345px;
@@ -71,7 +72,7 @@
       margin-top: 10px;
 
       @media (max-width: 575px) {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         text-align: center;
       }
     }
