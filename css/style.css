@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -1321,6 +1322,7 @@ textarea:focus:placeholder {
   border: 2px solid #77917e;
   margin: 0 auto 20px;
   max-width: 385px;
+  position: relative;
   width: 100%; }
 
 .contact-form__input {
@@ -1353,6 +1355,80 @@ textarea:focus:placeholder {
   .contact-form__button-modal {
     margin-bottom: 35px;
     margin-left: 10%; }
+
+.popup {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Вертикальное выравнивание элементов внутри блока */
+  display: none;
+  /* Скрываем блок до отправки формы */
+  height: 100%;
+  /* Высота блока 100% от высоты родительского блока */
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Горизонтальное выравнивание элементов внутри блока */
+  opacity: 0;
+  /* Делаем блок невидимым */
+  position: fixed;
+  /* Задаём фиксированную позицию блоку элементов всплывающего окна */
+  top: 0;
+  /* Прижимаем блок к верхнему краю родительского блока */
+  width: 100%;
+  /* Ширина блока 100% от ширины родительского блока */ }
+
+.popup.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
+
+.thanks {
+  background-color: #ffffffeb;
+  /* Цвет фона */
+  border: 1px solid #00000038;
+  /* Рамка вокруг блока */
+  border-radius: 10px;
+  /* Закругление блока на 4px */
+  max-width: 100%;
+  /* Максимальная ширина блока не может быть более 100% */
+  position: relative;
+  /* Устанавливает родительскую позицию */
+  text-align: center;
+  /* Выравнивание текста по центру */
+  width: 440px;
+  /* Ширина блока 440px */ }
+
+a.close {
+  position: absolute;
+  /* Устанавливает абсолютную позицию */
+  right: 15px;
+  /* Прижимаем к правому краю и отступаем на 15px */
+  top: 15px;
+  /* Прижимаем к верхнему краю и отступаем на 15px */ }
+
+.overlay {
+  background-color: #000;
+  /* Устанавливает цвет фона */
+  height: 100%;
+  /* Высота блока 100% от высоты родительского блока */
+  opacity: 0.3;
+  /* Прозрачность 0.3 из 1 */
+  position: absolute;
+  /* Устанавливает абсолютную позицию */
+  top: 0;
+  /* Прижимаем блок к верхнему краю родительского блока */
+  width: 100%;
+  /* Ширина блока 100% от ширины родительского блока */
+  z-index: -1;
+  /* Определяем порядок расположения блоков */ }
 
 @media (max-width: 575px) {
   .carousel {

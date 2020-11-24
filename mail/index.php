@@ -19,11 +19,11 @@
                 </div>
                 <div class="contact-form__input-wrapper">
                   <input name="tel" type="tel" class="contact-form__input contact-form__input-tel" id="inputTel" placeholder="телефон">
-                  <div class="contact-form__error contact-form__error-tel"></div>
+                  <div class="contact-form__error contact-form__error-name"></div>
                 </div>
                 <div class="contact-form__input-wrapper">
                   <input name="email" type="email" class="contact-form__input contact-form__input-email" id="inputEmail" placeholder="E-mail">
-                  <div class="contact-form__error contact-form__error-email"></div>
+                  <div class="contact-form__error contact-form__error-name"></div>
                 </div>
                 <div class="contact-form__input-wrapper">
                   <textarea name="message" id="textarea" cols="20" rows="5" placeholder="Сообщение"></textarea>

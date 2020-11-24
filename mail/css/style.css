@@ -31,7 +31,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color:#333;
+  color: #333;
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
 }
@@ -64,4 +64,3 @@ textarea:focus:placeholder {
   margin-left: 25%;
   text-align: center;
 }
-
