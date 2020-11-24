@@ -2,10 +2,10 @@
 	const NAMEISREQUIRED = true;
 	const MSGSNAMEERROR = "⚠ Это поле необходимо заполнить";
 
-	const TELISREQUIRED = false;
+	const TELISREQUIRED = true;
 	const MSGSTELERROR = "⚠ Некорректно введен номер телефона";
 
-	const EMAILISREQUIRED = false;
+	const EMAILISREQUIRED = true;
 	const MSGSEMAILERROR = "⚠ Это поле необходимо заполнить";
 	const MSGSEMAILINCORRECT = "⚠ Некорректно введен e-mail";
 
@@ -19,7 +19,7 @@
 		require_once($_SERVER['DOCUMENT_ROOT'] . '/mail/phpmailer/smtp.php');
 		const HOST = 'smtp.gmail.com';
 		const LOGIN = 'violamars777@gmail.com';
-		const PASS = 'JTf53aP__37hwb';
+		const PASS = 'jvmabchuzvwnjpyo';
 		const PORT = '465';
 
 	// *** /SMTP *** //
