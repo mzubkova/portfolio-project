@@ -5,7 +5,7 @@ $email = trim($_POST['email']);
 $message = trim($_POST['message']);
 $fromMail = '_mainaccount@kvkstudio.com.ua'; //Почта отправителя (в домене почты должен быть адрес вашего сайта)
 $fromName = 'Поступила заявка с сайта'; //Заголовок письма
-$emailTo = 'kvk.creative.studio@gmail.com'; //Ваша почта
+$emailTo = 'violamars777@gmail.com'; //Ваша почта kvk.creative.studio@gmail.com
 $subject = 'Форма обратной связи kvkstudio.com.ua';
 $subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
 $headers = "Content-type: text/plain; charset=\"utf-8\"\r\n";
