@@ -1381,15 +1381,17 @@ textarea:focus:placeholder {
   width: 100%; }
 
 .popup.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   opacity: 1;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
   z-index: 99; }
+
+a.close {
+  position: absolute;
+  right: 15px;
+  top: 15px; }
 
 .thanks {
   background-color: #fff;

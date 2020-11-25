@@ -1369,12 +1369,14 @@
                         />
                         <div class="popup">
                           <div class="thanks">
+                            <a class="close"></a>
                             <button
                               type="button"
-                              class="modal--close"
+                              class="close modal--close"
                               data-dismiss="modal"
+                              aria-label="Close"
                             >
-                              &times;
+                              <span aria-hidden="true">&times;</span>
                             </button>
                             <p class="thanks-text">
                               Ваша заявка отправлена, в ближайшее время с Вами
@@ -1645,24 +1647,6 @@
           var id = $(this).attr("href"),
             top = $(id).offset().top;
           $("body,html").animate({ scrollTop: top }, 1200);
-        });
-      });
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        $("form").submit(function () {
-          var form_data = $(this).serialize();
-          $.ajax({
-            type: "POST",
-            url: "sendform.php",
-            data: form_data,
-            success: function () {
-              $(".popup").addClass("active");
-              $(".thanks").addClass("active");
-            },
-          });
-          event.preventDefault();
         });
       });
     </script>
