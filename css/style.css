@@ -1963,8 +1963,11 @@ button:focus {
 
 .author-image {
   height: 650px;
-  margin-left: auto;
+  margin-left: 45px;
   width: 434px; }
+  @media (max-width: 1199px) {
+    .author-image {
+      margin-left: 0; } }
   @media (max-width: 575px) {
     .author-image {
       height: auto;
