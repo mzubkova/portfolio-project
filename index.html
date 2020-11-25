@@ -50,6 +50,119 @@
             >
               Заказать съёмку
             </button>
+            <div
+              class="modal fade"
+              id="ModalForm"
+              tabindex="-1"
+              aria-labelledby="ModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div>
+                    <button
+                      type="button"
+                      class="close modal--close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="contacts-section__contact-form-text">
+                      Заказать съемку
+                    </p>
+                  </div>
+                  <div class="modal-body">
+                    <form class="contact-form" id="ModalLabel">
+                      <p class="contact-form__description"></p>
+                      <label
+                        for="inputName"
+                        id="nameHelp"
+                        class="contact-form__label"
+                        >Имя</label
+                      >
+                      <div class="contact-form__input-wrapper">
+                        <input
+                          name="name"
+                          type="text"
+                          class="contact-form__input contact-form__input-name"
+                          id="inputName"
+                          aria-describedby="nameHelp"
+                        />
+                        <div
+                          class="contact-form__error contact-form__error-name"
+                        ></div>
+                      </div>
+                      <label
+                        for="inputTel"
+                        id="telHelp"
+                        class="contact-form__label"
+                        >Телефон</label
+                      >
+                      <div class="contact-form__input-wrapper">
+                        <input
+                          name="tel"
+                          type="tel"
+                          class="contact-form__input contact-form__input-tel"
+                          id="inputTel"
+                          aria-describedby="telHelp"
+                        />
+                        <div
+                          class="contact-form__error contact-form__error-tel"
+                        ></div>
+                      </div>
+                      <label
+                        for="inputEmail"
+                        id="emailHelp"
+                        class="contact-form__label"
+                        >E-mail</label
+                      >
+                      <div class="contact-form__input-wrapper">
+                        <input
+                          name="email"
+                          type="email"
+                          class="contact-form__input contact-form__input-email"
+                          id="inputEmail"
+                          aria-describedby="emailHelp"
+                        />
+                        <div
+                          class="contact-form__error contact-form__error-email"
+                        ></div>
+                      </div>
+                      <label for="textarea" class="contact-form__label"
+                        >Сообщение</label
+                      >
+                      <div class="contact-form__input-wrapper">
+                        <textarea
+                          name="message"
+                          id="textarea"
+                          cols="20"
+                          rows="5"
+                        ></textarea>
+                      </div>
+                      <input
+                        type="submit"
+                        name="submit"
+                        class="contact-form__button contact-form__button-modal btn-intro"
+                        value="Отправить"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal -->
+            <div class="popup">
+              <div class="thanks">
+                <a class="close"></a>
+                <span aria-hidden="true">&times;</span>
+                <p class="thanks-text">
+                  Ваша заявка отправлена, в ближайшее время с Вами свяжется наш
+                  менеджер для уточнения деталей.
+                </p>
+              </div>
+              <div class="overlay"></div>
+            </div>
           </div>
           <!-- /.intro-content -->
         </div>
@@ -1255,145 +1368,6 @@
                 />
               </form>
               <!-- .form -->
-              <div class="popup">
-                <div class="thanks">
-                  <a class="close">
-                    <button
-                      type="button"
-                      class="modal--close"
-                      data-dismiss="modal"
-                    >
-                      &times;
-                    </button>
-                  </a>
-                  <p class="thanks-text">
-                    Ваше сообщение отправлено, в ближайшее время с Вами свяжется
-                    наш менеджер для уточнения деталей.
-                  </p>
-                </div>
-                <div class="overlay"></div>
-              </div>
-              <div
-                class="modal fade"
-                id="ModalForm"
-                tabindex="-1"
-                aria-labelledby="ModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div>
-                      <button
-                        type="button"
-                        class="close modal--close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                      <p class="contacts-section__contact-form-text">
-                        Заказать съемку
-                      </p>
-                    </div>
-                    <div class="modal-body">
-                      <form class="contact-form" id="ModalLabel">
-                        <p class="contact-form__description"></p>
-                        <label
-                          for="inputName"
-                          id="nameHelp"
-                          class="contact-form__label"
-                          >Имя</label
-                        >
-                        <div class="contact-form__input-wrapper">
-                          <input
-                            name="name"
-                            type="text"
-                            class="contact-form__input contact-form__input-name"
-                            id="inputName"
-                            aria-describedby="nameHelp"
-                          />
-                          <div
-                            class="contact-form__error contact-form__error-name"
-                          ></div>
-                        </div>
-                        <label
-                          for="inputTel"
-                          id="telHelp"
-                          class="contact-form__label"
-                          >Телефон</label
-                        >
-                        <div class="contact-form__input-wrapper">
-                          <input
-                            name="tel"
-                            type="tel"
-                            class="contact-form__input contact-form__input-tel"
-                            id="inputTel"
-                            aria-describedby="telHelp"
-                          />
-                          <div
-                            class="contact-form__error contact-form__error-tel"
-                          ></div>
-                        </div>
-                        <label
-                          for="inputEmail"
-                          id="emailHelp"
-                          class="contact-form__label"
-                          >E-mail</label
-                        >
-                        <div class="contact-form__input-wrapper">
-                          <input
-                            name="email"
-                            type="email"
-                            class="contact-form__input contact-form__input-email"
-                            id="inputEmail"
-                            aria-describedby="emailHelp"
-                          />
-                          <div
-                            class="contact-form__error contact-form__error-email"
-                          ></div>
-                        </div>
-                        <label for="textarea" class="contact-form__label"
-                          >Сообщение</label
-                        >
-                        <div class="contact-form__input-wrapper">
-                          <textarea
-                            name="message"
-                            id="textarea"
-                            cols="20"
-                            rows="5"
-                          ></textarea>
-                        </div>
-                        <input
-                          type="submit"
-                          name="submit"
-                          class="contact-form__button contact-form__button-modal btn-intro"
-                          value="Отправить"
-                        />
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- modal -->
-              <div class="popup">
-                <div class="thanks">
-                  <a class="close">
-                    <button
-                      type="button"
-                      class="close modal--close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </a>
-                  <p class="thanks-text">
-                    Ваша заявка отправлена, в ближайшее время с Вами свяжется
-                    наш менеджер для уточнения деталей.
-                  </p>
-                </div>
-                <div class="overlay"></div>
-              </div>
             </div>
           </div>
           <!-- /.col col-6 -->
