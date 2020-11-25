@@ -1253,8 +1253,11 @@
                   value="Отправить"
                   class="contact-form__button btn-intro"
                 />
-                <div class="popup">
-                  <div class="thanks">
+              </form>
+              <!-- .form -->
+              <div class="popup">
+                <div class="thanks">
+                  <a class="close">
                     <button
                       type="button"
                       class="modal--close"
@@ -1262,15 +1265,14 @@
                     >
                       &times;
                     </button>
-                    <p class="thanks-text">
-                      Ваше сообщение отправлено, в ближайшее время с Вами
-                      свяжется наш менеджер для уточнения деталей.
-                    </p>
-                  </div>
-                  <div class="overlay"></div>
+                  </a>
+                  <p class="thanks-text">
+                    Ваше сообщение отправлено, в ближайшее время с Вами свяжется
+                    наш менеджер для уточнения деталей.
+                  </p>
                 </div>
-              </form>
-              <!-- .form -->
+                <div class="overlay"></div>
+              </div>
               <div
                 class="modal fade"
                 id="ModalForm"
@@ -1373,6 +1375,25 @@
                 </div>
               </div>
               <!-- modal -->
+              <div class="popup">
+                <div class="thanks">
+                  <a class="close">
+                    <button
+                      type="button"
+                      class="close modal--close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </a>
+                  <p class="thanks-text">
+                    Ваша заявка отправлена, в ближайшее время с Вами свяжется
+                    наш менеджер для уточнения деталей.
+                  </p>
+                </div>
+                <div class="overlay"></div>
+              </div>
             </div>
           </div>
           <!-- /.col col-6 -->
