@@ -1381,12 +1381,14 @@ textarea:focus:placeholder {
   width: 100%; }
 
 .popup.active {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 1;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
-  transition: opacity 1s;
-  z-index: 99; }
+  transition: opacity 1s; }
 
 a.close {
   position: absolute;
