@@ -1309,6 +1309,22 @@ textarea:focus:placeholder {
     background-color: #77917e;
     color: #fffcf8; }
 
+.btn-modal {
+  background-color: #fffcf8;
+  color: #77917e;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  height: 50px;
+  max-width: 200px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  width: 200px; }
+
 .contact-form__input-wrapper {
   border: 2px solid #77917e;
   margin: 0 auto 20px;
@@ -1725,13 +1741,6 @@ textarea:focus:placeholder {
   overflow-x: hidden;
   overflow-y: hidden;
   padding: 0; }
-
-.modal--close {
-  color: #666;
-  float: right;
-  font-family: helvetica, arial;
-  font-size: 30px;
-  margin: 15px 15px 0 0; }
 
 button:focus {
   border: 0; }
