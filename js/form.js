@@ -13,6 +13,6 @@ $(document).ready(function () {
   });
 });
 
-$(".close").click(function () {
+$(".close", ".btn-modal").click(function () {
   $(".popup").removeClass("active");
 });
