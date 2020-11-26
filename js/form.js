@@ -7,9 +7,12 @@ $(document).ready(function () {
       data: form_data,
       success: function () {
         $(".popup").addClass("active");
-        $(".thanks").addClass("active");
       },
     });
     event.preventDefault();
   });
+});
+
+$(".close").click(function () {
+  $(".popup").removeClass("active");
 });
