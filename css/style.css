@@ -1310,18 +1310,19 @@ textarea:focus:placeholder {
     color: #fffcf8; }
 
 .btn-modal {
-  background-color: #fffcf8;
-  color: #77917e;
+  background-color: #77917e;
+  color: #fff;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   height: 50px;
   max-width: 200px;
-  position: relative;
   text-align: center;
   text-transform: none;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   width: 200px; }
 
@@ -1402,6 +1403,7 @@ textarea:focus:placeholder {
               box-sizing: border-box;
       font-family: "Montserrat", sans-serif;
       font-size: 1.8rem;
+      line-height: 1.5;
       margin: 0 auto;
       max-width: 360px;
       width: 100%; }
