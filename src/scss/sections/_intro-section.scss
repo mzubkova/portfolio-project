@@ -23,9 +23,8 @@
     @media (max-width: 575px) {
       display: flex !important;
       justify-content: space-between;
-      margin: 0 auto;
-      padding: 0 117px;
-      transform: translateY(470px);
+      margin: 20px auto;
+      padding: 0 120px;
       width: 100%;
     }
 
@@ -52,7 +51,6 @@
 
   @media (max-width: 575px) {
     margin: 0;
-    transform: translateY(-260px);
     width: 100%;
 
     &::after {
@@ -122,11 +120,6 @@
     width: 100%;
   }
 
-  @media (max-width: 575px) {
-    margin: 0;
-    width: 100%;
-  }
-
   &__title {
     letter-spacing: 4px;
     margin: 75px 0 30px;
@@ -139,19 +132,9 @@
     }
 
     @media (max-width: 575px) {
-      display: none;
-    }
-
-    &--resp {
-      display: none;
-
-      @media (max-width: 575px) {
-        display: inline;
-        font-size: 1.7rem;
-        letter-spacing: 4px;
-        line-height: 1.4;
-        margin: 30px auto;
-      }
+      font-size: 2rem;
+      margin: 30px auto;
+      text-align: center;
     }
   }
 
@@ -163,18 +146,11 @@
     text-transform: none;
 
     @media (max-width: 575px) {
-      font-size: 2rem;
+      font-size: 1.6rem;
       line-height: 1.5;
       margin: 0;
-      padding: 40px 9px 0;
+      padding: 0 25px 30px;
       text-align: center;
-      transform: translateY(430px);
-    }
-  }
-
-  button {
-    @media (max-width: 575px) {
-      transform: translateY(440px);
     }
   }
 }
@@ -188,9 +164,5 @@
     height: auto;
     margin: 35px auto 0;
     width: 50%;
-  }
-
-  @media (max-width: 575px) {
-    display: none;
   }
 }
