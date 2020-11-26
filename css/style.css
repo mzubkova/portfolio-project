@@ -1376,7 +1376,7 @@ textarea:focus:placeholder {
           justify-content: center;
   left: 0;
   opacity: 0;
-  position: relative;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999; }
@@ -1410,7 +1410,11 @@ textarea:focus:placeholder {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
 
 .close {
   cursor: pointer;
