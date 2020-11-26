@@ -1316,13 +1316,12 @@ textarea:focus:placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   height: 50px;
+  margin-top: 38px;
   max-width: 200px;
   text-align: center;
   text-transform: none;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   width: 200px; }
 
