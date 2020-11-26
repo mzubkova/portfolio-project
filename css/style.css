@@ -59,6 +59,9 @@ textarea {
   font-size: 1.8rem;
   padding: 20px 15px 0;
   resize: none; }
+  @media (max-width: 575px) {
+    textarea {
+      padding: 10px; } }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #333;
@@ -85,6 +88,18 @@ textarea::placeholder {
   color: #333;
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem; }
+  @media (max-width: 575px) {
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      font-size: 1.2rem; }
+    input::-moz-placeholder, textarea::-moz-placeholder {
+      font-size: 1.2rem; }
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+      font-size: 1.2rem; }
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+      font-size: 1.2rem; }
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 1.2rem; } }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   opacity: 1;
@@ -113,8 +128,28 @@ textarea::placeholder {
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
 
-input:placeholder,
-textarea:placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input::placeholder,
+textarea::placeholder {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -1283,10 +1318,10 @@ textarea:focus:placeholder {
   @media (max-width: 575px) {
     .btn-intro {
       font-size: 1.6rem;
-      height: 35px;
+      height: 45px;
       margin: 10px auto 0;
       text-transform: inherit;
-      width: 150px; } }
+      width: 200px; } }
 
 .btn-product {
   background-color: #fffcf8;
@@ -1333,7 +1368,7 @@ textarea:focus:placeholder {
   width: 100%; }
   @media (max-width: 575px) {
     .contact-form__input-wrapper {
-      margin: 0;
+      margin: 0 0 10px;
       max-width: 300px; }
       .contact-form__input-wrapper textarea {
         font-size: 1rem;
@@ -1370,13 +1405,16 @@ textarea:focus:placeholder {
   @media (max-width: 575px) {
     .contact-form__label {
       font-size: 1.3rem;
-      margin-left: 0; } }
+      margin: 0; } }
 
 .contact-form__button {
   text-align: center; }
   .contact-form__button-modal {
     margin-bottom: 35px;
     margin-left: 10%; }
+    @media (max-width: 575px) {
+      .contact-form__button-modal {
+        margin-left: 0; } }
 
 .popup {
   -webkit-box-align: center;
@@ -1762,6 +1800,10 @@ textarea:focus:placeholder {
   display: flex; }
 
 .modal-open .modal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   overflow-x: hidden;
   overflow-y: hidden;
   padding: 0; }
@@ -2483,6 +2525,7 @@ button:focus {
       @media (max-width: 575px) {
         .contacts-section__contact-form-title {
           font-family: "Prata", sans-serif;
+          font-size: 1.8rem;
           font-weight: 400; } }
     .contacts-section__contact-form-text {
       color: #40573d;
@@ -2494,7 +2537,9 @@ button:focus {
       text-align: center; }
       @media (max-width: 575px) {
         .contacts-section__contact-form-text {
-          font-size: 1.7rem; } }
+          font-size: 1.7rem;
+          font-size: 1.5rem;
+          margin: 25px 0 10px; } }
       .contacts-section__contact-form-text--second {
         text-align: left; }
   .contacts-section__social {
