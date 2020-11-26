@@ -1418,6 +1418,7 @@ textarea:focus:placeholder {
 
 .close {
   cursor: pointer;
+  font-size: 2rem;
   position: absolute;
   right: 15px;
   top: 15px; }
