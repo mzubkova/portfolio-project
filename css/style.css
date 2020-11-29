@@ -1,6 +1,6 @@
 *,
-*::before,
-*::after {
+::before,
+::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -12,7 +12,7 @@ html {
 
 body {
   color: #333;
-  font: 400 1rem "Prata", sans-serif;
+  font: 400 1rem Prata, sans-serif;
   overflow: hidden; }
 
 ul {
@@ -55,7 +55,7 @@ textarea {
   outline: none; }
 
 textarea {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.8rem;
   padding: 20px 15px 0;
   resize: none; }
@@ -65,28 +65,28 @@ textarea {
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #333;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.7rem; }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   color: #333;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.7rem; }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #333;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.7rem; }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   color: #333;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.7rem; }
 
 input::placeholder,
 textarea::placeholder {
   color: #333;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.7rem; }
   @media (max-width: 575px) {
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -1301,7 +1301,7 @@ select:-webkit-autofill:focus {
             align-self: stretch !important; } }
 
 .title {
-  font-family: "Prata", sans-serif;
+  font-family: Prata, sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
   text-transform: uppercase; }
@@ -1329,7 +1329,7 @@ select:-webkit-autofill:focus {
   border: 0;
   color: #f6f6f6;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.8rem;
   height: 55px;
   line-height: 1.22;
@@ -1355,7 +1355,7 @@ select:-webkit-autofill:focus {
   border: 1px solid #77917e;
   color: #77917e;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.8rem;
   height: 50px;
   line-height: 1.5;
@@ -1404,7 +1404,7 @@ select:-webkit-autofill:focus {
   .contact-form__wrapper-input {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     height: 40px;
     max-width: 360px;
@@ -1416,7 +1416,7 @@ select:-webkit-autofill:focus {
 
 .contact-form__error-name {
   color: #e93223;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.5rem;
   line-height: 1; }
 
@@ -1832,7 +1832,7 @@ select:-webkit-autofill:focus {
   .nav__item a {
     color: #f2f2f2;
     display: inline-block;
-    font-family: "Prata", sans-serif;
+    font-family: Prata, sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
@@ -2028,7 +2028,7 @@ body.modal-open {
             box-sizing: border-box;
     color: #fffaf4;
     cursor: pointer;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     line-height: 1.66;
     position: absolute;
@@ -2091,7 +2091,7 @@ body.modal-open {
         text-align: center; } }
   .intro-content__text {
     color: #666;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     line-height: 1.7;
     text-transform: none; }
@@ -2150,7 +2150,7 @@ body.modal-open {
         margin: 0 0 10px; } }
   .author-content__blockquote {
     color: #40573d;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     line-height: 1.66;
     margin-bottom: 20px;
@@ -2161,7 +2161,7 @@ body.modal-open {
         width: 345px; } }
   .author-content__text {
     color: #333;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     line-height: 1.66; }
     @media (max-width: 1199px) {
@@ -2210,7 +2210,7 @@ body.modal-open {
   padding: 0; }
   .portfolio-content__title {
     color: #40573d;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     line-height: 1.66;
     margin-bottom: 45px;
@@ -2277,7 +2277,7 @@ body.modal-open {
         width: 100%; } }
     .portfolio-content__box-title {
       color: #333;
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-weight: 500;
       line-height: 1.66;
       margin-bottom: 15px;
@@ -2287,7 +2287,7 @@ body.modal-open {
           letter-spacing: 0; } }
     .portfolio-content__box-text {
       color: #333;
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.66;
@@ -2304,7 +2304,7 @@ body.modal-open {
 
 .next-image {
   color: #000;
-  font-family: "Prata", sans-serif;
+  font-family: Prata, sans-serif;
   font-size: 1.5rem;
   margin: 15px 0 0 15px; }
   .next-image--right {
@@ -2359,7 +2359,7 @@ body.modal-open {
         width: 100%; } }
   .profit-section__card-title {
     color: #fff;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
     line-height: 1.4; }
     @media (max-width: 575px) {
@@ -2368,7 +2368,7 @@ body.modal-open {
         text-align: center; } }
   .profit-section__card-text {
     color: #fff;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.5;
@@ -2422,7 +2422,7 @@ body.modal-open {
         display: none; } }
     .products-section__card-name {
       color: #000;
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.5;
@@ -2430,7 +2430,7 @@ body.modal-open {
       text-align: center; }
     .products-section__card-title {
       color: #000;
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 2.8rem;
       font-weight: 400;
       line-height: 1.5;
@@ -2442,7 +2442,7 @@ body.modal-open {
           font-size: 2rem; } }
     .products-section__card-price {
       color: #000;
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 2rem;
       font-weight: 400;
       line-height: 1.5;
@@ -2450,7 +2450,7 @@ body.modal-open {
       text-align: center; }
     .products-section__card-list {
       color: #000;
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 1.5;
@@ -2496,7 +2496,7 @@ body.modal-open {
         margin: 0 0 40px; } }
   .addition-section__title {
     color: #40573d;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 2.4rem;
     margin: 75px 0 30px;
     width: 355px; }
@@ -2520,7 +2520,7 @@ body.modal-open {
           margin-bottom: 20px; } }
   .addition-section__text {
     color: #333;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5; }
@@ -2566,7 +2566,7 @@ body.modal-open {
     .charity-section__box {
       margin: 0 auto; } }
   .charity-section__desc {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.8rem;
     line-height: 1.5;
     margin: 0 0 35px 15px;
@@ -2631,7 +2631,7 @@ body.modal-open {
           width: 20px; } }
     .contacts-section__list-text {
       color: #000;
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.5;
@@ -2691,18 +2691,18 @@ body.modal-open {
         margin: 0 0 40px;
         width: 345px; } }
     .contacts-section__contact-form-title {
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 2.4rem;
       font-weight: 600;
       text-transform: none; }
       @media (max-width: 575px) {
         .contacts-section__contact-form-title {
-          font-family: "Prata", sans-serif;
+          font-family: Prata, sans-serif;
           font-size: 1.8rem;
           font-weight: 400; } }
     .contacts-section__contact-form-text {
       color: #40573d;
-      font-family: "Montserrat", sans-serif;
+      font-family: Montserrat, sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.5;
@@ -2780,7 +2780,7 @@ body.modal-open {
 .footer-menu__link {
   color: #fff;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
