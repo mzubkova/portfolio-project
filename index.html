@@ -1148,40 +1148,40 @@
                   фотосессии
                 </p>
                 <p class="contact-form__description"></p>
-                <div class="contact-form__input-wrapper">
+                <div class="contact-form__wrapper">
                   <input
                     name="name"
                     type="text"
-                    class="contact-form__input contact-form__input-name"
+                    class="contact-form__wrapper-input"
                     placeholder="Имя"
                   />
                   <div
                     class="contact-form__error contact-form__error-name"
                   ></div>
                 </div>
-                <div class="contact-form__input-wrapper">
+                <div class="contact-form__wrapper">
                   <input
                     name="tel"
                     type="tel"
-                    class="contact-form__input contact-form__input-tel"
+                    class="contact-form__wrapper-input"
                     placeholder="Телефон"
                   />
                   <div
                     class="contact-form__error contact-form__error-tel"
                   ></div>
                 </div>
-                <div class="contact-form__input-wrapper">
+                <div class="contact-form__wrapper">
                   <input
                     name="email"
                     type="email"
-                    class="contact-form__input contact-form__input-email"
+                    class="contact-form__wrapper-input"
                     placeholder="E-mail"
                   />
                   <div
                     class="contact-form__error contact-form__error-email"
                   ></div>
                 </div>
-                <div class="contact-form__input-wrapper">
+                <div class="contact-form__wrapper">
                   <textarea
                     name="message"
                     cols="20"
@@ -1212,7 +1212,11 @@
               </h2>
               <ul class="contacts-section__list">
                 <li class="d-flex">
-                  <img src="images/mail-icon.svg" alt="mail" class="contacts-section__list-icon">
+                  <img
+                    src="images/mail-icon.svg"
+                    alt="mail"
+                    class="contacts-section__list-icon"
+                  />
                   <a
                     href="mailto:kvk.creative.studio@gmail.com"
                     class="contacts-section__list-text"
@@ -1220,13 +1224,21 @@
                   >
                 </li>
                 <li class="d-flex">
-                  <img src="images/phone-icon.svg" alt="phone number" class="contacts-section__list-icon">
+                  <img
+                    src="images/phone-icon.svg"
+                    alt="phone number"
+                    class="contacts-section__list-icon"
+                  />
                   <p class="contacts-section__list-text">
                     Телефон: +380 66 422 50 75
                   </p>
                 </li>
                 <li class="d-flex">
-                  <img src="images/place-icon.svg" alt="Украина, Харьков" class="contacts-section__list-icon">
+                  <img
+                    src="images/place-icon.svg"
+                    alt="Украина, Харьков"
+                    class="contacts-section__list-icon"
+                  />
                   <p class="contacts-section__list-text">Украина, Харьков</p>
                 </li>
               </ul>
@@ -1427,6 +1439,7 @@
       tabindex="-1"
       aria-labelledby="ModalLabel"
       aria-hidden="true"
+      data-backdrop="static"
     >
       <div class="modal-dialog">
         <div class="modal-content">
@@ -1443,15 +1456,14 @@
           </div>
           <div class="modal-body">
             <form class="contact-form" id="ModalLabel">
-              <p class="contact-form__description"></p>
               <label for="inputName" id="nameHelp" class="contact-form__label"
                 >Имя</label
               >
-              <div class="contact-form__input-wrapper">
+              <div class="contact-form__wrapper">
                 <input
                   name="name"
                   type="text"
-                  class="contact-form__input contact-form__input-name"
+                  class="contact-form__wrapper-input"
                   id="inputName"
                   aria-describedby="nameHelp"
                 />
@@ -1460,11 +1472,11 @@
               <label for="inputTel" id="telHelp" class="contact-form__label"
                 >Телефон</label
               >
-              <div class="contact-form__input-wrapper">
+              <div class="contact-form__wrapper">
                 <input
                   name="tel"
                   type="tel"
-                  class="contact-form__input contact-form__input-tel"
+                  class="contact-form__wrapper-input"
                   id="inputTel"
                   aria-describedby="telHelp"
                 />
@@ -1473,11 +1485,11 @@
               <label for="inputEmail" id="emailHelp" class="contact-form__label"
                 >E-mail</label
               >
-              <div class="contact-form__input-wrapper">
+              <div class="contact-form__wrapper">
                 <input
                   name="email"
                   type="email"
-                  class="contact-form__input contact-form__input-email"
+                  class="contact-form__wrapper-input"
                   id="inputEmail"
                   aria-describedby="emailHelp"
                 />
@@ -1488,7 +1500,7 @@
               <label for="textarea" class="contact-form__label"
                 >Сообщение</label
               >
-              <div class="contact-form__input-wrapper">
+              <div class="contact-form__wrapper">
                 <textarea
                   name="message"
                   id="textarea"
@@ -1557,9 +1569,7 @@
     </script>
 
     <script>
-      $("#myModal").on("shown.bs.modal", function () {
-        $("#myInput").trigger("focus");
-      });
+      $("#ModalForm").modal("show");
     </script>
   </body>
 </html>
