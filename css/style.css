@@ -1917,6 +1917,56 @@ body.modal-open {
         -ms-transform: scale(1.02);
             transform: scale(1.02); }
 
+.modal-dialog-scrollable {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: subtract(100%, 1rem); }
+  .modal-dialog-scrollable .modal-content {
+    max-height: subtract(100vh, 1rem);
+    overflow: hidden; }
+  .modal-dialog-scrollable .modal-header,
+  .modal-dialog-scrollable .modal-footer {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+  .modal-dialog-scrollable .modal-body {
+    overflow-y: auto; }
+
+.modal-dialog-centered {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: subtract(100%, 1rem); }
+  .modal-dialog-centered::before {
+    content: "";
+    display: block;
+    height: subtract(100vh, 1rem);
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content; }
+  .modal-dialog-centered.modal-dialog-scrollable {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .modal-dialog-centered.modal-dialog-scrollable .modal-content {
+      max-height: none; }
+    .modal-dialog-centered.modal-dialog-scrollable::before {
+      content: none; }
+
 .modal-content {
   background-clip: padding-box;
   background-color: #fff;
@@ -1948,6 +1998,10 @@ body.modal-open {
   .modal-backdrop.show {
     opacity: 0.5; }
 
+.modal-title {
+  line-height: 1;
+  margin-bottom: 0; }
+
 .modal-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
@@ -1955,6 +2009,13 @@ body.modal-open {
           flex: 1 1 auto;
   padding: 10px;
   position: relative; }
+
+.modal-scrollbar-measure {
+  height: 50px;
+  overflow: scroll;
+  position: absolute;
+  top: -9999px;
+  width: 50px; }
 
 .fade {
   -webkit-transition: opacity 0.15s linear;
