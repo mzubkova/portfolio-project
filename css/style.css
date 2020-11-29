@@ -1866,6 +1866,12 @@ select:-webkit-autofill:focus {
   transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%; }
 
+body.modal-open {
+  height: 100%;
+  overflow: visible;
+  position: absolute;
+  width: 100%; }
+
 .modal {
   display: none;
   height: 100%;
@@ -1885,9 +1891,6 @@ select:-webkit-autofill:focus {
     margin: 15px 15px 0 0; }
   .modal button:focus {
     border: 0; }
-
-body.modal-open {
-  overflow: visible; }
 
 .modal-dialog {
   margin: 10px;
