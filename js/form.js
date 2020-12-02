@@ -8,13 +8,12 @@ $(document).ready(function () {
       success: function () {
         $(".popup").addClass("active");
       },
+      $('form')[0].reset();
     });
     event.preventDefault();
   });
 });
 
 $(".close, .btn-modal").click(function () {
-  $(".popup").removeClass("active");
+  $(".popup").removeClass("active").trigger("reset");
 });
-
-$("form[name=contact-form]").trigger("reset");
