@@ -8,12 +8,11 @@ $(document).ready(function () {
       success: function () {
         $(".popup").addClass("active");
       },
-      $('form')[0].reset();
     });
     event.preventDefault();
   });
 });
 
 $(".close, .btn-modal").click(function () {
-  $(".popup").removeClass("active").trigger("reset");
+  $(".popup").removeClass("active").reset();
 });
