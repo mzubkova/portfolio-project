@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $("form").submit(function () {
+    event.preventDefault();
     var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
@@ -9,10 +10,10 @@ $(document).ready(function () {
         $(".popup").addClass("active");
       },
     });
-    event.preventDefault();
   });
 });
 
 $(".close, .btn-modal").click(function () {
   $(".popup").removeClass("active");
+  $("form").trigger("reset");
 });
