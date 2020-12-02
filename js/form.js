@@ -17,6 +17,4 @@ $(".close, .btn-modal").click(function () {
   $(".popup").removeClass("active");
 });
 
-$(
-  'form input[type="text"], form input[type="tel"], form input[type="email"], form textarea'
-).val("");
+$("form[name=contact-form]").trigger("reset");
