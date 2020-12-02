@@ -522,10 +522,6 @@ select:-webkit-autofill:focus {
 
 .title {
   color: #333; }
-  .title--h1 {
-    font-size: 3.6rem; }
-  .title--h3 {
-    font-size: 1.8rem; }
 
 .btn-intro {
   background-color: #77917e;
@@ -594,6 +590,7 @@ select:-webkit-autofill:focus {
   border: 2px solid #77917e;
   margin: 10px auto 20px;
   max-width: 385px;
+  overflow: hidden;
   position: relative;
   width: 100%; }
   @media (max-width: 575px) {
@@ -833,7 +830,7 @@ select:-webkit-autofill:focus {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0.5;
+  opacity: 1;
   position: absolute;
   text-align: center;
   top: 0;
@@ -849,7 +846,7 @@ select:-webkit-autofill:focus {
   .carousel-control-next:hover,
   .carousel-control-next:focus {
     color: #fff;
-    opacity: 0.9;
+    opacity: 1;
     outline: 0;
     text-decoration: none; }
 
@@ -863,8 +860,12 @@ select:-webkit-autofill:focus {
 .carousel-control-next-icon {
   background: no-repeat 50% / 100% 100%;
   display: inline-block;
-  height: 20px;
-  width: 20px; }
+  height: 40px;
+  width: 40px; }
+  @media (max-width: 575px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 20px; } }
 
 .carousel-control-prev-icon {
   background: url(../images/arrow-left.svg) no-repeat; }
@@ -895,7 +896,7 @@ select:-webkit-autofill:focus {
     -o-transition: opacity 0.6s ease;
     transition: opacity 0.6s ease;
     background-clip: padding-box;
-    background-color: #fff;
+    background-color: #bab5b5;
     border-bottom: 10px solid transparent;
     border-top: 10px solid transparent;
     -webkit-box-sizing: content-box;
@@ -905,7 +906,7 @@ select:-webkit-autofill:focus {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-    height: 3px;
+    height: 5px;
     margin-left: 3px;
     margin-right: 3px;
     opacity: 0.5;
@@ -1355,6 +1356,7 @@ body.modal-open {
       margin: 0;
       width: 100%; } }
   .intro-content__title {
+    font-size: 3.6rem;
     letter-spacing: 4px;
     margin: 75px 0 30px;
     text-align: left; }
@@ -1421,6 +1423,7 @@ body.modal-open {
       .author-content div {
         width: 100%; } }
   .author-content__title {
+    font-size: 3.6rem;
     margin: 60px 0 30px;
     text-align: left; }
     @media (max-width: 1199px) {
@@ -1477,6 +1480,7 @@ body.modal-open {
     .portfolio-section .container {
       margin-bottom: 40px; } }
   .portfolio-section__header {
+    font-size: 3.6rem;
     margin: 0 15px 50px; }
     @media (max-width: 1199px) {
       .portfolio-section__header h2 {
@@ -1560,6 +1564,7 @@ body.modal-open {
     .portfolio-content__box-title {
       color: #333;
       font-family: Montserrat, sans-serif;
+      font-size: 1.8rem;
       font-weight: 500;
       line-height: 1.66;
       margin-bottom: 15px;
@@ -1614,6 +1619,7 @@ body.modal-open {
                 justify-content: space-between; } }
   .profit-section__header {
     color: #fff;
+    font-size: 3.6rem;
     letter-spacing: 1px;
     line-height: 1.36;
     margin: 0 0 75px 15px; }
@@ -1642,6 +1648,7 @@ body.modal-open {
   .profit-section__card-title {
     color: #fff;
     font-family: Montserrat, sans-serif;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.4; }
     @media (max-width: 575px) {
@@ -1677,6 +1684,7 @@ body.modal-open {
     .products-section .col {
       margin: 0 auto; } }
   .products-section__header {
+    font-size: 3.6rem;
     margin-left: 15px; }
     @media (max-width: 1199px) {
       .products-section__header {
@@ -1768,6 +1776,7 @@ body.modal-open {
     .addition-section .container {
       margin-bottom: 10px; } }
   .addition-section__header {
+    font-size: 3.6rem;
     margin-left: 15px; }
     @media (max-width: 1199px) {
       .addition-section__header {
@@ -1831,6 +1840,7 @@ body.modal-open {
       .charity-section .container {
         margin-bottom: 40px; } }
   .charity-section__header {
+    font-size: 3.6rem;
     margin-left: 15px; }
     @media (max-width: 1199px) {
       .charity-section__header {
@@ -1882,6 +1892,7 @@ body.modal-open {
       .contacts-section .container {
         margin-bottom: 0; } }
   .contacts-section__header {
+    font-size: 3.6rem;
     margin-left: 15px; }
     @media (max-width: 1199px) {
       .contacts-section__header {
