@@ -1546,7 +1546,9 @@
     ></script>
 
     <script>
-      $("#ModalForm").modal("hide");
+      $("#ModalForm").on("hidden.bs.modal", function (e) {
+        document.getElementById("ModalForm").reset();
+      });
     </script>
 
     <script src="js/navigation.js"></script>

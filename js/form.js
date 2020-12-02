@@ -14,5 +14,5 @@ $(document).ready(function () {
 });
 
 $(".close, .btn-modal").click(function () {
-  $(".popup").removeClass("active").$("form")[0].reset();
+  $(".popup").removeClass("active");
 });
