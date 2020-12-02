@@ -28,8 +28,7 @@
   z-index: 10;
 
   @media (max-width: 575px) {
-    left: 20%;
-    top: 4.5%;
+    top: 5%;
   }
 
   .bars {
@@ -87,7 +86,7 @@
   opacity: 0;
   padding: 179px 0;
   position: absolute;
-  transition: 0s linear 0.25s;
+  transition: 0.5s linear 0.25s;
   visibility: hidden;
   width: 392px;
 
@@ -106,7 +105,7 @@
 
   &.is-active {
     opacity: 1;
-    transition: 0s linear;
+    transition: 0.5s linear;
     visibility: visible;
 
     @media (max-width: 575px) {

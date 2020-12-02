@@ -19,13 +19,32 @@
 .footer-menu {
   &__contacts {
     @media (max-width: 575px) {
-      margin-right: 55px;
+      margin-right: 0;
     }
 
     &--social {
       @media (max-width: 575px) {
         display: none;
       }
+    }
+  }
+
+  &__icon {
+    display: block;
+    height: 35px;
+    position: absolute;
+    width: 31px;
+
+    &--behance {
+      background: url(../images/behance-icon-white.svg) no-repeat;
+    }
+
+    &--facebook {
+      background: url(../images/facebook-icon-white.svg) no-repeat;
+    }
+
+    &--instagram {
+      background: url(../images/instagram-icon-white.svg) no-repeat;
     }
   }
 
@@ -52,6 +71,6 @@
   }
 
   &__social {
-    margin-right: 30px;
+    margin-right: 60px;
   }
 }

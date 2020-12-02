@@ -3,16 +3,14 @@
   position: relative;
 
   .container {
-    margin-bottom: 36px;
-    @media (max-width: 1199px) {
-      margin-bottom: 60px;
-    }
+    margin-bottom: 60px;
     @media (max-width: 575px) {
       margin-bottom: 40px;
     }
   }
 
   &__header {
+    font-size: 3.6rem;
     margin-left: 15px;
 
     @media (max-width: 1199px) {
@@ -35,6 +33,7 @@
 
   &__desc {
     font-family: $second-font;
+    font-size: 1.8rem;
     line-height: 1.5;
     margin: 0 0 35px 15px;
     text-transform: none;
@@ -45,20 +44,18 @@
   }
 
   &__img {
-    margin-bottom: 84px;
-    max-height: 453px;
-    max-width: 364px;
+    display: block;
+    height: auto;
+    margin-bottom: 30px;
+    width: 364px;
 
     @media (max-width: 1199px) {
-      height: 430px;
-      margin-bottom: 24px;
-      width: auto;
+      margin-bottom: 30px;
+      width: 90%;
     }
 
     @media (max-width: 575px) {
-      height: 430px;
-      margin-bottom: 24px;
-      max-width: 345px;
+      margin: 0 auto 24px;
     }
   }
 }

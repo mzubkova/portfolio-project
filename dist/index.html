@@ -10,12 +10,6 @@
     />
     <meta name="robots" content="index, follow" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans:wght@400;600;700&family=Prata&display=swap"
       rel="stylesheet"
     />
@@ -26,7 +20,7 @@
     </title>
   </head>
   <body>
-    <header class="intro-section" id="intro-block">
+    <section class="intro-section" id="intro-block">
       <div class="row">
         <div class="col col-6 col-sm-12">
           <div class="intro-content flex-column d-flex">
@@ -35,7 +29,7 @@
               alt="kvkstudio логотип"
               class="logo"
             />
-            <h1 class="title title--h1 intro-content__title">
+            <h1 class="title intro-content__title">
               Фото/Видео студия Ксении Кишишьян
             </h1>
             <p class="intro-content__text">
@@ -55,51 +49,13 @@
         </div>
         <div class="col col-6 col-sm-12">
           <div class="intro-section-author">
-            <div class="intro-section-social">
-              <div class="intro-section-social__item">
-                <a
-                  href="https://www.facebook.com/kseniakyshyshian/"
-                  target="_blank"
-                >
-                  <img
-                    src="images/fa-brands_facebook-square.svg"
-                    alt="фотограф, ксения кишишьян, личная страница, facebook"
-                  />
-                </a>
-              </div>
-              <div class="intro-section-social__item">
-                <a href="https://www.behance.net/kseniakys" target="_blank">
-                  <img
-                    src="images/fa-brands_behance-square.svg"
-                    alt="фотограф, ксения кишишьян, личная страница, behance"
-                  />
-                </a>
-              </div>
-              <div class="intro-section-social__item">
-                <a
-                  href="https://www.instagram.com/kvk_creative_studio/"
-                  target="_blank"
-                >
-                  <img
-                    src="images/fa-brands_instagram-square.svg"
-                    alt="фотограф, ксения кишишьян, личная страница, instagram"
-                  />
-                </a>
-              </div>
-            </div>
             <div class="intro-author">
-              <span class="intro-author__phone">
-                <span class="intro-author__phone-logo">
-                  <span
-                    class="iconify"
-                    data-icon="clarity:phone-handset-line"
-                    data-inline="false"
-                  ></span>
-                </span>
-                +380 66 422 50 75
+              <span class="intro-author__phone"
+                ><span class="intro-author__phone-logo"> </span> +380 66 422 50
+                75
               </span>
               <img
-                src="images/image-1.jpg"
+                src="images/photographer-image-1.jpg"
                 alt="фотограф, ксения кишишьян"
                 class="intro-author__img"
               />
@@ -107,7 +63,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
     <!-- /.intro-section -->
     <div class="nav" id="menu">
       <a href="#id" class="nav__trigger">
@@ -134,11 +90,11 @@
           <div class="col col-8 col-xl-7 col-sm-12 d-flex author-content">
             <div>
               <img
-                src="images/image-2.jpg"
+                src="images/photographer-image-2.jpg"
                 alt="фотограф, ксения кишишьян"
                 class="author-section__img"
               />
-              <h2 class="title title--h2 author-content__title">Обо мне</h2>
+              <h1 class="title author-content__title">Обо мне</h1>
               <blockquote class="author-content__blockquote">
                 “Когда я снимаю кадр, мне хочется, чтобы остановленные мгновения
                 продолжались!”
@@ -160,7 +116,11 @@
           </div>
           <div class="col col-4 col-xl-5 col-sm-12">
             <div class="author-image">
-              <img src="images/image-3.JPG" alt="фотограф, ксения кишишьян" />
+              <img
+                src="images/photographer-image-3.jpg"
+                alt="фотограф, ксения кишишьян"
+                class="author-section__img--sec"
+              />
             </div>
           </div>
         </div>
@@ -170,19 +130,19 @@
     <main class="main" id="portfolio-block">
       <section class="portfolio-section">
         <div class="container">
-          <h2 class="title title--h2 portfolio-section__header">Портфолио</h2>
+          <h1 class="title portfolio-section__header">Портфолио</h1>
           <div class="row">
             <div class="col col-5 col-xl-5 col-sm-12">
               <div class="portfolio-content">
-                <h4
-                  class="title title--h4 portfolio-content__title portfolio-content__title--left"
+                <h2
+                  class="title portfolio-content__title portfolio-content__title--left"
                 >
                   Fashion
-                </h4>
+                </h2>
                 <div class="portfolio-content__box">
-                  <h4 class="title title--h4 portfolio-content__box-title">
+                  <h3 class="title portfolio-content__box-title">
                     Имиджевая съемка All Inclusive
-                  </h4>
+                  </h3>
                   <p class="portfolio-content__box-text">
                     Создавайте свой имидж грамотно! Уже давно стилисты проводят
                     мастер - классы для всех кто занимается собственным бизнесом
@@ -190,7 +150,7 @@
                     важно понять как вы себя видите? Какой посыл несете? <br />
                     Вы это бренд – какой он? <br /><br />
                     Данная фотография поможет рассказать вам о себе, создать
-                    свое позиционирование, правильно передать massage и продать
+                    свое позиционирование, правильно передать message и продать
                     ваш бренд. Поэтому фотосессии и видео съемки это важный
                     элемент вашего имиджа.
                   </p>
@@ -206,6 +166,16 @@
                 data-ride="carousel"
                 data-interval="false"
               >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel_1"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carousel_1" data-slide-to="1"></li>
+                  <li data-target="#carousel_1" data-slide-to="2"></li>
+                  <li data-target="#carousel_1" data-slide-to="3"></li>
+                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
@@ -213,9 +183,6 @@
                       class="d-block w-100 carousel-image"
                       alt="fashion, портфолио, девушка"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">01/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -223,9 +190,6 @@
                       class="d-block w-100 carousel-image"
                       alt="fashion, портфолио, девушка с лимонами"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">02/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -233,9 +197,6 @@
                       class="d-block w-100 carousel-image"
                       alt="fashion, портфолио, девушка"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">03/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -243,9 +204,6 @@
                       class="d-block w-100 carousel-image"
                       alt="fashion, портфолио, девушка у камина, рождество"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">04/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-link">
                     <a
@@ -291,6 +249,16 @@
                 data-ride="carousel"
                 data-interval="false"
               >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel_2"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carousel_2" data-slide-to="1"></li>
+                  <li data-target="#carousel_2" data-slide-to="2"></li>
+                  <li data-target="#carousel_2" data-slide-to="3"></li>
+                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
@@ -298,11 +266,6 @@
                       class="d-block w-100 carousel-image"
                       alt="individual, портфолио, девушка"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">01/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -310,11 +273,6 @@
                       class="d-block w-100 carousel-image"
                       alt="individual, портфолио, девушка"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">02/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -322,11 +280,6 @@
                       class="d-block w-100 carousel-image"
                       alt="individual, портфолио, парень"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">03/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -334,11 +287,6 @@
                       class="d-block w-100 carousel-image"
                       alt="individual, портфолио, девушка"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">04/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-link carousel-link--left">
                     <a
@@ -373,15 +321,15 @@
             <!-- .col col-7 portfolio-content -->
             <div class="col col-5 col-sm-12">
               <div class="portfolio-content--right">
-                <h4
-                  class="title title--h4 portfolio-content__title portfolio-content__title--right"
+                <h2
+                  class="title portfolio-content__title portfolio-content__title--right"
                 >
                   Individual
-                </h4>
+                </h2>
                 <div class="portfolio-content__box">
-                  <h4 class="title title--h4 portfolio-content__box-title">
+                  <h3 class="title portfolio-content__box-title">
                     Индивидуальная фотосессия All Inclusive
-                  </h4>
+                  </h3>
                   <p class="portfolio-content__box-text">
                     Это интересная и полная эмоций съемка, которая покажет всю
                     вашу красоту гармонично и целостно. Уникальный стиль,
@@ -405,15 +353,15 @@
           <div class="row">
             <div class="col col-5 col-sm-12">
               <div class="portfolio-content">
-                <h4
-                  class="title title--h4 portfolio-content__title portfolio-content__title--left"
+                <h2
+                  class="title portfolio-content__title portfolio-content__title--left"
                 >
                   Lifestyle
-                </h4>
+                </h2>
                 <div class="portfolio-content__box">
-                  <h4 class="title title--h4 portfolio-content__box-title">
+                  <h3 class="title portfolio-content__box-title">
                     Уличная фотография
-                  </h4>
+                  </h3>
                   <p class="portfolio-content__box-text">
                     Этот вид съёмки набирает все большей популярности. Они
                     передают эмоцию, которую может ощутить ваш клиент когда
@@ -436,6 +384,16 @@
                 data-ride="carousel"
                 data-interval="false"
               >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel_3"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carousel_3" data-slide-to="1"></li>
+                  <li data-target="#carousel_3" data-slide-to="2"></li>
+                  <li data-target="#carousel_3" data-slide-to="3"></li>
+                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
@@ -443,19 +401,13 @@
                       class="d-block w-100 carousel-image"
                       alt="lifestyle, портфолио, парень, стадион"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">01/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
                       src="images/kvk-lifestyle-image-2.jpg"
                       class="d-block w-100 carousel-image"
                       alt="lifestyle, портфолио, девушка, рюкзак"
-                    />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">02/04</h5>
-                    </div>
+                    />>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -463,9 +415,6 @@
                       class="d-block w-100 carousel-image"
                       alt="lifestyle, портфолио, девушка"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">03/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -473,9 +422,6 @@
                       class="d-block w-100 carousel-image"
                       alt="lifestyle, портфолио, девушка"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">04/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-link">
                     <a
@@ -521,6 +467,16 @@
                 data-ride="carousel"
                 data-interval="false"
               >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel_4"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carousel_4" data-slide-to="1"></li>
+                  <li data-target="#carousel_4" data-slide-to="2"></li>
+                  <li data-target="#carousel_4" data-slide-to="3"></li>
+                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
@@ -528,11 +484,6 @@
                       class="d-block w-100 carousel-image"
                       alt="subject, предметная съемка, футбол"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">01/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -540,11 +491,6 @@
                       class="d-block w-100 carousel-image"
                       alt="subject, предметная съемка, футбол"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">02/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -552,11 +498,6 @@
                       class="d-block w-100 carousel-image"
                       alt="subject, предметная съемка, косметика"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">03/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -564,11 +505,6 @@
                       class="d-block w-100 carousel-image"
                       alt="subject, предметная съемка, цветы в вазе"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">04/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-link carousel-link--left">
                     <a
@@ -603,15 +539,15 @@
             <!-- .col col-7 portfolio-content -->
             <div class="col col-5 col-sm-12">
               <div class="portfolio-content--right">
-                <h4
-                  class="title title--h4 portfolio-content__title portfolio-content__title--right"
+                <h2
+                  class="title portfolio-content__title portfolio-content__title--right"
                 >
                   Subject
-                </h4>
+                </h2>
                 <div class="portfolio-content__box">
-                  <h4 class="title title--h4 portfolio-content__box-title">
+                  <h3 class="title portfolio-content__box-title">
                     Предметная съемка
-                  </h4>
+                  </h3>
                   <p class="portfolio-content__box-text">
                     Правильно поставленный свет, ракурс и композиция это очень
                     важные составляющие. Сегодня не помогут вам продавать
@@ -634,15 +570,15 @@
           <div class="row">
             <div class="col col-5 col-sm-12">
               <div class="portfolio-content">
-                <h4
-                  class="title title--h4 portfolio-content__title portfolio-content__title--left"
+                <h2
+                  class="title portfolio-content__title portfolio-content__title--left"
                 >
                   Commercial
-                </h4>
+                </h2>
                 <div class="portfolio-content__box">
-                  <h4 class="title title--h4 portfolio-content__box-title">
+                  <h3 class="title portfolio-content__box-title">
                     Коммерческая съемка
-                  </h4>
+                  </h3>
                   <p class="portfolio-content__box-text">
                     Качественный визуальный контент, это важная часть вашего
                     успеха. Люди любят красиво преподнесенную картинку, которая
@@ -664,6 +600,16 @@
                 data-ride="carousel"
                 data-interval="false"
               >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel_5"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carousel_5" data-slide-to="1"></li>
+                  <li data-target="#carousel_5" data-slide-to="2"></li>
+                  <li data-target="#carousel_5" data-slide-to="3"></li>
+                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
@@ -671,9 +617,6 @@
                       class="d-block w-100 carousel-image"
                       alt="commercial, коммерческая съемка, девушка со сладостями"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">01/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -681,9 +624,6 @@
                       class="d-block w-100 carousel-image"
                       alt="commercial, коммерческая съемка, футболка с чашкой"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">02/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -691,9 +631,6 @@
                       class="d-block w-100 carousel-image"
                       alt="commercial, коммерческая съемка, девушка с лимонами"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">03/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -701,9 +638,6 @@
                       class="d-block w-100 carousel-image"
                       alt="commercial, коммерческая съемка, парень в стильных очках"
                     />
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="carousel-caption__title">04/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-link">
                     <a
@@ -749,6 +683,16 @@
                 data-ride="carousel"
                 data-interval="false"
               >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carousel_6"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#carousel_6" data-slide-to="1"></li>
+                  <li data-target="#carousel_6" data-slide-to="2"></li>
+                  <li data-target="#carousel_6" data-slide-to="3"></li>
+                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
@@ -756,11 +700,6 @@
                       class="d-block w-100 carousel-image"
                       alt="мобильная съемка, женский журнал, ткань"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">01/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -768,11 +707,6 @@
                       class="d-block w-100 carousel-image"
                       alt="мобильная съемка, девушка за столиком"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">02/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -780,11 +714,6 @@
                       class="d-block w-100 carousel-image"
                       alt="мобильная съемка, образцы тканей"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">03/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-item">
                     <img
@@ -792,11 +721,6 @@
                       class="d-block w-100 carousel-image"
                       alt="мобильная съемка, платье в узоре, пионы"
                     />
-                    <div
-                      class="carousel-caption carousel-caption--left d-md-block"
-                    >
-                      <h5 class="carousel-caption__title">04/04</h5>
-                    </div>
                   </div>
                   <div class="carousel-link carousel-link--left">
                     <a
@@ -831,15 +755,15 @@
             <!-- .col col-7 portfolio-content -->
             <div class="col col-5 col-sm-12">
               <div class="portfolio-content--right">
-                <h4
-                  class="title title--h4 portfolio-content__title portfolio-content__title--right"
+                <h2
+                  class="title portfolio-content__title portfolio-content__title--right"
                 >
                   Mobile
-                </h4>
+                </h2>
                 <div class="portfolio-content__box">
-                  <h4 class="title title--h4 portfolio-content__box-title">
+                  <h3 class="title portfolio-content__box-title">
                     Мобильная съёмка
-                  </h4>
+                  </h3>
                   <p class="portfolio-content__box-text">
                     В современном мире мобильная фотография набирает всё больше
                     и больше популярности. Современные камеры телефонов передают
@@ -860,16 +784,14 @@
     <!-- .main -->
     <section class="profit-section">
       <div class="container">
-        <h2 class="title title--h2 profit-section__header">Мои преимущества</h2>
+        <h1 class="title profit-section__header">Мои преимущества</h1>
         <div class="row">
           <div class="col col-2 col-sm-12">
             <div class="profit-section__card">
               <div class="profit-section__card-img">
                 <img src="images/man-img.svg" alt="logo man" />
               </div>
-              <h4 class="title--h4 profit-section__card-title">
-                Индивидуальный подход
-              </h4>
+              <h3 class="profit-section__card-title">Индивидуальный подход</h3>
               <p class="profit-section__card-text">
                 Учитываю все пожелания заказчика. Консультация, составление
                 brief
@@ -882,9 +804,9 @@
               <div class="profit-section__card-img">
                 <img src="images/art-img.svg" alt="logo art" />
               </div>
-              <h4 class="title--h4 profit-section__card-title">
+              <h3 class="profit-section__card-title">
                 Качественная и быстрая работа
-              </h4>
+              </h3>
               <p class="profit-section__card-text">
                 Максимально быстро клиент получает ожидаемый готовый качественно
                 выполненный заказ
@@ -897,9 +819,9 @@
               <div class="profit-section__card-img">
                 <img src="images/photo-album-img.svg" alt="logo photo-album" />
               </div>
-              <h4 class="title--h4 profit-section__card-title">
+              <h3 class="profit-section__card-title">
                 Фото книги премиум класса
-              </h4>
+              </h3>
               <p class="profit-section__card-text">
                 Подготовка макета, обработка фото и печать фотокниги премиум
                 качества
@@ -912,9 +834,7 @@
               <div class="profit-section__card-img">
                 <img src="images/cooperation-img.svg" alt="logo cooperation" />
               </div>
-              <h4 class="title--h4 profit-section__card-title">
-                Фотосессии под ключ
-              </h4>
+              <h3 class="profit-section__card-title">Фотосессии под ключ</h3>
               <p class="profit-section__card-text">
                 Получайте максимум удовольствия от съемки, остальное оставьте
                 профессионалам
@@ -930,9 +850,7 @@
                   alt="logo positive-vote"
                 />
               </div>
-              <h4 class="title--h4 profit-section__card-title">
-                Простые тарифы
-              </h4>
+              <h3 class="profit-section__card-title">Простые тарифы</h3>
               <p class="profit-section__card-text">
                 Понятные тарифы, быстрый просчёт стоимости. Удобно, понятно,
                 комфортно
@@ -947,14 +865,12 @@
     <!-- /.profit-section -->
     <section class="products-section" id="products-block">
       <div class="container">
-        <h2 class="title title--h2 products-section__header">Пакеты услуг</h2>
+        <h1 class="title products-section__header">Пакеты услуг</h1>
         <div class="row">
           <div class="col col-4 col-sm-12">
             <div class="products-section__card flex-column align-items-center">
               <p class="products-section__card-name">пакет</p>
-              <h3 class="title title--h3 products-section__card-title">
-                LIGHT
-              </h3>
+              <p class="products-section__card-title">light</p>
               <p class="products-section__card-price">3 500 ₴ / 108 €</p>
               <ul class="products-section__card-list">
                 <li>- 10 фотографий в ретуши</li>
@@ -979,9 +895,7 @@
           <div class="col col-4 col-sm-12">
             <div class="products-section__card flex-column align-items-center">
               <p class="products-section__card-name">пакет</p>
-              <h3 class="title title--h3 products-section__card-title">
-                MEDIUM
-              </h3>
+              <p class="products-section__card-title">medium</p>
               <p class="products-section__card-price">4 500 ₴ / 138 €</p>
               <ul class="products-section__card-list">
                 <li>- 20 фотографий в ретуши</li>
@@ -1007,9 +921,7 @@
           <div class="col col-4 col-sm-12">
             <div class="products-section__card flex-column align-items-center">
               <p class="products-section__card-name">пакет</p>
-              <h3 class="title title--h3 products-section__card-title">
-                ALL INCLUSIVE
-              </h3>
+              <p class="products-section__card-title">all inclusive</p>
               <p class="products-section__card-price">6 000 ₴ / 184 €</p>
               <ul class="products-section__card-list">
                 <li>- 30 фотографий в ретуши</li>
@@ -1017,6 +929,30 @@
                 <li>- стоимость аренды студии</li>
                 <li>- помощь в позировании</li>
                 <li>- все исходники</li>
+              </ul>
+              <div class="products-section__card-btn">
+                <button
+                  class="btn-product align-items-center"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#ModalForm"
+                >
+                  Купить
+                </button>
+              </div>
+            </div>
+            <!-- /.products-section__card -->
+            <div
+              class="products-section__card products-section__card--resp flex-column align-items-center"
+            >
+              <p class="products-section__card-name">пакет</p>
+              <p class="products-section__card-title">light</p>
+              <p class="products-section__card-price">3 500 ₴ / 108 €</p>
+              <ul class="products-section__card-list">
+                <li>- 10 фотографий в ретуши</li>
+                <li>- 1 созданный образ и стиль</li>
+                <li>- стоимость работы стилиста и парикмахера</li>
+                <li>- стоимость аренды студии</li>
               </ul>
               <div class="products-section__card-btn">
                 <button
@@ -1040,13 +976,11 @@
     <!-- /.products-section -->
     <section class="addition-section">
       <div class="container">
-        <h2 class="title title--h2 addition-section__header">
-          Дополнительные услуги
-        </h2>
+        <h1 class="title addition-section__header">Дополнительные услуги</h1>
         <div class="row">
           <div class="col col-4 col-sm-12">
             <div class="addition-section-box">
-              <h3 class="title addition-section__title">Back stage</h3>
+              <h2 class="title addition-section__title">Back stage</h2>
               <p class="addition-section__text">
                 Всегда интересно вспоминать и показать другим, как это было на
                 съёмке. Яркие и незабываемые эмоции, которые так и хочется
@@ -1057,11 +991,11 @@
             </div>
             <!-- /.addition-section-box -->
             <div class="addition-section-box">
-              <h3
+              <h2
                 class="title addition-section__title addition-section__title--long"
               >
                 Видео съёмка
-              </h3>
+              </h2>
               <p class="addition-section__text">
                 Сегодня видео набирает всё больше оборотов в нашем мире полном
                 визуализации. Видео это один из прекрасных способов передать
@@ -1074,7 +1008,7 @@
           <!-- /.col col-4 -->
           <div class="col col-4 col-sm-12">
             <div class="addition-section-box">
-              <h3 class="title addition-section__title">Фото книги и флешки</h3>
+              <h2 class="title addition-section__title">Фото книги и флешки</h2>
               <p class="addition-section__text">
                 Это эксклюзивная фотографии с вашей фотосессии напечатанные и
                 оформленные в красивой фото книге. Все фотографии записаны на
@@ -1084,9 +1018,9 @@
             </div>
             <!-- /.addition-section-box -->
             <div class="addition-section-box">
-              <h3 class="title addition-section__title">
+              <h2 class="title addition-section__title">
                 Печать авторских фотографий на футболке
-              </h3>
+              </h2>
               <p class="addition-section__text addition-section__text--middle">
                 Вы любите оригинальную и креативную одежду? Мы создадим дизайн
                 для той фотографии которая вам приглянулась. На ней можно
@@ -1099,7 +1033,7 @@
           <!-- /.col col-4 -->
           <div class="col col-4 col-sm-12">
             <div class="addition-section-box">
-              <h3 class="title addition-section__title">Ретушь</h3>
+              <h2 class="title addition-section__title">Ретушь</h2>
               <p class="addition-section__text">
                 Вам необходимо сделать качественно быстро ретушь для фотографий.
                 Я предлагаю вам решить этот вопрос быстро и с результатами,
@@ -1108,11 +1042,11 @@
             </div>
             <!-- /.addition-section-box -->
             <div class="addition-section-box">
-              <h3
+              <h2
                 class="title addition-section__title addition-section__title--middle"
               >
                 Печать фотографий на холсте
-              </h3>
+              </h2>
               <p class="addition-section__text">
                 Как важно не просто сделать свою фотосессию а ещё и распечатать
                 самую красивую фотографию на холсте, ведь на этой картине будет
@@ -1129,13 +1063,11 @@
     <!-- /.addition-section -->
     <section class="charity-section" id="projects-block">
       <div class="container">
-        <h2 class="title title--h2 charity-section__header">
-          Проект «На Крильях мечты»
-        </h2>
-        <h4 class="title title--h4 charity-section__desc">
+        <h1 class="title charity-section__header">Проект «На Крильях мечты»</h1>
+        <h2 class="title charity-section__desc">
           «На крыльях мечты»: благотворительный проект в поддержку женщин с
           онкологией
-        </h4>
+        </h2>
         <div class="row">
           <div class="col col-4 col-sm-12 charity-section__box">
             <img
@@ -1183,21 +1115,23 @@
     <!-- /.charity-section -->
     <section class="contacts-section" id="registration-block">
       <div class="container">
-        <h2 class="title title--h2 contacts-section__header">
-          Связаться со мной
-        </h2>
+        <h1 class="title contacts-section__header">Связаться со мной</h1>
         <div class="row">
           <div class="col col-6 col-sm-12">
-            <div class="contacts-section__img contacts-section__img--first">
-              <img src="images/image-4.jpg" alt="ксения кишишьян, фотограф" />
+            <div class="contacts-section__img">
+              <img
+                src="images/photographer-image-4.jpg"
+                alt="ксения кишишьян, фотограф"
+                class="contacts-section__img--first"
+              />
             </div>
           </div>
           <!-- /.col col-6 -->
           <div class="col col-6 col-sm-12">
             <div class="contacts-section__contact-form">
-              <h3 class="title contacts-section__contact-form-title">
+              <h2 class="title contacts-section__contact-form-title">
                 Остались вопросы?
-              </h3>
+              </h2>
               <form class="contact-form" id="contact-form-on-page">
                 <p
                   class="contacts-section__contact-form-text--second contacts-section__contact-form-text"
@@ -1206,40 +1140,40 @@
                   фотосессии
                 </p>
                 <p class="contact-form__description"></p>
-                <div class="contact-form__input-wrapper">
+                <div class="contact-form__wrapper">
                   <input
                     name="name"
                     type="text"
-                    class="contact-form__input contact-form__input-name"
+                    class="contact-form__wrapper-input"
                     placeholder="Имя"
                   />
                   <div
                     class="contact-form__error contact-form__error-name"
                   ></div>
                 </div>
-                <div class="contact-form__input-wrapper">
+                <div class="contact-form__wrapper">
                   <input
                     name="tel"
                     type="tel"
-                    class="contact-form__input contact-form__input-tel"
+                    class="contact-form__wrapper-input"
                     placeholder="Телефон"
                   />
                   <div
                     class="contact-form__error contact-form__error-tel"
                   ></div>
                 </div>
-                <div class="contact-form__input-wrapper">
+                <div class="contact-form__wrapper">
                   <input
                     name="email"
                     type="email"
-                    class="contact-form__input contact-form__input-email"
+                    class="contact-form__wrapper-input"
                     placeholder="E-mail"
                   />
                   <div
                     class="contact-form__error contact-form__error-email"
                   ></div>
                 </div>
-                <div class="contact-form__input-wrapper">
+                <div class="contact-form__wrapper">
                   <textarea
                     name="message"
                     cols="20"
@@ -1265,16 +1199,16 @@
         <div class="row">
           <div class="col col-6 col-sm-12">
             <div class="contacts-section__social" id="contacts-block">
-              <h3 class="title contacts-section__contact-form-title">
+              <h2 class="title contacts-section__contact-form-title">
                 Контактная информация
-              </h3>
+              </h2>
               <ul class="contacts-section__list">
                 <li class="d-flex">
-                  <span
-                    class="iconify"
-                    data-icon="carbon:email"
-                    data-inline="false"
-                  ></span>
+                  <img
+                    src="images/mail-icon.svg"
+                    alt="mail"
+                    class="contacts-section__list-icon"
+                  />
                   <a
                     href="mailto:kvk.creative.studio@gmail.com"
                     class="contacts-section__list-text"
@@ -1282,21 +1216,21 @@
                   >
                 </li>
                 <li class="d-flex">
-                  <span
-                    class="iconify"
-                    data-icon="clarity:phone-handset-line"
-                    data-inline="false"
-                  ></span>
+                  <img
+                    src="images/phone-icon.svg"
+                    alt="phone number"
+                    class="contacts-section__list-icon"
+                  />
                   <p class="contacts-section__list-text">
                     Телефон: +380 66 422 50 75
                   </p>
                 </li>
                 <li class="d-flex">
-                  <span
-                    class="iconify"
-                    data-icon="carbon:location"
-                    data-inline="false"
-                  ></span>
+                  <img
+                    src="images/place-icon.svg"
+                    alt="Украина, Харьков"
+                    class="contacts-section__list-icon"
+                  />
                   <p class="contacts-section__list-text">Украина, Харьков</p>
                 </li>
               </ul>
@@ -1308,17 +1242,22 @@
                   <a
                     href="https://www.facebook.com/kseniakyshyshian/"
                     target="_blank"
+                    rel="noopener"
                   >
                     <img
-                      src="images/fa-brands_facebook-square.svg"
+                      src="images/facebook-icon-dark.svg"
                       alt="фотограф, ксения кишишьян, личная страница, facebook"
                     />
                   </a>
                 </div>
                 <div class="contacts-section__social-list-item">
-                  <a href="https://www.behance.net/kseniakys" target="_blank">
+                  <a
+                    href="https://www.behance.net/kseniakys"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     <img
-                      src="images/fa-brands_behance-square.svg"
+                      src="images/behance-icon-dark.svg"
                       alt="фотограф, ксения кишишьян, личная страница, behance"
                     />
                   </a>
@@ -1327,9 +1266,10 @@
                   <a
                     href="https://www.instagram.com/kvk_creative_studio/"
                     target="_blank"
+                    rel="noopener"
                   >
                     <img
-                      src="images/fa-brands_instagram-square.svg"
+                      src="images/instagram-icon-dark.svg"
                       alt="фотограф, ксения кишишьян, личная страница, instagram"
                     />
                   </a>
@@ -1341,8 +1281,12 @@
           </div>
           <!-- .col col-6 -->
           <div class="col col-6 col-sm-12">
-            <div class="contacts-section__img contacts-section__img--second">
-              <img src="images/image-5.jpg" alt="ксения кишишьян, фотограф" />
+            <div class="contacts-section__img">
+              <img
+                src="images/photographer-image-5.jpg"
+                alt="ксения кишишьян, фотограф"
+                class="contacts-section__img--second"
+              />
             </div>
           </div>
           <!-- /.col-col-6 -->
@@ -1355,7 +1299,7 @@
     <footer class="footer-section">
       <div class="container">
         <div class="row">
-          <div class="col col-3 col-sm-12">
+          <div class="col col-3 col-sm-6">
             <div class="footer-menu__contacts">
               <ul>
                 <li>
@@ -1383,7 +1327,7 @@
             <!-- footer-menu__contacts -->
           </div>
           <!-- /.col col-3 -->
-          <div class="col col-3 col-sm-12">
+          <div class="col col-3 col-sm-6">
             <div class="footer-menu__contacts">
               <ul>
                 <li>
@@ -1406,15 +1350,24 @@
             <!-- footer-menu__contacts -->
           </div>
           <!-- /.col col-3 -->
-          <div class="col col-6 col-sm-12">
+          <div class="col col-6">
             <div class="footer-menu__contacts--social">
               <ul>
                 <li class="d-flex">
-                  <span
-                    class="iconify iconify-footer"
-                    data-icon="carbon:email"
-                    data-inline="false"
-                  ></span>
+                  <svg
+                    width="29"
+                    height="29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.833 4.833h19.333a2.424 2.424 0 012.417 2.417v14.5a2.424 2.424 0 01-2.417 2.417H4.833a2.424 2.424 0 01-2.417-2.417V7.25a2.424 2.424 0 012.417-2.417zM15.78 14.912l7.903-4.942a1.026 1.026 0 10-1.088-1.74L14.5 13.292 6.403 8.229a1.026 1.026 0 10-1.087 1.74l7.903 4.942a2.393 2.393 0 002.561 0z"
+                      fill="#fff"
+                      fill-opacity="1"
+                    />
+                  </svg>
                   <a
                     href="mailto:kvk.creative.studio@gmail.com"
                     class="footer-menu__link"
@@ -1422,11 +1375,17 @@
                   >
                 </li>
                 <li class="d-flex">
-                  <span
-                    class="iconify iconify-footer"
-                    data-icon="clarity:phone-handset-line"
-                    data-inline="false"
-                  ></span>
+                  <svg
+                    width="29"
+                    height="29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5 3.625h10.875v8.44h-7.25L14.5 15.69V3.625zm9.686 15.123c.34 0 .623.113.85.34.226.226.339.51.339.85v4.248c0 .34-.113.623-.34.85-.226.226-.51.339-.85.339-5.663 0-10.516-2.001-14.556-6.004-4.003-4.04-6.004-8.892-6.004-14.557 0-.34.113-.623.34-.85.226-.226.51-.339.85-.339h4.247c.34 0 .624.113.85.34.227.226.34.51.34.85 0 1.51.226 2.945.68 4.304.15.491.056.906-.284 1.246l-2.662 2.662c1.813 3.512 4.475 6.174 7.987 7.987l2.662-2.662c.34-.34.755-.435 1.246-.284 1.36.453 2.794.68 4.305.68z"
+                      fill="#fff"
+                    />
+                  </svg>
                   <a href="tel:380664225075" class="footer-menu__link"
                     >Телефон: +380 66 422 50 75</a
                   >
@@ -1436,33 +1395,30 @@
                     href="https://www.behance.net/kseniakys"
                     class="footer-menu__social"
                     target="_blank"
+                    rel="noopener"
                   >
                     <span
-                      class="iconify iconify-footer"
-                      data-icon="fa-brands:behance-square"
-                      data-inline="false"
+                      class="footer-menu__icon footer-menu__icon--behance"
                     ></span>
                   </a>
                   <a
                     href="https://www.facebook.com/kseniakyshyshian/"
                     class="footer-menu__social"
                     target="_blank"
+                    rel="noopener"
                   >
                     <span
-                      class="iconify iconify-footer"
-                      data-icon="fa-brands:facebook-square"
-                      data-inline="false"
+                      class="footer-menu__icon footer-menu__icon--facebook"
                     ></span>
                   </a>
                   <a
                     href="https://www.instagram.com/kvk_creative_studio/"
                     class="footer-menu__social"
                     target="_blank"
+                    rel="noopener"
                   >
                     <span
-                      class="iconify iconify-footer"
-                      data-icon="fa-brands:instagram-square"
-                      data-inline="false"
+                      class="footer-menu__icon footer-menu__icon--instagram"
                     ></span>
                   </a>
                 </li>
@@ -1484,6 +1440,7 @@
       tabindex="-1"
       aria-labelledby="ModalLabel"
       aria-hidden="true"
+      data-backdrop="static"
     >
       <div class="modal-dialog">
         <div class="modal-content">
@@ -1492,7 +1449,6 @@
               type="button"
               class="close modal--close"
               data-dismiss="modal"
-              aria-label="Close"
             >
               <span aria-hidden="true">&times;</span>
             </button>
@@ -1500,15 +1456,14 @@
           </div>
           <div class="modal-body">
             <form class="contact-form" id="ModalLabel">
-              <p class="contact-form__description"></p>
               <label for="inputName" id="nameHelp" class="contact-form__label"
                 >Имя</label
               >
-              <div class="contact-form__input-wrapper">
+              <div class="contact-form__wrapper">
                 <input
                   name="name"
                   type="text"
-                  class="contact-form__input contact-form__input-name"
+                  class="contact-form__wrapper-input"
                   id="inputName"
                   aria-describedby="nameHelp"
                 />
@@ -1517,11 +1472,11 @@
               <label for="inputTel" id="telHelp" class="contact-form__label"
                 >Телефон</label
               >
-              <div class="contact-form__input-wrapper">
+              <div class="contact-form__wrapper">
                 <input
                   name="tel"
                   type="tel"
-                  class="contact-form__input contact-form__input-tel"
+                  class="contact-form__wrapper-input"
                   id="inputTel"
                   aria-describedby="telHelp"
                 />
@@ -1530,11 +1485,11 @@
               <label for="inputEmail" id="emailHelp" class="contact-form__label"
                 >E-mail</label
               >
-              <div class="contact-form__input-wrapper">
+              <div class="contact-form__wrapper">
                 <input
                   name="email"
                   type="email"
-                  class="contact-form__input contact-form__input-email"
+                  class="contact-form__wrapper-input"
                   id="inputEmail"
                   aria-describedby="emailHelp"
                 />
@@ -1545,7 +1500,7 @@
               <label for="textarea" class="contact-form__label"
                 >Сообщение</label
               >
-              <div class="contact-form__input-wrapper">
+              <div class="contact-form__wrapper">
                 <textarea
                   name="message"
                   id="textarea"
@@ -1578,32 +1533,24 @@
       </div>
     </div>
 
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
-      defer
     ></script>
 
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"
-      defer
-    ></script>
+    <script>
+      $("#ModalForm").modal("hide");
+    </script>
 
-    <script src="js/navigation.js" defer></script>
-    <script src="js/scrollBody.js" defer></script>
-    <script src="js/form.js" defer></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/form.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -1613,12 +1560,6 @@
             top = $(id).offset().top;
           $("body,html").animate({ scrollTop: top }, 1200);
         });
-      });
-    </script>
-
-    <script>
-      $("#myModal").on("shown.bs.modal", function () {
-        $("#myInput").trigger("focus");
       });
     </script>
   </body>

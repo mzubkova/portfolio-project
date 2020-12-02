@@ -17,6 +17,7 @@
 
   &__header {
     color: $text-white;
+    font-size: 3.6rem;
     letter-spacing: 1px;
     line-height: 1.36;
     margin: 0 0 75px 15px;
@@ -35,7 +36,7 @@
 
   &__card {
     @media (max-width: 575px) {
-      margin: 35px auto;
+      margin: 15px auto;
       width: 345px;
     }
 
@@ -54,6 +55,7 @@
     &-title {
       color: $text-white;
       font-family: $second-font;
+      font-size: 1.8rem;
       font-weight: $body-fw-md;
       line-height: 1.4;
 

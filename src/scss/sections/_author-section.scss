@@ -4,20 +4,25 @@
 
   .container {
     @media (max-width: 575px) {
-      margin-bottom: 80px;
+      margin-bottom: 30px;
     }
   }
 
   &__img {
+    height: 327px;
     width: 700px;
 
     @media (max-width: 1199px) {
-      height: auto;
       width: 90%;
     }
 
     @media (max-width: 575px) {
       display: none;
+    }
+
+    &--sec {
+      height: 650px;
+      width: 434px;
     }
   }
 }
@@ -34,6 +39,7 @@
   }
 
   &__title {
+    font-size: 3.6rem;
     margin: 60px 0 30px;
     text-align: left;
 
@@ -80,7 +86,6 @@
 }
 
 .author-image {
-  height: 650px;
   margin-left: 45px;
   width: 434px;
 

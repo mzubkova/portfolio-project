@@ -1,131 +1,190 @@
 .carousel {
+  margin-top: 80px;
+  position: relative;
+
   @media (max-width: 575px) {
-    width: 345px;
+    margin-top: 30px;
   }
+}
 
-  &-link {
-    display: flex;
-    position: relative;
-    transform: translateY(530px);
-    z-index: 999;
-
-    @media (max-width: 575px) {
-      transform: translateY(470px);
-    }
-
-    &--left {
-      transform: translateY(530px) translateX(-600px);
-
-      @media (max-width: 575px) {
-        transform: translateY(470px) translateX(0);
-      }
-    }
-  }
-
-  &-image {
-    height: 100%;
-    height: 452px;
-    margin-top: 80px;
-    max-width: 680px;
-    object-fit: cover;
-    width: 100%;
-
-    @media (max-width: 575px) {
-      height: 229px;
-      margin-top: 30px;
-    }
-  }
+.carousel.pointer-event {
+  touch-action: pan-y;
 }
 
 .carousel-inner {
-  overflow: inherit;
+  @include clearfix();
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.carousel-control-prev-icon {
-  background-image: none;
-  transform: translateX(570px) translateY(30px);
+.carousel-item {
+  @include transition($carousel-transition);
+  backface-visibility: hidden;
+  display: none;
+  float: left;
+  margin-right: -100%;
+  position: relative;
+  width: 100%;
+}
 
-  &::before {
-    background: url(../images/arrow-left.svg) no-repeat;
-    background-size: contain;
-    color: $text-black;
-    content: "";
-    display: inline-block;
-    height: 15px;
-    transform: translateX(-20px) translateY(0);
-    width: 8px;
-
-    @media (max-width: 575px) {
-      transform: none;
-    }
-  }
-
-  @media (max-width: 1191px) {
-    transform: translateX(450px) translateY(30px);
-  }
+.carousel-image {
+  height: 452px;
+  object-fit: cover;
+  width: 680px;
 
   @media (max-width: 575px) {
+    height: 229px;
+    width: 100%;
+  }
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next:not(.carousel-item-left),
+.active.carousel-item-right {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+  transform: translateX(-100%);
+}
+
+.carousel-fade {
+  .carousel-item {
+    opacity: 0;
     transform: none;
-  }
-}
-
-.carousel-control-next-icon {
-  background-image: none;
-
-  &::after {
-    background: url(../images/arrow-right.svg) no-repeat;
-    background-size: contain;
-    color: $text-black;
-    content: "";
-    display: inline-block;
-    height: 15px;
-    margin-left: 15px;
-    transform: translateX(30px) translateY(30px);
-    width: 8px;
-
-    @media (max-width: 575px) {
-      margin: 0;
-      transform: translateX(-275px) translateY(0);
-    }
-  }
-}
-
-.carousel-caption {
-  bottom: 0;
-  color: #000;
-  position: absolute;
-  text-align: right;
-  transform: translateY(55px) translateX(74px);
-  z-index: 99;
-
-  @media (max-width: 1191px) {
-    transform: translateY(55px) translateX(67px);
+    transition-property: opacity;
   }
 
-  @media (max-width: 575px) {
-    transform: translateY(58px) translateX(-100px);
+  .carousel-item.active,
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    z-index: 1;
   }
 
-  &--left {
-    transform: translateY(55px) translateX(-527px);
-
-    @media (max-width: 575px) {
-      transform: translate(-100px, 58px);
-    }
-  }
-
-  &__title {
-    font-size: 1.5rem;
+  .active.carousel-item-left,
+  .active.carousel-item-right {
+    @include transition(opacity 0s $carousel-transition-duration);
+    opacity: 0;
+    z-index: 0;
   }
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  color: $text-black;
-  opacity: 1;
+  @include transition($carousel-control-transition);
+  align-items: center; // 2. vertically center contents
+  bottom: 0;
+  color: $carousel-control-color;
+  display: flex;
+  justify-content: center;
+  opacity: $carousel-control-opacity;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: $carousel-control-width;
+  z-index: 1;
 
-  @media (max-width: 575px) {
-    transform: translateX(136px) translateY(-180px);
-    width: 0%;
+  @include hover-focus() {
+    color: $carousel-control-color;
+    opacity: $carousel-control-hover-opacity;
+    outline: 0;
+    text-decoration: none;
   }
 }
+
+.carousel-control-prev {
+  left: 0;
+  @if $enable-gradients {
+    background-image: linear-gradient(
+      90deg,
+      rgba($black, 0.25),
+      rgba($black, 0.001)
+    );
+  }
+}
+
+.carousel-control-next {
+  right: 0;
+  @if $enable-gradients {
+    background-image: linear-gradient(
+      270deg,
+      rgba($black, 0.25),
+      rgba($black, 0.001)
+    );
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: no-repeat 50% / 100% 100%;
+  display: inline-block;
+  height: $carousel-control-icon-width;
+  width: $carousel-control-icon-width;
+
+  @media (max-width: 575px) {
+    width: $carousel-control-icon-width / 2;
+  }
+}
+
+.carousel-control-prev-icon {
+  background: url(../images/arrow-left.svg) no-repeat;
+}
+
+.carousel-control-next-icon {
+  background: url(../images/arrow-right.svg) no-repeat;
+}
+
+.carousel-indicators {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  list-style: none;
+  margin-left: $carousel-control-width;
+  margin-right: $carousel-control-width;
+  padding-left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 15;
+
+  li {
+    @include transition($carousel-indicator-transition);
+    background-clip: padding-box;
+    background-color: $carousel-indicator-active-bg;
+    border-bottom: $carousel-indicator-hit-area-height solid transparent;
+    border-top: $carousel-indicator-hit-area-height solid transparent;
+    box-sizing: content-box;
+    cursor: pointer;
+    flex: 0 1 auto;
+    height: $carousel-indicator-height;
+    margin-left: $carousel-indicator-spacer;
+    margin-right: $carousel-indicator-spacer;
+    opacity: 0.5;
+    text-indent: -999px;
+    width: $carousel-indicator-width;
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+
+// .carousel-caption {
+//   bottom: 20px;
+//   color: $carousel-caption-color;
+//   left: (100% - $carousel-caption-width) / 2;
+//   padding-bottom: 20px;
+//   padding-top: 20px;
+//   position: absolute;
+//   right: (100% - $carousel-caption-width) / 2;
+//   text-align: center;
+//   z-index: 10;
+// }

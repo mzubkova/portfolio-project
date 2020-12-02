@@ -4,34 +4,12 @@
   position: relative;
 
   @media (max-width: 1199px) {
-    padding: 0 0 60px;
+    padding: 0 0 30px;
   }
 
   @media (max-width: 575px) {
     div {
       display: block;
-    }
-  }
-
-  &-social {
-    margin-top: 645px;
-
-    @media (max-width: 1199px) {
-      margin: auto 20px 0;
-    }
-
-    @media (max-width: 575px) {
-      display: flex !important;
-      justify-content: space-between;
-      margin: 20px auto;
-      padding: 0 120px;
-      width: 100%;
-    }
-
-    &__item {
-      height: 35px;
-      margin-bottom: 10px;
-      width: 31px;
     }
   }
 
@@ -89,8 +67,14 @@
     }
 
     &-logo {
+      background: url(../images/phone-icon-header.svg) no-repeat;
+      color: #fff;
+      display: block;
+      height: 24px;
       position: absolute;
-      transform: translateX(-35px) translateY(0);
+      transform: translateX(-35px) translateY(3px);
+      width: 24px;
+      width: 100px;
     }
   }
 
@@ -121,6 +105,7 @@
   }
 
   &__title {
+    font-size: 3.6rem;
     letter-spacing: 4px;
     margin: 75px 0 30px;
     text-align: left;
@@ -158,11 +143,12 @@
 .logo {
   height: 168px;
   margin: 55px auto 0;
+  padding: 0;
   width: 289px;
 
   @media (max-width: 1199px) {
     height: auto;
-    margin: 35px auto 0;
+    margin: 35px 25% 0;
     width: 50%;
   }
 }

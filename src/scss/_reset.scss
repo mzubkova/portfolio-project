@@ -1,6 +1,6 @@
 *,
-*::before,
-*::after {
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -23,15 +23,12 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 h1,
@@ -47,16 +44,12 @@ button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  outline: none !important;
+  outline: 0 !important;
 }
 
 p {
   margin: 0;
   padding: 0;
-}
-
-li:hover {
-  text-decoration: none;
 }
 
 input,
@@ -80,36 +73,32 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   color: $text-gray;
-  font-family: $second-font;
   font-size: 1.7rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 
   @media (max-width: 575px) {
     font-size: 1.2rem;
   }
 }
 
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-text-fill-color: #000;
+  transition: background-color 5000s ease-in-out 0s;
 
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-input:focus::placeholder,
-textarea:focus::placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-input:focus:placeholder,
-textarea:focus:placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  @media (max-width: 575px) {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 575px) {

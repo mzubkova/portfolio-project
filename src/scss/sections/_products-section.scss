@@ -8,7 +8,7 @@
   }
 
   @media (max-width: 575px) {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 
   .container {
@@ -24,6 +24,7 @@
   }
 
   &__header {
+    font-size: 3.6rem;
     margin-left: 15px;
 
     @media (max-width: 1199px) {
@@ -53,6 +54,10 @@
       width: 290px;
     }
 
+    @media (max-width: 575px) {
+      display: none;
+    }
+
     &-name {
       color: $text-black;
       font-family: $second-font;
@@ -66,10 +71,12 @@
     &-title {
       color: $text-black;
       font-family: $second-font;
+      font-size: 2.8rem;
       font-weight: $body-fw;
       line-height: 1.5;
       margin-bottom: 25px;
       text-align: center;
+      text-transform: uppercase;
 
       @media (max-width: 575px) {
         font-size: 2rem;
@@ -101,13 +108,22 @@
 
     &-btn {
       bottom: 5%;
-      left: 20%;
+      left: 22%;
       position: absolute;
       text-align: center;
       width: 200px;
 
       @media (max-width: 1199px) {
         left: 15%;
+      }
+    }
+
+    &--resp {
+      display: none;
+
+      @media (max-width: 575px) {
+        display: block;
+        margin: 20px auto;
       }
     }
   }
