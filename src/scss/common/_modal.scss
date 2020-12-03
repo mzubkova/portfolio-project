@@ -144,6 +144,10 @@ body.modal-open {
   flex: 1 1 auto;
   padding: 10px;
   position: relative;
+
+  @media (max-width: 991px) {
+    margin: 0 auto;
+  }
 }
 
 .modal-scrollbar-measure {

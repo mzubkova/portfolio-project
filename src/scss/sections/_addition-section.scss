@@ -6,11 +6,14 @@
     padding-bottom: 40px;
   }
 
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
     padding-bottom: 0;
   }
 
   .container {
+    @media (max-width: 991px) {
+      margin-bottom: 50px;
+    }
     @media (max-width: 575px) {
       margin-bottom: 10px;
     }
@@ -24,8 +27,12 @@
       font-size: 3rem;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
       font-size: 2rem;
+      margin: 0 15px 10px;
+    }
+
+    @media (max-width: 575px) {
       margin: 0 0 40px;
     }
   }
@@ -42,13 +49,29 @@
       width: 290px;
     }
 
+    @media (max-width: 991px) {
+      margin: 35px 0;
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      margin: 20px 0 10px;
+    }
+
     @media (max-width: 575px) {
-      font-size: 2rem;
       margin: 0 0 20px;
     }
 
     &--middle {
       margin-bottom: 60px;
+
+      @media (max-width: 991px) {
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 767px) {
+        margin: 20px 0 10px;
+      }
 
       @media (max-width: 575px) {
         margin-bottom: 20px;
@@ -58,8 +81,22 @@
     &--long {
       margin-bottom: 90px;
 
+      @media (max-width: 991px) {
+        margin-bottom: 85px;
+      }
+
+      @media (max-width: 767px) {
+        margin: 20px 0 10px;
+      }
+
       @media (max-width: 575px) {
         margin-bottom: 20px;
+      }
+    }
+
+    &--resp {
+      @media (max-width: 991px) {
+        margin-bottom: 10px;
       }
     }
   }
@@ -70,6 +107,10 @@
     font-size: 1.8rem;
     font-weight: $body-fw;
     line-height: 1.5;
+
+    @media (max-width: 991px) {
+      font-size: 1.5rem;
+    }
 
     @media (max-width: 575px) {
       font-size: 1.4rem;
@@ -84,6 +125,17 @@
     @media (max-width: 1199px) {
       margin-bottom: 20px;
       width: 290px;
+    }
+
+    @media (max-width: 991px) {
+      margin-bottom: 60px;
+      padding: 0 10px 0 0;
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      height: auto;
+      margin-bottom: 20px;
     }
 
     @media (max-width: 575px) {

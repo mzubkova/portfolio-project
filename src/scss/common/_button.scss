@@ -15,6 +15,21 @@
   transition: all 0.2s ease-in;
   width: 100%;
 
+  @media (max-width: 991px) {
+    font-size: 1.6rem;
+    height: 45px;
+    margin-bottom: 0;
+    max-width: 200px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 1.4rem;
+    height: 35px;
+    margin: 10px 0 0;
+    text-transform: inherit;
+    width: 150px;
+  }
+
   @media (max-width: 575px) {
     font-size: 1.6rem;
     height: 45px;

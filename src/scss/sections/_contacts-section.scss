@@ -7,12 +7,23 @@
     padding-bottom: 60px;
   }
 
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+  }
+
   @media (max-width: 575px) {
     padding-bottom: 40px;
   }
 
   .container {
     margin-bottom: 0;
+
+    @media (max-width: 991px) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
     @media (max-width: 575px) {
       margin-bottom: 0;
     }
@@ -26,7 +37,7 @@
       font-size: 3rem;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
       font-size: 2rem;
       margin: 0 0 20px;
     }
@@ -50,6 +61,11 @@
       position: absolute;
       width: 29px;
 
+      @media (max-width: 767px) {
+        height: 25px;
+        width: 25px;
+      }
+
       @media (max-width: 575px) {
         height: 20px;
         width: 20px;
@@ -64,8 +80,13 @@
       line-height: 1.5;
       margin-left: 45px;
 
-      @media (max-width: 575px) {
+      @media (max-width: 991px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 767px) {
         font-size: 1.3rem;
+        margin-left: 35px;
       }
     }
   }
@@ -77,6 +98,10 @@
     @media (max-width: 1199px) {
       height: auto;
       width: 400px;
+    }
+
+    @media (max-width: 991px) {
+      width: 80%;
     }
 
     @media (max-width: 575px) {
@@ -107,6 +132,15 @@
 
       @media (max-width: 1199px) {
         margin: 40px 0 0 40px;
+        width: 100%;
+      }
+
+      @media (max-width: 1199px) {
+        margin: 40px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        margin: 10px 0 0;
       }
     }
 
@@ -117,6 +151,11 @@
 
       @media (max-width: 1199px) {
         margin: 0 0 0 50px;
+        width: 100%;
+      }
+
+      @media (max-width: 991px) {
+        margin-right: auto;
       }
     }
   }
@@ -135,7 +174,7 @@
       margin: 40px auto 0;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
       margin: 0 0 40px;
       width: 345px;
     }
@@ -145,6 +184,11 @@
       font-size: 2.4rem;
       font-weight: 600;
       text-transform: none;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+        font-weight: 500;
+      }
 
       @media (max-width: 575px) {
         font-family: $main-font;
@@ -162,10 +206,18 @@
       margin: 35px 0 10px;
       text-align: center;
 
-      @media (max-width: 575px) {
-        font-size: 1.7rem;
+      @media (max-width: 991px) {
+        margin: 15px 0 10px;
+      }
+
+      @media (max-width: 767px) {
         font-size: 1.5rem;
-        margin: 25px 0 10px;
+        margin: 15px 0;
+        width: 200px;
+      }
+
+      @media (max-width: 575px) {
+        width: 300px;
       }
 
       &--second {
@@ -182,7 +234,7 @@
       margin: 0 0 0 40px;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 991px) {
       margin: 0;
     }
 

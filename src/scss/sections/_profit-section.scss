@@ -27,7 +27,7 @@
       margin: 0 0 40px 15px;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
       font-size: 2rem;
       margin: 0;
       text-align: center;
@@ -35,6 +35,9 @@
   }
 
   &__card {
+    @media (max-width: 767px) {
+      margin: 15px auto;
+    }
     @media (max-width: 575px) {
       margin: 15px auto;
       width: 345px;
@@ -45,10 +48,31 @@
       margin-bottom: 42px;
       width: 75px;
 
+      @media (max-width: 767px) {
+        height: 55px;
+        margin: 0 auto 15px;
+        width: 55px;
+      }
+
       @media (max-width: 575px) {
         margin-bottom: 30px;
         text-align: center;
-        width: 100%;
+      }
+    }
+
+    &-header {
+      height: 50px;
+      margin-bottom: 20px;
+      width: 200px;
+
+      @media (max-width: 991px) {
+        width: auto;
+      }
+
+      @media (max-width: 767px) {
+        height: auto;
+        margin: 0 auto 15px;
+        width: auto;
       }
     }
 
@@ -59,8 +83,12 @@
       font-weight: $body-fw-md;
       line-height: 1.4;
 
-      @media (max-width: 575px) {
-        font-size: 2rem;
+      @media (max-width: 991px) {
+        font-size: 1.4rem;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 1.5rem;
         text-align: center;
       }
     }
@@ -73,7 +101,7 @@
       line-height: 1.5;
       margin-top: 10px;
 
-      @media (max-width: 575px) {
+      @media (max-width: 767px) {
         font-size: 1.4rem;
         text-align: center;
       }
