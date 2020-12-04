@@ -8,7 +8,7 @@ $("#ModalLabel").validate({
     },
     tel: {
       required: true,
-      minlength: 11,
+      minlength: 10,
     },
     email: {
       required: true,

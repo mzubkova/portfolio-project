@@ -1789,23 +1789,23 @@ body.modal-open {
       margin: 0 auto; } }
   .products-section__header {
     font-size: 3.6rem;
-    margin-left: 15px; }
+    margin: 0 0 50px 15px; }
     @media (max-width: 1199px) {
       .products-section__header {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        margin-bottom: 30px; } }
     @media (max-width: 767px) {
       .products-section__header {
         font-size: 2rem; } }
     @media (max-width: 575px) {
       .products-section__header {
-        margin-left: 0;
+        margin-bottom: 10px;
         text-align: center; } }
   .products-section__card {
     background-color: #fffcf8;
     -webkit-box-shadow: 0 0 25px rgba(119, 145, 126, 0.6);
             box-shadow: 0 0 25px rgba(119, 145, 126, 0.6);
     height: 480px;
-    margin-top: 50px;
     padding: 30px 0 25px;
     position: relative;
     width: 350px; }
@@ -1909,7 +1909,7 @@ body.modal-open {
       padding: 60px 0 40px; } }
   @media (max-width: 991px) {
     .addition-section {
-      padding-bottom: 0; } }
+      padding: 0; } }
   @media (max-width: 991px) {
     .addition-section .container {
       margin-bottom: 50px; } }
@@ -1933,7 +1933,7 @@ body.modal-open {
     color: #40573d;
     font-family: "Montserrat", sans-serif;
     font-size: 2.4rem;
-    margin: 75px 0 30px;
+    margin: 0 0 30px;
     width: 355px; }
     @media (max-width: 1199px) {
       .addition-section__title {
@@ -1941,14 +1941,8 @@ body.modal-open {
         width: 290px; } }
     @media (max-width: 991px) {
       .addition-section__title {
-        margin: 35px 0;
+        margin: 0;
         width: 100%; } }
-    @media (max-width: 767px) {
-      .addition-section__title {
-        margin: 20px 0 10px; } }
-    @media (max-width: 575px) {
-      .addition-section__title {
-        margin: 0 0 20px; } }
     .addition-section__title--middle {
       margin-bottom: 60px; }
       @media (max-width: 991px) {
@@ -1982,13 +1976,15 @@ body.modal-open {
     line-height: 1.5; }
     @media (max-width: 991px) {
       .addition-section__text {
-        font-size: 1.5rem; } }
+        font-size: 1.5rem;
+        margin: 35px 0; } }
     @media (max-width: 575px) {
       .addition-section__text {
-        font-size: 1.4rem; } }
+        font-size: 1.4rem;
+        margin: 15px 0; } }
   .addition-section-box {
     height: 300px;
-    margin-bottom: 80px;
+    margin: 75px 0 80px;
     width: 315px; }
     @media (max-width: 1199px) {
       .addition-section-box {
@@ -2002,11 +1998,11 @@ body.modal-open {
     @media (max-width: 767px) {
       .addition-section-box {
         height: auto;
-        margin-bottom: 20px; } }
+        margin: 20px 0 10px; } }
     @media (max-width: 575px) {
       .addition-section-box {
         height: auto;
-        margin-bottom: 30px; } }
+        margin: 0 0 20px; } }
 
 .charity-section {
   overflow: hidden;
@@ -2241,6 +2237,7 @@ body.modal-open {
           width: 200px; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-text {
+          margin: 15px 0;
           width: 300px; } }
       .contacts-section__contact-form-text--second {
         text-align: left; }
