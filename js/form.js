@@ -1,6 +1,9 @@
 $(document).ready(function () {
   $("form").submit(function () {
     event.preventDefault();
+    if (validateForm()) {
+      return false;
+    }
     var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
@@ -17,4 +20,3 @@ $(".close, .btn-modal").click(function () {
   $(".popup").removeClass("active");
   $("form").trigger("reset");
 });
-
