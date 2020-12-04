@@ -17,3 +17,4 @@ $(".close, .btn-modal").click(function () {
   $(".popup").removeClass("active");
   $("form").trigger("reset");
 });
+

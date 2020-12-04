@@ -11,12 +11,12 @@
     <meta name="robots" content="index, follow" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Prata&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>
-      Фото/Видео студия Ксении Кишишьян | Заказать портфолио, видео- фотосъемку
+      Фото/Видео студия Ксении Кишишьян | Заказать портфолио, видео- фотосъемку,
       фото книги и флешки, печать фотографий на футболке, ретушь
     </title>
   </head>
@@ -1152,7 +1152,7 @@
               <h2 class="title contacts-section__contact-form-title">
                 Остались вопросы?
               </h2>
-              <form class="contact-form" id="contact-form-on-page">
+              <form class="contact-form" id="contactForm">
                 <p
                   class="contacts-section__contact-form-text--second contacts-section__contact-form-text"
                 >
@@ -1165,33 +1165,30 @@
                     type="text"
                     class="contact-form__wrapper-input"
                     placeholder="Имя"
+                    id="inputName2"
                   />
-                  <div
-                    class="contact-form__error contact-form__error-name"
-                  ></div>
                 </div>
+                <!-- Name -->
                 <div class="contact-form__wrapper">
                   <input
                     name="tel"
                     type="tel"
                     class="contact-form__wrapper-input"
                     placeholder="Телефон"
+                    id="inputTel2"
                   />
-                  <div
-                    class="contact-form__error contact-form__error-tel"
-                  ></div>
                 </div>
+                <!-- Tel -->
                 <div class="contact-form__wrapper">
                   <input
                     name="email"
                     type="email"
                     class="contact-form__wrapper-input"
                     placeholder="E-mail"
+                    id="inputEmail2"
                   />
-                  <div
-                    class="contact-form__error contact-form__error-email"
-                  ></div>
                 </div>
+                <!-- E-mail -->
                 <div class="contact-form__wrapper">
                   <textarea
                     name="message"
@@ -1486,8 +1483,9 @@
                   id="inputName"
                   aria-describedby="nameHelp"
                 />
-                <div class="contact-form__error contact-form__error-name"></div>
               </div>
+              <div class="contact-form__error"></div>
+              <!-- Name -->
               <label for="inputTel" id="telHelp" class="contact-form__label"
                 >Телефон</label
               >
@@ -1499,8 +1497,9 @@
                   id="inputTel"
                   aria-describedby="telHelp"
                 />
-                <div class="contact-form__error contact-form__error-tel"></div>
               </div>
+              <div class="contact-form__error"></div>
+              <!-- Tel -->
               <label for="inputEmail" id="emailHelp" class="contact-form__label"
                 >E-mail</label
               >
@@ -1512,10 +1511,9 @@
                   id="inputEmail"
                   aria-describedby="emailHelp"
                 />
-                <div
-                  class="contact-form__error contact-form__error-email"
-                ></div>
               </div>
+              <div class="contact-form__error"></div>
+              <!-- E-mail -->
               <label for="textarea" class="contact-form__label"
                 >Сообщение</label
               >
@@ -1568,8 +1566,11 @@
       $("#ModalForm").modal("hide");
     </script>
 
-    <script src="js/navigation.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/navigationMenu.js"></script>
+    <script src="js/form.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="js/validateForm.js" defer></script>
 
     <script>
       $(document).ready(function () {
