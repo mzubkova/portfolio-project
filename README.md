@@ -14,11 +14,12 @@ Bachunska Kateruna
 
 ## Technology
 
-Flexbox
-Grid
-Responsive Web Design
-Gulp
-Node-SASS
-JQuery 3.5.1
-Bootstrap v4.5
-PHP
+- Flexbox
+- Grid
+- Responsive Web Design
+- SCSS
+- Gulp
+- Node-SASS
+- JQuery 3.5.1
+- Bootstrap v4.5
+- PHP
