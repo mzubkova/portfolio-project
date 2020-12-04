@@ -650,6 +650,10 @@ select:-webkit-autofill:focus {
     .contact-form__wrapper {
       margin: 10px 0 15px;
       width: 345px; } }
+  @media (max-width: 767px) {
+    .contact-form__wrapper {
+      margin: 10px 0 15px;
+      width: 240px; } }
   @media (max-width: 575px) {
     .contact-form__wrapper {
       margin: 0 0 10px;
@@ -1909,7 +1913,7 @@ body.modal-open {
       padding: 60px 0 40px; } }
   @media (max-width: 991px) {
     .addition-section {
-      padding: 0; } }
+      padding-bottom: 0; } }
   @media (max-width: 991px) {
     .addition-section .container {
       margin-bottom: 50px; } }
@@ -1918,7 +1922,7 @@ body.modal-open {
       margin-bottom: 10px; } }
   .addition-section__header {
     font-size: 3.6rem;
-    margin-left: 15px; }
+    margin: 0 0 70px 15px; }
     @media (max-width: 1199px) {
       .addition-section__header {
         font-size: 3rem; } }
@@ -1941,8 +1945,14 @@ body.modal-open {
         width: 290px; } }
     @media (max-width: 991px) {
       .addition-section__title {
-        margin: 0;
+        margin: 35px 0;
         width: 100%; } }
+    @media (max-width: 767px) {
+      .addition-section__title {
+        margin: 20px 0 10px; } }
+    @media (max-width: 575px) {
+      .addition-section__title {
+        margin: 0 0 20px; } }
     .addition-section__title--middle {
       margin-bottom: 60px; }
       @media (max-width: 991px) {
@@ -1976,15 +1986,13 @@ body.modal-open {
     line-height: 1.5; }
     @media (max-width: 991px) {
       .addition-section__text {
-        font-size: 1.5rem;
-        margin: 35px 0; } }
+        font-size: 1.5rem; } }
     @media (max-width: 575px) {
       .addition-section__text {
-        font-size: 1.4rem;
-        margin: 15px 0; } }
+        font-size: 1.4rem; } }
   .addition-section-box {
     height: 300px;
-    margin: 75px 0 80px;
+    margin-bottom: 80px;
     width: 315px; }
     @media (max-width: 1199px) {
       .addition-section-box {
@@ -1998,11 +2006,11 @@ body.modal-open {
     @media (max-width: 767px) {
       .addition-section-box {
         height: auto;
-        margin: 20px 0 10px; } }
+        margin-bottom: 20px; } }
     @media (max-width: 575px) {
       .addition-section-box {
         height: auto;
-        margin: 0 0 20px; } }
+        margin-bottom: 30px; } }
 
 .charity-section {
   overflow: hidden;
@@ -2209,11 +2217,13 @@ body.modal-open {
       font-family: "Prata", sans-serif;
       font-size: 2.4rem;
       font-weight: 400;
+      margin-top: 130px;
       text-transform: none; }
       @media (max-width: 767px) {
         .contacts-section__contact-form-title {
           font-size: 2rem;
-          font-weight: 500; } }
+          font-weight: 500;
+          margin-top: 0; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-title {
           font-family: "Prata", sans-serif;
@@ -2233,7 +2243,7 @@ body.modal-open {
       @media (max-width: 767px) {
         .contacts-section__contact-form-text {
           font-size: 1.5rem;
-          margin: 15px auto 0;
+          margin: 15px 0;
           width: 200px; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-text {
@@ -2242,7 +2252,6 @@ body.modal-open {
       .contacts-section__contact-form-text--second {
         text-align: left; }
   .contacts-section__social {
-    margin-top: 130px;
     position: relative; }
     @media (max-width: 1199px) {
       .contacts-section__social {
@@ -2303,12 +2312,6 @@ body.modal-open {
   height: 35px;
   position: absolute;
   width: 31px; }
-  .footer-menu__icon--behance {
-    background: url(../images/behance-icon-white.svg) no-repeat; }
-  .footer-menu__icon--facebook {
-    background: url(../images/facebook-icon-white.svg) no-repeat; }
-  .footer-menu__icon--instagram {
-    background: url(../images/instagram-icon-white.svg) no-repeat; }
 
 .footer-menu__link {
   color: #fff;
