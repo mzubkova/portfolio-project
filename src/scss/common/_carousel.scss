@@ -1,5 +1,4 @@
 .carousel {
-  margin-top: 80px;
   position: relative;
 
   @media (max-width: 1199px) {
@@ -43,7 +42,7 @@
   }
 
   @media (max-width: 575px) {
-    height: 229px;
+    height: auto;
     width: 100%;
   }
 }

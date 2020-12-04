@@ -1,8 +1,12 @@
 .profit-section {
   background-color: $text-gray-3;
   overflow: hidden;
-  padding: 40px 0;
+  padding: 56px 0 50px;
   position: relative;
+
+  @media (max-width: 1199px) {
+    padding: 40px 0;
+  }
 
   .container {
     margin-bottom: 0;

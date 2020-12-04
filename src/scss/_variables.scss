@@ -1,5 +1,5 @@
-$main-font: Prata, sans-serif;
-$second-font: Montserrat, sans-serif;
+$main-font: "Prata", sans-serif;
+$second-font: "Montserrat", sans-serif;
 
 // Text Colors
 $text-gray: #333;
@@ -20,7 +20,8 @@ $body-fw-md: 500;
 $body-lh: 1;
 
 // Grid
-$container-width: 1215px;
+$container-width: 1185px;
+$container-fluid-width: 1305px;
 $grid-columns: 12;
 $grid-gutter-width: 30px;
 $grid-no-gutter: 0;

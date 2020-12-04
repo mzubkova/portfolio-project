@@ -7,12 +7,6 @@
     padding: 0 0 50px;
   }
 
-  @media (max-width: 575px) {
-    div {
-      display: block;
-    }
-  }
-
   &-author {
     display: flex;
     @media (max-width: 575px) {
@@ -92,7 +86,6 @@
 }
 
 .intro-content {
-  margin-left: 135px;
   width: 540px;
 
   @media (max-width: 1199px) {
@@ -148,6 +141,18 @@
       margin: 0;
       padding: 0 25px 30px;
       text-align: center;
+    }
+  }
+
+  &__button {
+    margin: 25px 0 85px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 575px) {
+      margin: 0 auto 20px;
     }
   }
 }

@@ -2,6 +2,10 @@
   overflow: hidden;
   position: relative;
 
+  @media (max-width: 1199px) {
+    padding: 60px 0 0;
+  }
+
   .container {
     margin-bottom: 60px;
     @media (max-width: 991px) {

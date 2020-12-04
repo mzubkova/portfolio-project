@@ -35,9 +35,13 @@ body.modal-open {
 }
 
 .modal-dialog {
-  margin: 10px;
+  bottom: 0;
+  left: 0;
+  margin: 20px auto;
   pointer-events: none;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: auto;
 
   .modal.fade & {
@@ -54,51 +58,51 @@ body.modal-open {
   }
 }
 
-.modal-dialog-scrollable {
-  display: flex;
-  max-height: subtract(100%, $modal-dialog-margin * 2);
+// .modal-dialog-scrollable {
+//   display: flex;
+//   max-height: subtract(100%, $modal-dialog-margin * 2);
 
-  .modal-content {
-    max-height: subtract(100vh, $modal-dialog-margin * 2);
-    overflow: hidden;
-  }
+//   .modal-content {
+//     max-height: subtract(100vh, $modal-dialog-margin * 2);
+//     overflow: hidden;
+//   }
 
-  .modal-header,
-  .modal-footer {
-    flex-shrink: 0;
-  }
+//   .modal-header,
+//   .modal-footer {
+//     flex-shrink: 0;
+//   }
 
-  .modal-body {
-    overflow-y: auto;
-  }
-}
+//   .modal-body {
+//     overflow-y: auto;
+//   }
+// }
 
-.modal-dialog-centered {
-  align-items: center;
-  display: flex;
-  min-height: subtract(100%, $modal-dialog-margin * 2);
+// .modal-dialog-centered {
+//   align-items: center;
+//   display: flex;
+//   min-height: subtract(100%, $modal-dialog-margin * 2);
 
-  &::before {
-    content: "";
-    display: block;
-    height: subtract(100vh, $modal-dialog-margin * 2);
-    height: min-content;
-  }
+//   &::before {
+//     content: "";
+//     display: block;
+//     height: subtract(100vh, $modal-dialog-margin * 2);
+//     height: min-content;
+//   }
 
-  &.modal-dialog-scrollable {
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
+//   &.modal-dialog-scrollable {
+//     flex-direction: column;
+//     height: 100%;
+//     justify-content: center;
 
-    .modal-content {
-      max-height: none;
-    }
+//     .modal-content {
+//       max-height: none;
+//     }
 
-    &::before {
-      content: none;
-    }
-  }
-}
+//     &::before {
+//       content: none;
+//     }
+//   }
+// }
 
 .modal-content {
   background-clip: padding-box;

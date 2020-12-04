@@ -1,9 +1,10 @@
 .addition-section {
   overflow: hidden;
+  padding-bottom: 100px;
   position: relative;
 
   @media (max-width: 1199px) {
-    padding-bottom: 40px;
+    padding: 60px 0 40px;
   }
 
   @media (max-width: 991px) {
@@ -21,7 +22,7 @@
 
   &__header {
     font-size: 3.6rem;
-    margin-left: 15px;
+    margin: 0 0 70px 15px;
 
     @media (max-width: 1199px) {
       font-size: 3rem;
@@ -41,7 +42,7 @@
     color: $text-gray-4;
     font-family: $second-font;
     font-size: 2.4rem;
-    margin: 75px 0 30px;
+    margin: 0 0 30px;
     width: 355px;
 
     @media (max-width: 1199px) {

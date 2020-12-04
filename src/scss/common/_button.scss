@@ -7,7 +7,6 @@
   font-size: 1.8rem;
   height: 55px;
   line-height: 1.22;
-  margin: 25px 0 85px;
   max-width: 240px;
   position: relative;
   text-align: center;
@@ -18,14 +17,12 @@
   @media (max-width: 991px) {
     font-size: 1.6rem;
     height: 45px;
-    margin-bottom: 0;
     max-width: 200px;
   }
 
   @media (max-width: 767px) {
     font-size: 1.4rem;
     height: 35px;
-    margin: 10px 0 0;
     text-transform: inherit;
     width: 150px;
   }
@@ -33,7 +30,6 @@
   @media (max-width: 575px) {
     font-size: 1.6rem;
     height: 45px;
-    margin: 0 25% 30px;
     text-transform: inherit;
     width: 200px;
   }

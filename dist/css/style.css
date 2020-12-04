@@ -12,8 +12,35 @@ html {
 
 body {
   color: #333;
-  font: 400 1rem Prata, sans-serif;
+  font: 400 1rem "Prata", sans-serif;
   overflow: hidden; }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../webfonts/Montserrat-Regular.woff2") format("woff2"), url("../webfonts/Montserrat-Regular.woff") format("woff"); }
+
+/** Montserrat Medium **/
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../webfonts/Montserrat-Medium.woff2") format("woff2"), url("../webfonts/Montserrat-Medium.woff") format("woff"); }
+
+/** Montserrat SemiBold **/
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../webfonts/Montserrat-SemiBold.woff2") format("woff2"), url("../webfonts/Montserrat-SemiBold.woff") format("woff"); }
+
+/** Montserrat Bold **/
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../webfonts/Montserrat-Bold.woff2") format("woff2"), url("../webfonts/Montserrat-Bold.woff") format("woff"); }
 
 ul {
   list-style: none;
@@ -51,7 +78,7 @@ textarea {
   outline: none; }
 
 textarea {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   padding: 20px 15px 0;
   resize: none; }
@@ -152,10 +179,9 @@ select:-webkit-autofill:focus {
     margin: 0; } }
 
 .container {
-  margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1215px;
+  max-width: 1185px;
   padding-left: 15px;
   padding-right: 15px; }
   @media (max-width: 1199px) {
@@ -170,6 +196,12 @@ select:-webkit-autofill:focus {
   @media (max-width: 575px) {
     .container {
       max-width: 100%; } }
+
+.container-fluid {
+  margin-left: auto;
+  max-width: 1305px;
+  padding-left: 0;
+  padding-right: 0; }
 
 .row {
   -webkit-box-align: stretch;
@@ -527,7 +559,7 @@ select:-webkit-autofill:focus {
             align-items: center !important; } }
 
 .title {
-  font-family: Prata, sans-serif;
+  font-family: "Prata", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase; }
@@ -540,11 +572,10 @@ select:-webkit-autofill:focus {
   border: 0;
   color: #f6f6f6;
   display: inline-block;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   height: 55px;
   line-height: 1.22;
-  margin: 25px 0 85px;
   max-width: 240px;
   position: relative;
   text-align: center;
@@ -557,20 +588,17 @@ select:-webkit-autofill:focus {
     .btn-intro {
       font-size: 1.6rem;
       height: 45px;
-      margin-bottom: 0;
       max-width: 200px; } }
   @media (max-width: 767px) {
     .btn-intro {
       font-size: 1.4rem;
       height: 35px;
-      margin: 10px 0 0;
       text-transform: inherit;
       width: 150px; } }
   @media (max-width: 575px) {
     .btn-intro {
       font-size: 1.6rem;
       height: 45px;
-      margin: 0 25% 30px;
       text-transform: inherit;
       width: 200px; } }
 
@@ -579,7 +607,7 @@ select:-webkit-autofill:focus {
   border: 1px solid #77917e;
   color: #77917e;
   display: inline-block;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   height: 50px;
   line-height: 1.5;
@@ -625,11 +653,7 @@ select:-webkit-autofill:focus {
   @media (max-width: 767px) {
     .contact-form__wrapper {
       margin: 10px 0 15px;
-      width: 200px; }
-      .contact-form__wrapper textarea {
-        font-size: 1rem;
-        height: 5rem;
-        width: 40rem; } }
+      width: 240px; } }
   @media (max-width: 575px) {
     .contact-form__wrapper {
       margin: 0 0 10px;
@@ -641,7 +665,7 @@ select:-webkit-autofill:focus {
   .contact-form__wrapper-input {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     height: 40px;
     max-width: 360px;
@@ -651,11 +675,18 @@ select:-webkit-autofill:focus {
       .contact-form__wrapper-input {
         height: 25px; } }
 
-.contact-form__error-name {
+.contact-form__error {
   color: #e93223;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  line-height: 1; }
+  line-height: 1;
+  margin: 0 0 10px 50px; }
+  @media (max-width: 991px) {
+    .contact-form__error {
+      margin: 0 0 10px; } }
+  @media (max-width: 575px) {
+    .contact-form__error {
+      font-size: 1rem; } }
 
 .contact-form__label {
   -webkit-box-sizing: border-box;
@@ -757,7 +788,6 @@ select:-webkit-autofill:focus {
   top: 15px; }
 
 .carousel {
-  margin-top: 80px;
   position: relative; }
   @media (max-width: 1199px) {
     .carousel {
@@ -809,7 +839,7 @@ select:-webkit-autofill:focus {
       width: 100%; } }
   @media (max-width: 575px) {
     .carousel-image {
-      height: 229px;
+      height: auto;
       width: 100%; } }
 
 .carousel-item.active,
@@ -1089,7 +1119,7 @@ select:-webkit-autofill:focus {
   .nav__item a {
     color: #f2f2f2;
     display: inline-block;
-    font-family: Prata, sans-serif;
+    font-family: "Prata", sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
@@ -1153,9 +1183,13 @@ body.modal-open {
     border: 0; }
 
 .modal-dialog {
-  margin: 10px;
+  bottom: 0;
+  left: 0;
+  margin: 20px auto;
   pointer-events: none;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: auto; }
   .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform 0.3s ease-out;
@@ -1179,56 +1213,6 @@ body.modal-open {
     -webkit-transform: scale(1.02);
         -ms-transform: scale(1.02);
             transform: scale(1.02); }
-
-.modal-dialog-scrollable {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-height: subtract(100%, 1rem); }
-  .modal-dialog-scrollable .modal-content {
-    max-height: subtract(100vh, 1rem);
-    overflow: hidden; }
-  .modal-dialog-scrollable .modal-header,
-  .modal-dialog-scrollable .modal-footer {
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0; }
-  .modal-dialog-scrollable .modal-body {
-    overflow-y: auto; }
-
-.modal-dialog-centered {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: subtract(100%, 1rem); }
-  .modal-dialog-centered::before {
-    content: "";
-    display: block;
-    height: subtract(100vh, 1rem);
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content; }
-  .modal-dialog-centered.modal-dialog-scrollable {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100%;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .modal-dialog-centered.modal-dialog-scrollable .modal-content {
-      max-height: none; }
-    .modal-dialog-centered.modal-dialog-scrollable::before {
-      content: none; }
 
 .modal-content {
   background-clip: padding-box;
@@ -1321,9 +1305,6 @@ body.modal-open {
   @media (max-width: 1199px) {
     .intro-section {
       padding: 0 0 50px; } }
-  @media (max-width: 575px) {
-    .intro-section div {
-      display: block; } }
   .intro-section-author {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1358,7 +1339,7 @@ body.modal-open {
             box-sizing: border-box;
     color: #fffaf4;
     cursor: pointer;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.66;
     position: absolute;
@@ -1396,7 +1377,6 @@ body.modal-open {
         width: 100%; } }
 
 .intro-content {
-  margin-left: 135px;
   width: 540px; }
   @media (max-width: 1199px) {
     .intro-content {
@@ -1429,7 +1409,7 @@ body.modal-open {
         text-align: center; } }
   .intro-content__text {
     color: #666;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.7;
     text-transform: none; }
@@ -1442,6 +1422,14 @@ body.modal-open {
         margin: 0;
         padding: 0 25px 30px;
         text-align: center; } }
+  .intro-content__button {
+    margin: 25px 0 85px; }
+    @media (max-width: 991px) {
+      .intro-content__button {
+        margin-bottom: 0; } }
+    @media (max-width: 575px) {
+      .intro-content__button {
+        margin: 0 auto 20px; } }
 
 .logo {
   height: 168px;
@@ -1462,10 +1450,11 @@ body.modal-open {
 
 .author-section {
   overflow: hidden;
+  padding-bottom: 120px;
   position: relative; }
   @media (max-width: 1199px) {
-    .author-section .container {
-      margin-bottom: 50px; } }
+    .author-section {
+      padding-bottom: 0; } }
   @media (max-width: 575px) {
     .author-section .container {
       margin-bottom: 30px; } }
@@ -1477,9 +1466,6 @@ body.modal-open {
         height: auto;
         width: 90%; } }
     @media (max-width: 991px) {
-      .author-section__img {
-        display: none; } }
-    @media (max-width: 575px) {
       .author-section__img {
         display: none; } }
     .author-section__img--sec {
@@ -1499,11 +1485,6 @@ body.modal-open {
 .author-content {
   padding: 0;
   width: 685px; }
-  @media (max-width: 575px) {
-    .author-content {
-      width: 345px; }
-      .author-content div {
-        width: 100%; } }
   .author-content__title {
     font-size: 3.6rem;
     margin: 60px 0 30px;
@@ -1522,7 +1503,7 @@ body.modal-open {
         margin: 0 0 10px; } }
   .author-content__blockquote {
     color: #40573d;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.66;
     margin-bottom: 20px;
@@ -1536,7 +1517,7 @@ body.modal-open {
         font-size: 1.5rem; } }
   .author-content__text {
     color: #333;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.66; }
     @media (max-width: 1199px) {
@@ -1556,44 +1537,50 @@ body.modal-open {
   @media (max-width: 575px) {
     .author-image {
       height: auto;
-      margin-top: 30px;
-      width: 345px; } }
+      margin: 30px 0; } }
 
 .main {
   overflow: hidden;
   position: relative; }
+  @media (max-width: 1199px) {
+    .main {
+      padding: 60px; } }
+  @media (max-width: 575px) {
+    .main {
+      padding: 0; } }
 
-.portfolio-section {
-  padding: 0; }
+.portfolio-section .container {
+  margin-bottom: 100px; }
   @media (max-width: 1199px) {
     .portfolio-section .container {
       margin-bottom: 50px; } }
   @media (max-width: 575px) {
     .portfolio-section .container {
       margin-bottom: 40px; } }
-  .portfolio-section__header {
-    font-size: 3.6rem;
-    margin: 0 15px 50px; }
-    @media (max-width: 1199px) {
-      .portfolio-section__header {
-        font-size: 3rem;
-        margin-bottom: 10px; } }
-    @media (max-width: 767px) {
-      .portfolio-section__header {
-        font-size: 2rem;
-        letter-spacing: 2px; } }
-    @media (max-width: 575px) {
-      .portfolio-section__header {
-        margin: 0; } }
+
+.portfolio-section__header {
+  font-size: 3.6rem;
+  margin: 0 15px 50px; }
+  @media (max-width: 1199px) {
+    .portfolio-section__header {
+      font-size: 3rem;
+      margin-bottom: 10px; } }
+  @media (max-width: 767px) {
+    .portfolio-section__header {
+      font-size: 2rem;
+      letter-spacing: 2px; } }
+  @media (max-width: 575px) {
+    .portfolio-section__header {
+      margin: 0; } }
 
 .portfolio-content {
   padding: 0; }
   .portfolio-content__title {
     color: #40573d;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.66;
-    margin-bottom: 45px;
+    margin: 0 0 40px 75px;
     text-transform: inherit; }
     @media (max-width: 1199px) {
       .portfolio-content__title {
@@ -1605,7 +1592,7 @@ body.modal-open {
       border-top: 2px solid #4e6655;
       content: "";
       height: 0;
-      left: -65px;
+      left: 0;
       max-width: 50px;
       position: absolute;
       top: 15px;
@@ -1621,7 +1608,7 @@ body.modal-open {
       border-top: 2px solid #4e6655;
       content: "";
       height: 0;
-      left: 40px;
+      left: 105px;
       max-width: 50px;
       position: absolute;
       top: 15px;
@@ -1655,7 +1642,7 @@ body.modal-open {
         width: 100%; } }
     .portfolio-content__box-title {
       color: #333;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.8rem;
       font-weight: 500;
       line-height: 1.66;
@@ -1666,7 +1653,7 @@ body.modal-open {
           letter-spacing: 0; } }
     .portfolio-content__box-text {
       color: #333;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.66;
@@ -1687,7 +1674,7 @@ body.modal-open {
 
 .next-image {
   color: #000;
-  font-family: Prata, sans-serif;
+  font-family: "Prata", sans-serif;
   font-size: 1.5rem;
   margin: 15px 0 0 15px; }
   .next-image--right {
@@ -1698,8 +1685,11 @@ body.modal-open {
 .profit-section {
   background-color: #77917e;
   overflow: hidden;
-  padding: 40px 0;
+  padding: 56px 0 50px;
   position: relative; }
+  @media (max-width: 1199px) {
+    .profit-section {
+      padding: 40px 0; } }
   .profit-section .container {
     margin-bottom: 0; }
   .profit-section .row {
@@ -1762,7 +1752,7 @@ body.modal-open {
         width: auto; } }
   .profit-section__card-title {
     color: #fff;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.4; }
@@ -1775,7 +1765,7 @@ body.modal-open {
         text-align: center; } }
   .profit-section__card-text {
     color: #fff;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.5;
@@ -1787,11 +1777,11 @@ body.modal-open {
 
 .products-section {
   overflow: hidden;
-  padding: 120px 0 0;
+  padding: 100px 0;
   position: relative; }
   @media (max-width: 1199px) {
     .products-section {
-      padding: 60px 0 0; } }
+      padding: 60px 0; } }
   @media (max-width: 575px) {
     .products-section {
       padding: 40px 0 0; } }
@@ -1803,23 +1793,23 @@ body.modal-open {
       margin: 0 auto; } }
   .products-section__header {
     font-size: 3.6rem;
-    margin-left: 15px; }
+    margin: 0 0 50px 15px; }
     @media (max-width: 1199px) {
       .products-section__header {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        margin-bottom: 30px; } }
     @media (max-width: 767px) {
       .products-section__header {
         font-size: 2rem; } }
     @media (max-width: 575px) {
       .products-section__header {
-        margin-left: 0;
+        margin-bottom: 10px;
         text-align: center; } }
   .products-section__card {
     background-color: #fffcf8;
     -webkit-box-shadow: 0 0 25px rgba(119, 145, 126, 0.6);
             box-shadow: 0 0 25px rgba(119, 145, 126, 0.6);
     height: 480px;
-    margin-top: 50px;
     padding: 30px 0 25px;
     position: relative;
     width: 350px; }
@@ -1842,7 +1832,7 @@ body.modal-open {
         display: none; } }
     .products-section__card-name {
       color: #000;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.5;
@@ -1850,7 +1840,7 @@ body.modal-open {
       text-align: center; }
     .products-section__card-title {
       color: #000;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 2.8rem;
       font-weight: 400;
       line-height: 1.5;
@@ -1865,7 +1855,7 @@ body.modal-open {
           font-size: 2rem; } }
     .products-section__card-price {
       color: #000;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 2rem;
       font-weight: 400;
       line-height: 1.5;
@@ -1873,7 +1863,7 @@ body.modal-open {
       text-align: center; }
     .products-section__card-list {
       color: #000;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 1.5;
@@ -1916,10 +1906,11 @@ body.modal-open {
 
 .addition-section {
   overflow: hidden;
+  padding-bottom: 100px;
   position: relative; }
   @media (max-width: 1199px) {
     .addition-section {
-      padding-bottom: 40px; } }
+      padding: 60px 0 40px; } }
   @media (max-width: 991px) {
     .addition-section {
       padding-bottom: 0; } }
@@ -1931,7 +1922,7 @@ body.modal-open {
       margin-bottom: 10px; } }
   .addition-section__header {
     font-size: 3.6rem;
-    margin-left: 15px; }
+    margin: 0 0 70px 15px; }
     @media (max-width: 1199px) {
       .addition-section__header {
         font-size: 3rem; } }
@@ -1944,9 +1935,9 @@ body.modal-open {
         margin: 0 0 40px; } }
   .addition-section__title {
     color: #40573d;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2.4rem;
-    margin: 75px 0 30px;
+    margin: 0 0 30px;
     width: 355px; }
     @media (max-width: 1199px) {
       .addition-section__title {
@@ -1989,7 +1980,7 @@ body.modal-open {
         margin-bottom: 10px; } }
   .addition-section__text {
     color: #333;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5; }
@@ -2024,6 +2015,9 @@ body.modal-open {
 .charity-section {
   overflow: hidden;
   position: relative; }
+  @media (max-width: 1199px) {
+    .charity-section {
+      padding: 60px 0 0; } }
   .charity-section .container {
     margin-bottom: 60px; }
     @media (max-width: 991px) {
@@ -2060,7 +2054,7 @@ body.modal-open {
     .charity-section__box--resp {
       display: inline-block; } }
   .charity-section__desc {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.5;
     margin: 0 0 35px 15px;
@@ -2093,16 +2087,13 @@ body.modal-open {
   position: relative; }
   @media (max-width: 1199px) {
     .contacts-section {
-      padding-bottom: 60px; } }
-  @media (max-width: 991px) {
-    .contacts-section {
       padding-bottom: 0; } }
   @media (max-width: 575px) {
     .contacts-section {
       padding-bottom: 40px; } }
   .contacts-section .container {
     margin-bottom: 0; }
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       .contacts-section .container {
         margin-bottom: 60px; } }
     @media (max-width: 767px) {
@@ -2144,7 +2135,7 @@ body.modal-open {
           width: 20px; } }
     .contacts-section__list-text {
       color: #000;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.5;
@@ -2170,14 +2161,14 @@ body.modal-open {
       .contacts-section__img {
         display: none; } }
     .contacts-section__img::before {
-      background-image: url(../images/photographer-image-4.webp);
-      bottom: -20px;
+      background-image: url(../images/photographer-image-4.jpg);
+      bottom: -25px;
       content: "";
       display: block;
       height: 525px;
       opacity: 0.5;
       position: absolute;
-      right: 50px;
+      right: 25px;
       width: 429px;
       z-index: -2; }
       @media (max-width: 1199px) {
@@ -2223,26 +2214,28 @@ body.modal-open {
         margin: 0 0 40px;
         width: 345px; } }
     .contacts-section__contact-form-title {
-      font-family: Montserrat, sans-serif;
+      font-family: "Prata", sans-serif;
       font-size: 2.4rem;
-      font-weight: 600;
+      font-weight: 400;
+      margin-top: 130px;
       text-transform: none; }
       @media (max-width: 767px) {
         .contacts-section__contact-form-title {
           font-size: 2rem;
-          font-weight: 500; } }
+          font-weight: 500;
+          margin-top: 0; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-title {
-          font-family: Prata, sans-serif;
+          font-family: "Prata", sans-serif;
           font-size: 1.8rem;
           font-weight: 400; } }
     .contacts-section__contact-form-text {
       color: #40573d;
-      font-family: Montserrat, sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.5;
-      margin: 35px 0 10px;
+      margin: 15px 0 23px;
       text-align: center; }
       @media (max-width: 991px) {
         .contacts-section__contact-form-text {
@@ -2254,11 +2247,11 @@ body.modal-open {
           width: 200px; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-text {
+          margin: 15px 0;
           width: 300px; } }
       .contacts-section__contact-form-text--second {
         text-align: left; }
   .contacts-section__social {
-    margin-top: 130px;
     position: relative; }
     @media (max-width: 1199px) {
       .contacts-section__social {
@@ -2319,17 +2312,11 @@ body.modal-open {
   height: 35px;
   position: absolute;
   width: 31px; }
-  .footer-menu__icon--behance {
-    background: url(../images/behance-icon-white.svg) no-repeat; }
-  .footer-menu__icon--facebook {
-    background: url(../images/facebook-icon-white.svg) no-repeat; }
-  .footer-menu__icon--instagram {
-    background: url(../images/instagram-icon-white.svg) no-repeat; }
 
 .footer-menu__link {
   color: #fff;
   cursor: pointer;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
