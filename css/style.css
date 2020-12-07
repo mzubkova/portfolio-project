@@ -1016,7 +1016,11 @@ select:-webkit-autofill:focus {
   z-index: 99; }
   @media (max-width: 575px) {
     .nav {
-      left: 0; } }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-left: auto; } }
   .nav.is-active {
     width: 100%; }
 
@@ -1024,14 +1028,11 @@ select:-webkit-autofill:focus {
   display: block;
   padding: 8px 0;
   position: absolute;
-  top: 50%;
+  top: 5%;
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   z-index: 10; }
-  @media (max-width: 575px) {
-    .nav__trigger {
-      top: 5%; } }
   .nav__trigger .bars {
     position: relative; }
     .nav__trigger .bars, .nav__trigger .bars::before, .nav__trigger .bars::after {
