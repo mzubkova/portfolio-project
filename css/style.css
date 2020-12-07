@@ -68,9 +68,10 @@ h6 {
 
 button {
   background-color: transparent;
-  border: 0;
+  border-style: none;
   cursor: pointer;
-  outline: 0 !important; }
+  outline: 0 !important;
+  text-decoration: none; }
 
 p {
   margin: 0;
@@ -574,38 +575,26 @@ select:-webkit-autofill:focus {
 
 .btn-intro {
   background-color: #77917e;
-  border: 0;
   color: #f6f6f6;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
-  height: 55px;
   line-height: 1.22;
-  max-width: 240px;
-  position: relative;
+  padding: 15px 0;
   text-align: center;
   text-transform: inherit;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   width: 100%; }
   @media (max-width: 991px) {
     .btn-intro {
-      font-size: 1.6rem;
-      height: 45px;
-      max-width: 200px; } }
+      font-size: 1.6rem; } }
   @media (max-width: 767px) {
     .btn-intro {
       font-size: 1.4rem;
-      height: 35px;
-      text-transform: inherit;
-      width: 150px; } }
+      height: 40px;
+      padding: 10px 0; } }
   @media (max-width: 575px) {
     .btn-intro {
-      font-size: 1.6rem;
-      height: 45px;
-      text-transform: inherit;
-      width: 200px; } }
+      font-size: 1.6rem; } }
 
 .btn-product {
   background-color: #fffcf8;
@@ -627,6 +616,23 @@ select:-webkit-autofill:focus {
   .btn-product:hover {
     background-color: #77917e;
     color: #fffcf8; }
+
+.btn-form {
+  cursor: pointer;
+  height: 50px;
+  padding: 15px 0;
+  text-align: center;
+  width: 200px; }
+  .btn-form--modal {
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: 35px;
+    margin-left: 10%;
+    padding: 15px 0;
+    width: 200px; }
+    @media (max-width: 991px) {
+      .btn-form--modal {
+        margin-left: 0; } }
 
 .btn-modal {
   background-color: #77917e;
@@ -708,19 +714,6 @@ select:-webkit-autofill:focus {
   @media (max-width: 575px) {
     .contact-form__label {
       font-size: 1.3rem; } }
-
-.contact-form__button {
-  cursor: pointer;
-  text-align: center; }
-  @media (max-width: 575px) {
-    .contact-form__button {
-      margin: 0; } }
-  .contact-form__button-modal {
-    margin-bottom: 35px;
-    margin-left: 10%; }
-    @media (max-width: 991px) {
-      .contact-form__button-modal {
-        margin-left: 0; } }
 
 .popup {
   -webkit-box-align: center;
@@ -1009,19 +1002,15 @@ select:-webkit-autofill:focus {
   right: 0;
   text-align: center;
   top: 0;
-  -webkit-transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 35px;
   will-change: width;
   z-index: 99; }
   @media (max-width: 575px) {
     .nav {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      margin-left: auto; } }
+      left: 0; } }
   .nav.is-active {
     width: 100%; }
 
@@ -1029,11 +1018,15 @@ select:-webkit-autofill:focus {
   display: block;
   padding: 8px 0;
   position: absolute;
-  top: 5%;
+  top: 50%;
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   z-index: 10; }
+  @media (max-width: 575px) {
+    .nav__trigger {
+      margin-left: 20px;
+      top: 5%; } }
   .nav__trigger .bars {
     position: relative; }
     .nav__trigger .bars, .nav__trigger .bars::before, .nav__trigger .bars::after {
@@ -1479,13 +1472,23 @@ body.modal-open {
         padding: 0 25px 30px;
         text-align: center; } }
   .intro-content__button {
-    margin: 30px 0 0; }
+    height: 55px;
+    margin: 30px 0 0;
+    width: 240px; }
     @media (max-width: 991px) {
       .intro-content__button {
-        margin-bottom: 0; } }
+        height: 45px;
+        margin-bottom: 0;
+        width: 200px; } }
+    @media (max-width: 767px) {
+      .intro-content__button {
+        height: 35px;
+        width: 150px; } }
     @media (max-width: 575px) {
       .intro-content__button {
-        margin: 0 auto 20px; } }
+        height: 45px;
+        margin: 0 auto 20px;
+        width: 200px; } }
 
 .logo {
   height: 139px;
