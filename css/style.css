@@ -16,6 +16,7 @@ body {
   overflow: hidden; }
 
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -23,6 +24,7 @@ body {
 
 /** Montserrat Medium **/
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -30,6 +32,7 @@ body {
 
 /** Montserrat SemiBold **/
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -37,6 +40,7 @@ body {
 
 /** Montserrat Bold **/
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
