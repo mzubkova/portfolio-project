@@ -640,22 +640,10 @@ select:-webkit-autofill:focus {
     @media (max-width: 991px) {
       .btn-form--modal {
         margin-left: 0; } }
-
-.btn-modal {
-  background-color: #77917e;
-  color: #fff;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  height: 50px;
-  margin-top: 38px;
-  max-width: 200px;
-  text-align: center;
-  text-transform: none;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  width: 200px; }
+    @media (max-width: 575px) {
+      .btn-form--modal {
+        height: 40px;
+        padding: 10px 0; } }
 
 .contact-form__wrapper {
   border: 2px solid #77917e;
@@ -772,6 +760,21 @@ select:-webkit-autofill:focus {
       @media (max-width: 575px) {
         .popup__thanks-text {
           font-size: 1.7rem; } }
+  .popup__button {
+    background-color: #77917e;
+    color: #fff;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    height: 50px;
+    margin-top: 38px;
+    max-width: 200px;
+    text-align: center;
+    text-transform: none;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    width: 200px; }
 
 .popup.active {
   display: -webkit-box;
@@ -1159,7 +1162,7 @@ select:-webkit-autofill:focus {
   transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%; }
 
-body.modal-open {
+.modal-open {
   height: 100%;
   overflow: visible;
   position: absolute;
