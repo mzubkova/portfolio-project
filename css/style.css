@@ -11,6 +11,7 @@ html {
   overflow-x: hidden; }
 
 body {
+  background-color: #fffaf4;
   color: #333;
   font: 400 1rem "Prata", sans-serif;
   overflow: hidden; }
@@ -1447,7 +1448,7 @@ body.modal-open {
   .intro-content__title {
     font-size: 3.6rem;
     letter-spacing: 4px;
-    margin: 75px 0 30px;
+    margin: 45px 0 20px;
     text-align: left; }
     @media (max-width: 1199px) {
       .intro-content__title {
@@ -1478,7 +1479,7 @@ body.modal-open {
         padding: 0 25px 30px;
         text-align: center; } }
   .intro-content__button {
-    margin: 25px 0 85px; }
+    margin: 30px 0 0; }
     @media (max-width: 991px) {
       .intro-content__button {
         margin-bottom: 0; } }
@@ -1487,10 +1488,10 @@ body.modal-open {
         margin: 0 auto 20px; } }
 
 .logo {
-  height: 168px;
-  margin: 55px auto 0;
+  height: 139px;
+  margin: 113px auto 0;
   padding: 0;
-  width: 289px; }
+  width: 240px; }
   @media (max-width: 1199px) {
     .logo {
       height: auto;
@@ -1537,51 +1538,50 @@ body.modal-open {
         .author-section__img--sec {
           width: 50%; } }
 
-.author-content {
-  padding: 0;
-  width: 685px; }
-  .author-content__title {
-    font-size: 3.6rem;
-    margin: 60px 0 30px;
-    text-align: left; }
-    @media (max-width: 1199px) {
-      .author-content__title {
-        font-size: 3rem;
-        margin-bottom: 10px; } }
-    @media (max-width: 991px) {
-      .author-content__title {
-        font-size: 3rem;
-        margin: 0 0 20px; } }
-    @media (max-width: 767px) {
-      .author-content__title {
-        font-size: 2rem;
-        margin: 0 0 10px; } }
-  .author-content__blockquote {
-    color: #40573d;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.8rem;
-    line-height: 1.66;
-    margin-bottom: 20px;
-    text-transform: initial;
-    width: 450px; }
-    @media (max-width: 991px) {
-      .author-content__blockquote {
-        width: auto; } }
-    @media (max-width: 767px) {
-      .author-content__blockquote {
-        font-size: 1.5rem; } }
-  .author-content__text {
-    color: #333;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.8rem;
-    line-height: 1.66; }
-    @media (max-width: 1199px) {
-      .author-content__text {
-        font-size: 1.5rem;
-        padding-right: 40px; } }
-    @media (max-width: 575px) {
-      .author-content__text {
-        font-size: 1.4rem; } }
+.author-content__title {
+  font-size: 3.6rem;
+  margin: 60px 0 30px;
+  text-align: left; }
+  @media (max-width: 1199px) {
+    .author-content__title {
+      font-size: 3rem;
+      margin-bottom: 10px; } }
+  @media (max-width: 991px) {
+    .author-content__title {
+      font-size: 3rem;
+      margin: 0 0 20px; } }
+  @media (max-width: 767px) {
+    .author-content__title {
+      font-size: 2rem;
+      margin: 0 0 10px; } }
+
+.author-content__blockquote {
+  color: #40573d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.66;
+  margin-bottom: 20px;
+  text-transform: initial;
+  width: 450px; }
+  @media (max-width: 991px) {
+    .author-content__blockquote {
+      width: auto; } }
+  @media (max-width: 767px) {
+    .author-content__blockquote {
+      font-size: 1.5rem; } }
+
+.author-content__text {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.66; }
+  @media (max-width: 1199px) {
+    .author-content__text {
+      font-size: 1.5rem;
+      padding-right: 40px; } }
+  @media (max-width: 575px) {
+    .author-content__text {
+      font-size: 1.4rem; } }
 
 .author-image {
   margin-left: 45px;
@@ -1599,7 +1599,7 @@ body.modal-open {
   position: relative; }
   @media (max-width: 1199px) {
     .main {
-      padding: 60px; } }
+      padding: 60px 0; } }
   @media (max-width: 575px) {
     .main {
       padding: 0; } }
@@ -1870,7 +1870,6 @@ body.modal-open {
     width: 350px; }
     @media (max-width: 1199px) {
       .products-section__card {
-        height: 100%;
         width: 290px; } }
     @media (max-width: 991px) {
       .products-section__card {
@@ -1981,6 +1980,9 @@ body.modal-open {
     @media (max-width: 1199px) {
       .addition-section__header {
         font-size: 3rem; } }
+    @media (max-width: 991px) {
+      .addition-section__header {
+        margin: 0 0 0 15px; } }
     @media (max-width: 767px) {
       .addition-section__header {
         font-size: 2rem;
@@ -2051,7 +2053,6 @@ body.modal-open {
     width: 315px; }
     @media (max-width: 1199px) {
       .addition-section-box {
-        margin-bottom: 20px;
         width: 290px; } }
     @media (max-width: 991px) {
       .addition-section-box {
@@ -2274,6 +2275,9 @@ body.modal-open {
       font-weight: 400;
       margin-top: 130px;
       text-transform: none; }
+      @media (max-width: 1199px) {
+        .contacts-section__contact-form-title {
+          margin-top: 0; } }
       @media (max-width: 767px) {
         .contacts-section__contact-form-title {
           font-size: 2rem;
