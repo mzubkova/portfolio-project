@@ -1,5 +1,4 @@
-$(document).ready(function () {
-  $("#ModalLabel").validate({
+$("#ModalLabel").validate({
     errorElement: "div",
     errorClass: "contact-form__error-name",
     rules: {
@@ -32,9 +31,8 @@ $(document).ready(function () {
     },
     errorPlacement: function (error, element) {
       $(element).parent().next("div").html(error);
-    },
-  });
-  $("form").submit(function () {
+  },
+    submitHandler: function (form) {
     event.preventDefault();
     var form_data = $(this).serialize();
     $.ajax({
@@ -45,8 +43,8 @@ $(document).ready(function () {
         $(".popup").addClass("active");
       },
     });
+  }
   });
-});
 
 $(".close").click(function () {
   $(".popup").removeClass("active");
