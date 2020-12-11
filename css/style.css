@@ -638,24 +638,6 @@ select:-webkit-autofill:focus {
         height: 40px;
         padding: 10px 0; } }
 
-.btn-modal {
-  background-color: #77917e;
-  color: #fff;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  height: 50px;
-  margin-top: 38px;
-  max-width: 200px;
-  text-align: center;
-  text-transform: none;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  width: 200px; }
-
 .contact-form__wrapper {
   border: 2px solid #77917e;
   margin: 10px auto 20px;
