@@ -167,7 +167,6 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 0;
   -webkit-box-shadow: 0 0 0 1000px #fff inset;
           box-shadow: 0 0 0 1000px #fff inset;
   -webkit-text-fill-color: #000;
@@ -680,7 +679,7 @@ select:-webkit-autofill:focus {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   line-height: 1;
-  margin: 0 0 10px 50px; }
+  margin-bottom: 10px; }
   @media (max-width: 991px) {
     .contact-form__error {
       margin: 0 0 10px; } }
@@ -780,13 +779,14 @@ select:-webkit-autofill:focus {
   transition: opacity 1s; }
 
 .close {
+  background: url(../images/close-btn-icon.svg) no-repeat;
   cursor: pointer;
-  font-family: "Montserrat";
-  font-size: 2.7rem;
-  font-weight: 500;
+  height: 18px;
   position: absolute;
-  right: 15px;
-  top: 15px; }
+  right: 30px;
+  top: 20px;
+  width: 19px;
+  z-index: 999; }
 
 .carousel {
   position: relative; }
@@ -1171,18 +1171,6 @@ select:-webkit-autofill:focus {
   top: 0;
   width: 100%;
   z-index: 1050; }
-  .modal--close {
-    color: #666;
-    cursor: pointer;
-    float: right;
-    font-family: helvetica, arial;
-    font-size: 30px;
-    margin: 15px 15px 0 0; }
-    @media (max-width: 575px) {
-      .modal--close {
-        margin: 0; } }
-  .modal button:focus {
-    border: 0; }
 
 .modal-dialog {
   bottom: 0;
@@ -1278,7 +1266,7 @@ select:-webkit-autofill:focus {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 587px;
+  height: auto;
   margin: 0 auto;
   outline: 0;
   pointer-events: auto;
