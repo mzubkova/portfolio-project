@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#ModalLabel", "#contactForm").submit(function () {
+  $("form").submit(function () {
     event.preventDefault();
     var form_data = $(this).serialize();
     $.ajax({
