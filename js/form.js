@@ -1,4 +1,4 @@
-$("#ModalLabel").validate({
+$("#ModalLabel, #formOnPage").validate({
   errorElement: "div",
   errorClass: "contact-form__error-name",
   rules: {
