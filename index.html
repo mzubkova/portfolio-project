@@ -1240,7 +1240,7 @@
                   />
                   <a
                     href="mailto:kvk.creative.studio@gmail.com"
-                    class="contacts-section__list-text"
+                    class="contacts-section__list-text hvr-underline-from-center"
                     >E-mail: kvk.creative.studio@gmail.com</a
                   >
                 </li>
@@ -1252,7 +1252,7 @@
                   />
                   <a
                     href="tel:380664225075"
-                    class="contacts-section__list-text"
+                    class="contacts-section__list-text hvr-underline-from-center"
                   >
                     Телефон: +380 66 422 50 75
                   </a>
@@ -1336,22 +1336,30 @@
               <ul>
                 <li>
                   <a href="#intro-block">
-                    <p class="footer-menu__link">Главная</p>
+                    <p class="footer-menu__link hvr-underline-from-left">
+                      Главная
+                    </p>
                   </a>
                 </li>
                 <li>
                   <a href="#author-block">
-                    <p class="footer-menu__link">Обо мне</p>
+                    <p class="footer-menu__link hvr-underline-from-left">
+                      Обо мне
+                    </p>
                   </a>
                 </li>
                 <li>
                   <a href="#portfolio-block">
-                    <p class="footer-menu__link">Портфолио</p>
+                    <p class="footer-menu__link hvr-underline-from-left">
+                      Портфолио
+                    </p>
                   </a>
                 </li>
                 <li>
                   <a href="#products-block">
-                    <p class="footer-menu__link">Услуги</p>
+                    <p class="footer-menu__link hvr-underline-from-left">
+                      Услуги
+                    </p>
                   </a>
                 </li>
               </ul>
@@ -1364,17 +1372,23 @@
               <ul>
                 <li>
                   <a href="#projects-block">
-                    <p class="footer-menu__link">Проекты</p>
+                    <p class="footer-menu__link hvr-underline-from-left">
+                      Проекты
+                    </p>
                   </a>
                 </li>
                 <li>
                   <a href="#registration-block">
-                    <p class="footer-menu__link">Запись</p>
+                    <p class="footer-menu__link hvr-underline-from-left">
+                      Запись
+                    </p>
                   </a>
                 </li>
                 <li>
                   <a href="#contacts-block">
-                    <p class="footer-menu__link">Контакты</p>
+                    <p class="footer-menu__link hvr-underline-from-left">
+                      Контакты
+                    </p>
                   </a>
                 </li>
               </ul>
@@ -1402,7 +1416,7 @@
                   </svg>
                   <a
                     href="mailto:kvk.creative.studio@gmail.com"
-                    class="footer-menu__link"
+                    class="footer-menu__link hvr-underline-from-left"
                     ><span>E-mail:</span>kvk.creative.studio@gmail.com</a
                   >
                 </li>
@@ -1418,7 +1432,9 @@
                       fill="#fff"
                     />
                   </svg>
-                  <a href="tel:380664225075" class="footer-menu__link"
+                  <a
+                    href="tel:380664225075"
+                    class="footer-menu__link hvr-underline-from-left"
                     >Телефон: +380 66 422 50 75</a
                   >
                 </li>
@@ -1493,6 +1509,46 @@
           </div>
           <div class="modal-body">
             <form class="contact-form" id="ModalLabel">
+              <div class="options__header">Выберите удобный пакет:</div>
+              <div class="options">
+                <div class="options__item">
+                  <input
+                    type="radio"
+                    name="price"
+                    id="lightPrice"
+                    value="lightPrice"
+                    class="options__input"
+                    checked
+                  />
+                  <label for="lightPrice" class="options__label"
+                    ><span class="options__title">Light</span></label
+                  >
+                </div>
+                <div class="options__item">
+                  <input
+                    type="radio"
+                    name="price"
+                    id="mediumPrice"
+                    value="mediumPrice"
+                    class="options__input"
+                  />
+                  <label for="mediumPrice" class="options__label"
+                    ><span class="options__title">Medium</span></label
+                  >
+                </div>
+                <div class="options__item">
+                  <input
+                    type="radio"
+                    name="price"
+                    id="highPrice"
+                    value="allInclusivePrice"
+                    class="options__input"
+                  />
+                  <label for="highPrice" class="options__label"
+                    ><span class="options__title"> All Inclusive </span></label
+                  >
+                </div>
+              </div>
               <label for="inputName" id="nameHelp" class="contact-form__label"
                 >Имя</label
               >
