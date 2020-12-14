@@ -23,7 +23,6 @@ body {
   font-weight: 300;
   src: url("../webfonts/Montserrat-Regular.woff2") format("woff2"), url("../webfonts/Montserrat-Regular.woff") format("woff"); }
 
-/** Montserrat Medium **/
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
@@ -31,7 +30,6 @@ body {
   font-weight: 500;
   src: url("../webfonts/Montserrat-Medium.woff2") format("woff2"), url("../webfonts/Montserrat-Medium.woff") format("woff"); }
 
-/** Montserrat SemiBold **/
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
@@ -39,7 +37,6 @@ body {
   font-weight: 600;
   src: url("../webfonts/Montserrat-SemiBold.woff2") format("woff2"), url("../webfonts/Montserrat-SemiBold.woff") format("woff"); }
 
-/** Montserrat Bold **/
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
@@ -87,10 +84,7 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   padding: 15px;
-  resize: none; }
-  @media (max-width: 767px) {
-    textarea {
-      padding: 10px; } }
+  resize: vertical; }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #333;
@@ -298,9 +292,6 @@ select:-webkit-autofill:focus {
   padding: 0;
   position: relative;
   width: 100%; }
-  .col--no-gutter {
-    padding-left: 0;
-    padding-right: 0; }
 
 .col-1 {
   max-width: 8.33333%; }
