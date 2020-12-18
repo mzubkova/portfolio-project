@@ -31,6 +31,35 @@
     </title>
   </head>
   <body>
+    <div class="overlay" id="menu">
+      <nav class="overlayMenu">
+        <ul role="menu">
+          <li class="nav__item">
+            <a href="#intro-block" role="menuitem">главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="#author-block" role="menuitem">обо мне</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio-block" role="menuitem">портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a href="#products-block" role="menuitem">услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects-block" role="menuitem">проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#registration-block" role="menuitem">запись</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts-block" role="menuitem">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="navBurger" role="navigation" id="navToggle"></div>
+
     <section class="intro-section" id="intro-block">
       <div class="container-fluid">
         <div class="row">
@@ -41,11 +70,12 @@
                 height="139"
                 src="images/kvk-logo.png"
                 alt="kvkstudio логотип"
-                class="logo lazyload"
+                class="logo-kvk lazyload"
               />
               <h1 class="title intro-content__title">
                 Фото/Видео студия Ксении Кишишьян
               </h1>
+              <h2 class="intro-content__title--responsive">Ксения Кишишьян</h2>
               <p class="intro-content__text">
                 Cохраню для вас прекрасные моменты в фотографиях, чтобы вы могли
                 просматривать их снова и снова.
@@ -70,13 +100,15 @@
                   ><span class="intro-author__phone-logo"> </span> +380 66 422
                   50 75
                 </span>
-                <img
-                  width="685"
-                  height="802"
-                  src="images/photographer-image-1.jpg"
-                  alt="фотограф, ксения кишишьян"
-                  class="intro-author__img lazyload"
-                />
+                <div class="intro-author__img">
+                  <img
+                    width="685"
+                    height="802"
+                    src="images/photographer-image-1.jpg"
+                    alt="фотограф ксения кишишьян в кресле"
+                    class="lazyload"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -85,25 +117,6 @@
       <!-- /.container-fluid -->
     </section>
     <!-- /.intro-section -->
-    <div class="nav" id="menu">
-      <a href="#id" class="nav__trigger">
-        <div class="bars"></div>
-      </a>
-      <div class="nav__content">
-        <nav class="nav__list">
-          <ul>
-            <li class="nav__item"><a href="#intro-block">Главная</a></li>
-            <li class="nav__item"><a href="#author-block">Обо мне</a></li>
-            <li class="nav__item"><a href="#portfolio-block">Портфолио</a></li>
-            <li class="nav__item"><a href="#products-block">Услуги</a></li>
-            <li class="nav__item"><a href="#projects-block">Проекты</a></li>
-            <li class="nav__item"><a href="#registration-block">Запись</a></li>
-            <li class="nav__item"><a href="#contacts-block">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <!-- nav -->
     <section class="author-section" id="author-block">
       <div class="container">
         <div class="row">
@@ -113,7 +126,7 @@
                 width="700"
                 height="327"
                 src="images/photographer-image-2.jpg"
-                alt="фотограф, ксения кишишьян"
+                alt="портрет фотограф ксения кишишьян"
                 class="author-content__img lazyload"
               />
               <h1 class="title author-content__title">Обо мне</h1>
@@ -142,7 +155,7 @@
                 width="434"
                 height="650"
                 src="images/photographer-image-3.jpg"
-                alt="фотограф, ксения кишишьян"
+                alt="фотограф ксения кишишьян улыбается"
                 class="author-section__img--sec lazyload"
               />
             </div>
@@ -204,7 +217,7 @@
                       src="images/kvk-fashion-image-1.jpg"
                       srcset="images/kvk-fashion-image-1.jpg 50w"
                       class="d-block carousel-image lazyload"
-                      alt="fashion, портфолио, девушка"
+                      alt="портфолио, девушка в красном платье"
                     />
                   </div>
                   <div class="carousel-item">
@@ -213,7 +226,7 @@
                       height="451"
                       src="images/kvk-fashion-image-2.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="fashion, портфолио, девушка с лимонами"
+                      alt="портфолио, девушка с лимонами в желтых очках"
                     />
                   </div>
                   <div class="carousel-item">
@@ -222,7 +235,7 @@
                       height="451"
                       src="images/kvk-fashion-image-3.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="fashion, портфолио, девушка"
+                      alt="девушка в красном платье на черном фоне"
                     />
                   </div>
                   <div class="carousel-item">
@@ -231,7 +244,7 @@
                       height="451"
                       src="images/kvk-fashion-image-4.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="fashion, портфолио, девушка у камина, рождество"
+                      alt="портфолио, девушка у камина, рождество"
                     />
                   </div>
                   <div class="carousel-link">
@@ -272,7 +285,7 @@
         </div>
         <!-- .container -->
         <div class="container">
-          <div class="row">
+          <div class="row row--reverse">
             <div class="col col-7 col-lg-12 col-sm-12">
               <div
                 id="carousel_2"
@@ -297,7 +310,7 @@
                       height="451"
                       src="images/kvk-individual-image-1.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="individual, портфолио, девушка"
+                      alt="портфолио, портрет девушки с серьгами"
                     />
                   </div>
                   <div class="carousel-item">
@@ -306,7 +319,7 @@
                       height="451"
                       src="images/kvk-individual-image-2.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="individual, портфолио, девушка"
+                      alt="портфолио, девушка девушка на сером фоне"
                     />
                   </div>
                   <div class="carousel-item">
@@ -315,7 +328,7 @@
                       height="451"
                       src="images/kvk-individual-image-3.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="individual, портфолио, парень"
+                      alt="портфолио, парень сидит на круглой скульптуре"
                     />
                   </div>
                   <div class="carousel-item">
@@ -324,7 +337,7 @@
                       height="451"
                       src="images/kvk-individual-image-4.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="individual, портфолио, девушка"
+                      alt="портфолио, девушка у водоема"
                     />
                   </div>
                   <div class="carousel-link carousel-link--left">
@@ -439,7 +452,7 @@
                       height="451"
                       src="images/kvk-lifestyle-image-1.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="lifestyle, портфолио, парень, стадион"
+                      alt="портфолио, парень, стадион"
                     />
                   </div>
                   <div class="carousel-item">
@@ -448,7 +461,7 @@
                       height="451"
                       src="images/kvk-lifestyle-image-2.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="lifestyle, портфолио, девушка, рюкзак"
+                      alt="портфолио, девушка с рюкзаком"
                     />
                   </div>
                   <div class="carousel-item">
@@ -457,7 +470,7 @@
                       height="451"
                       src="images/kvk-lifestyle-image-3.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="lifestyle, портфолио, девушка"
+                      alt="портфолио, девушка в черных очках"
                     />
                   </div>
                   <div class="carousel-item">
@@ -466,7 +479,7 @@
                       height="451"
                       src="images/kvk-lifestyle-image-4.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="lifestyle, портфолио, девушка"
+                      alt="портфолио, девушка с шарфом"
                     />
                   </div>
                   <div class="carousel-link">
@@ -507,7 +520,7 @@
         </div>
         <!-- .container -->
         <div class="container">
-          <div class="row">
+          <div class="row row--reverse">
             <div class="col col-7 col-lg-12 col-sm-12">
               <div
                 id="carousel_4"
@@ -532,7 +545,7 @@
                       height="451"
                       src="images/kvk-subject-image-1.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="subject, предметная съемка, футбол"
+                      alt="предметная съемка, футбол, бокалы"
                     />
                   </div>
                   <div class="carousel-item">
@@ -541,7 +554,7 @@
                       height="451"
                       src="images/kvk-subject-image-2.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="subject, предметная съемка, футбол"
+                      alt="предметная съемка, футбольное поле, мяч"
                     />
                   </div>
                   <div class="carousel-item">
@@ -550,7 +563,7 @@
                       height="451"
                       src="images/kvk-subject-image-3.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="subject, предметная съемка, косметика"
+                      alt="предметная съемка, косметика"
                     />
                   </div>
                   <div class="carousel-item">
@@ -559,7 +572,7 @@
                       height="451"
                       src="images/kvk-subject-image-4.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="subject, предметная съемка, цветы в вазе"
+                      alt="предметная съемка, цветы в вазе"
                     />
                   </div>
                   <div class="carousel-link carousel-link--left">
@@ -684,7 +697,7 @@
                       height="451"
                       src="images/kvk-commercial-image-2.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="commercial, коммерческая съемка, футболка с чашкой"
+                      alt="коммерческая съемка, футболка с чашкой"
                     />
                   </div>
                   <div class="carousel-item">
@@ -693,7 +706,7 @@
                       height="451"
                       src="images/kvk-commercial-image-3.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="commercial, коммерческая съемка, девушка с лимонами"
+                      alt="коммерческая съемка, девушка с лимонами"
                     />
                   </div>
                   <div class="carousel-item">
@@ -702,7 +715,7 @@
                       height="451"
                       src="images/kvk-commercial-image-4.jpg"
                       class="d-block carousel-image lazyload"
-                      alt="commercial, коммерческая съемка, парень в стильных очках"
+                      alt="коммерческая съемка, парень в стильных очках"
                     />
                   </div>
                   <div class="carousel-link">
@@ -743,7 +756,7 @@
         </div>
         <!-- .container -->
         <div class="container">
-          <div class="row">
+          <div class="row row--reverse">
             <div class="col col-7 col-lg-12 col-sm-12">
               <div
                 id="carousel_6"
@@ -979,107 +992,115 @@
       <div class="container">
         <h1 class="title products-section__header">Пакеты услуг</h1>
         <div class="row">
-          <div class="col col-4 col-sm-12 col-md-12">
-            <div class="products-section__card flex-column align-items-center">
-              <p class="products-section__card-name">пакет</p>
-              <p class="products-section__card-title">light</p>
-              <p class="products-section__card-price">3 500 ₴ / 108 €</p>
-              <ul class="products-section__card-list">
-                <li>- 10 фотографий в ретуши</li>
-                <li>- 1 созданный образ и стиль</li>
-                <li>- стоимость работы стилиста и парикмахера</li>
-                <li>- стоимость аренды студии</li>
-              </ul>
-              <div class="products-section__card-btn">
-                <button
-                  class="btn-product align-items-center"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
-                >
-                  Купить
-                </button>
+          <section class="slider responsive" data-sizes="50vw">
+            <div class="col col-4 col-md-12">
+              <div
+                class="products-section__card flex-column align-items-center"
+              >
+                <p class="products-section__card-name">пакет</p>
+                <p class="products-section__card-title">light</p>
+                <p class="products-section__card-price">3 500 ₴ / 108 €</p>
+                <ul class="products-section__card-list">
+                  <li>- 10 фотографий в ретуши</li>
+                  <li>- 1 созданный образ и стиль</li>
+                  <li>- стоимость работы стилиста и парикмахера</li>
+                  <li>- стоимость аренды студии</li>
+                </ul>
+                <div class="products-section__card-btn">
+                  <button
+                    class="btn-product align-items-center"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#ModalForm"
+                  >
+                    Купить
+                  </button>
+                </div>
               </div>
+              <!-- /.products-section__card -->
             </div>
-            <!-- /.products-section__card -->
-          </div>
-          <!-- /.col col-4 -->
-          <div class="col col-4 col-sm-12 col-md-12">
-            <div class="products-section__card flex-column align-items-center">
-              <p class="products-section__card-name">пакет</p>
-              <p class="products-section__card-title">medium</p>
-              <p class="products-section__card-price">4 500 ₴ / 138 €</p>
-              <ul class="products-section__card-list">
-                <li>- 20 фотографий в ретуши</li>
-                <li>- 2 созданных образа и стиля</li>
-                <li>- работа визажиста и парикмахера</li>
-                <li>- стоимость аренды студии</li>
-                <li>- помощь в позировании</li>
-              </ul>
-              <div class="products-section__card-btn">
-                <button
-                  class="btn-product align-items-center"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
-                >
-                  Купить
-                </button>
+            <!-- /.col col-4 -->
+            <div class="col col-4 col-md-12">
+              <div
+                class="products-section__card flex-column align-items-center"
+              >
+                <p class="products-section__card-name">пакет</p>
+                <p class="products-section__card-title">medium</p>
+                <p class="products-section__card-price">4 500 ₴ / 138 €</p>
+                <ul class="products-section__card-list">
+                  <li>- 20 фотографий в ретуши</li>
+                  <li>- 2 созданных образа и стиля</li>
+                  <li>- работа визажиста и парикмахера</li>
+                  <li>- стоимость аренды студии</li>
+                  <li>- помощь в позировании</li>
+                </ul>
+                <div class="products-section__card-btn">
+                  <button
+                    class="btn-product align-items-center"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#ModalForm"
+                  >
+                    Купить
+                  </button>
+                </div>
               </div>
+              <!-- /.products-section__card -->
             </div>
-            <!-- /.products-section__card -->
-          </div>
-          <!-- /.col col-4 -->
-          <div class="col col-4 col-sm-12 col-md-12">
-            <div class="products-section__card flex-column align-items-center">
-              <p class="products-section__card-name">пакет</p>
-              <p class="products-section__card-title">all inclusive</p>
-              <p class="products-section__card-price">6 000 ₴ / 184 €</p>
-              <ul class="products-section__card-list">
-                <li>- 30 фотографий в ретуши</li>
-                <li>- 3 созданных образа и стиля</li>
-                <li>- стоимость аренды студии</li>
-                <li>- помощь в позировании</li>
-                <li>- все исходники</li>
-              </ul>
-              <div class="products-section__card-btn">
-                <button
-                  class="btn-product align-items-center"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
-                >
-                  Купить
-                </button>
+            <!-- /.col col-4 -->
+            <div class="col col-4 col-md-12">
+              <div
+                class="products-section__card flex-column align-items-center"
+              >
+                <p class="products-section__card-name">пакет</p>
+                <p class="products-section__card-title">all inclusive</p>
+                <p class="products-section__card-price">6 000 ₴ / 184 €</p>
+                <ul class="products-section__card-list">
+                  <li>- 30 фотографий в ретуши</li>
+                  <li>- 3 созданных образа и стиля</li>
+                  <li>- стоимость аренды студии</li>
+                  <li>- помощь в позировании</li>
+                  <li>- все исходники</li>
+                </ul>
+                <div class="products-section__card-btn">
+                  <button
+                    class="btn-product align-items-center"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#ModalForm"
+                  >
+                    Купить
+                  </button>
+                </div>
               </div>
-            </div>
-            <!-- /.products-section__card -->
-            <div
-              class="products-section__card products-section__card--resp flex-column align-items-center"
-            >
-              <p class="products-section__card-name">пакет</p>
-              <p class="products-section__card-title">light</p>
-              <p class="products-section__card-price">3 500 ₴ / 108 €</p>
-              <ul class="products-section__card-list">
-                <li>- 10 фотографий в ретуши</li>
-                <li>- 1 созданный образ и стиль</li>
-                <li>- стоимость работы стилиста и парикмахера</li>
-                <li>- стоимость аренды студии</li>
-              </ul>
-              <div class="products-section__card-btn">
-                <button
-                  class="btn-product align-items-center"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
-                >
-                  Купить
-                </button>
+              <!-- /.products-section__card -->
+              <div
+                class="products-section__card products-section__card--resp flex-column align-items-center"
+              >
+                <p class="products-section__card-name">пакет</p>
+                <p class="products-section__card-title">light</p>
+                <p class="products-section__card-price">3 500 ₴ / 108 €</p>
+                <ul class="products-section__card-list">
+                  <li>- 10 фотографий в ретуши</li>
+                  <li>- 1 созданный образ и стиль</li>
+                  <li>- стоимость работы стилиста и парикмахера</li>
+                  <li>- стоимость аренды студии</li>
+                </ul>
+                <div class="products-section__card-btn">
+                  <button
+                    class="btn-product align-items-center"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#ModalForm"
+                  >
+                    Купить
+                  </button>
+                </div>
               </div>
+              <!-- /.products-section__card -->
             </div>
-            <!-- /.products-section__card -->
-          </div>
-          <!-- /.col col-4 -->
+            <!-- /.col col-4 -->
+          </section>
         </div>
         <!-- .row -->
       </div>
@@ -1174,6 +1195,75 @@
             <!-- /.addition-section-box -->
           </div>
           <!-- /.col col-4 -->
+          <div class="addition-section__list">
+            <div class="addition-section__list--item close-card">
+              <span class="addition-section__list--text">Back stage</span>
+              <span class="addition-section__list--icon"></span>
+              <p class="addition-section__list--desc">
+                Всегда интересно вспоминать и показать другим, как это было на
+                съёмке. Яркие и незабываемые эмоции, которые так и хочется
+                выставить в соцсетях или сделать рекламу для своего бренда.
+                Зафиксируйте то что было важно и потом уже не повторить и не
+                вернуть.
+              </p>
+            </div>
+            <div class="addition-section__list--item close-card">
+              <span class="addition-section__list--text"
+                >Фото книги и флешки</span
+              >
+              <span class="addition-section__list--icon"></span>
+              <p class="addition-section__list--desc">
+                Это эксклюзивная фотографии с вашей фотосессии напечатанные и
+                оформленные в красивой фото книге. Все фотографии записаны на
+                флешке, которая идет в наборе с книгой. Теперь в любой момент вы
+                можете наслаждаться важными моментами из вашей жизни.
+              </p>
+            </div>
+            <div class="addition-section__list--item close-card">
+              <span class="addition-section__list--text">Ретушь</span>
+              <span class="addition-section__list--icon"></span>
+              <p class="addition-section__list--desc">
+                Вам необходимо сделать качественно быстро ретушь для фотографий.
+                Я предлагаю вам решить этот вопрос быстро и с результатами,
+                которые вам понравятся.
+              </p>
+            </div>
+            <div class="addition-section__list--item close-card">
+              <span class="addition-section__list--text">Видео съёмка</span>
+              <span class="addition-section__list--icon"></span>
+              <p class="addition-section__list--desc">
+                Сегодня видео набирает всё больше оборотов в нашем мире полном
+                визуализации. Видео это один из прекрасных способов передать
+                эмоцию и сюжет. Я предлагаю вам качественный и комплексный
+                подход к видеосъёмке.
+              </p>
+            </div>
+            <div class="addition-section__list--item close-card">
+              <span class="addition-section__list--text"
+                >Печать авторских <br />
+                фотографий на футболке</span
+              >
+              <span class="addition-section__list--icon"></span>
+              <p class="addition-section__list--desc">
+                Вы любите оригинальную и креативную одежду? Мы создадим дизайн
+                для той фотографии которая вам приглянулась. На ней можно
+                изобразить сюжет с вашей съёмки или создать творческий дизайн
+                отображающий вас как личность. Добавьте изюминку в ваш гардероб.
+              </p>
+            </div>
+            <div class="addition-section__list--item close-card">
+              <span class="addition-section__list--text"
+                >Печать фотографий на холсте</span
+              >
+              <span class="addition-section__list--icon"></span>
+              <p class="addition-section__list--desc">
+                Как важно не просто сделать свою фотосессию а ещё и распечатать
+                самую красивую фотографию на холсте, ведь на этой картине будет
+                запечатлено именно то что будет отображать прекрасный момент.
+              </p>
+            </div>
+          </div>
+          <!-- addition-section__list responsive -->
         </div>
       </div>
       <!-- /.container -->
@@ -1183,8 +1273,8 @@
       <div class="container">
         <h1 class="title charity-section__header">Проект «На Крильях мечты»</h1>
         <h2 class="title charity-section__desc">
-          «На крыльях мечты»: благотворительный проект в поддержку женщин с
-          онкологией
+          <span>«На крыльях мечты»</span> — благотворительный проект в поддержку
+          женщин с онкологией
         </h2>
         <div class="row">
           <div class="col col-4 col-sm-12 col-md-6 charity-section__box">
@@ -1199,7 +1289,7 @@
               width="363"
               height="453"
               src="images/charity-image-2.jpg"
-              alt="благотворительная фотосессия, девушка в красном"
+              alt="благотворительная фотосессия, девушка в красном на ступеньках"
               class="charity-section__img lazyload"
             />
           </div>
@@ -1209,14 +1299,14 @@
               width="363"
               height="453"
               src="images/charity-image-3.jpg"
-              alt="благотворительная фотосессия, девушка в красном, крылья"
+              alt="благотворительная фотосессия, девушка в красном с крыльями"
               class="charity-section__img lazyload"
             />
             <img
               width="363"
               height="453"
               src="images/charity-image-4.jpg"
-              alt="благотворительная фотосессия, девушка в красном"
+              alt="благотворительная фотосессия, девушка в красном в осеннем лесу"
               class="charity-section__img lazyload"
             />
           </div>
@@ -1228,14 +1318,14 @@
               width="363"
               height="453"
               src="images/charity-image-5.jpg"
-              alt="благотворительная фотосессия, девушка в красном, крылья"
+              alt="благотворительная фотосессия, девушка в красном с крыльями улыбается"
               class="charity-section__img lazyload"
             />
             <img
               width="363"
               height="453"
               src="images/charity-image-6.jpg"
-              alt="благотворительная фотосессия, девушка в красном, крылья"
+              alt="благотворительная фотосессия, девушка в красном с крыльями у водоема"
               class="charity-section__img lazyload"
             />
           </div>
@@ -1255,7 +1345,7 @@
                 width="429"
                 height="525"
                 src="images/photographer-image-4.jpg"
-                alt="ксения кишишьян, фотограф"
+                alt="фотограф ксения кишишьян в черном платье со спины"
                 class="contacts-section__img--first lazyload"
               />
             </div>
@@ -1441,7 +1531,7 @@
                 width="425"
                 height="525"
                 src="images/photographer-image-5.jpg"
-                alt="ксения кишишьян, фотограф"
+                alt="фотограф ксения кишишьян в черном платье"
                 class="contacts-section__img--second lazyload"
               />
             </div>
@@ -1641,12 +1731,12 @@
               data-dismiss="modal"
               aria-label="Close"
             ></button>
-            <p class="contacts-section__contact-form-text">Заказать съемку</p>
           </div>
           <div class="modal-body">
             <form class="contact-form" id="ModalLabel">
+              <p class="contacts-section__contact-form-text">Заказать съемку</p>
               <div class="options__header">Выберите удобный пакет:</div>
-              <div class="options">
+              <div class="options d-flex">
                 <div class="options__item">
                   <input
                     type="radio"
@@ -1656,7 +1746,7 @@
                     class="options__input"
                     checked
                   />
-                  <label for="lightPrice" class="options__label"
+                  <label for="lightPrice" class="options__label d-flex flex-column"
                     ><span class="options__title">Light</span></label
                   >
                 </div>
@@ -1668,7 +1758,7 @@
                     value="mediumPrice"
                     class="options__input"
                   />
-                  <label for="mediumPrice" class="options__label"
+                  <label for="mediumPrice" class="options__label d-flex flex-column"
                     ><span class="options__title">Medium</span></label
                   >
                 </div>
@@ -1680,7 +1770,7 @@
                     value="allInclusivePrice"
                     class="options__input"
                   />
-                  <label for="highPrice" class="options__label"
+                  <label for="highPrice" class="options__label d-flex flex-column"
                     ><span class="options__title"> All Inclusive </span></label
                   >
                 </div>
@@ -1769,6 +1859,96 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="js/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          responsive: [
+            {
+              breakpoint: 1440,
+              settings: "unslick",
+            },
+            {
+              breakpoint: 1199,
+              settings: "unslick",
+            },
+            {
+              breakpoint: 991,
+              settings: "unslick",
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                lazyLoad: "ondemand",
+                infinite: true,
+                dots: true,
+                fade: false,
+                speed: 800,
+                infinite: true,
+                touchThreshold: 100,
+              },
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                lazyLoad: "ondemand",
+                infinite: true,
+                dots: true,
+                fade: false,
+                speed: 800,
+                infinite: true,
+                touchThreshold: 100,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+    </script>
+    <!-- <script>
+       $('.responsive').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script> -->
+    <!-- <script>
+      $(document).ready(function () {
+        if ($("body").width() < 575) {
+          $(".slider").slick({});
+        }
+      });
+    </script> -->
+
     <script src="js/navigationMenu.js"></script>
     <script>
       $(document).ready(function () {
@@ -1786,5 +1966,6 @@
       $("#ModalForm").modal("hide");
     </script>
     <script src="js/form.js" async></script>
+    <script src="js/openCard.js" async></script>
   </body>
 </html>
