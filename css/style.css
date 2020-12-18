@@ -1665,6 +1665,50 @@ body.modal-open {
   left: 0;
   right: 0; }
 
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp; }
+
 .intro-section {
   overflow: hidden;
   padding: 0 0 120px;
@@ -2190,12 +2234,6 @@ body.modal-open {
     @media (max-width: 575px) {
       .products-section__card {
         margin: 0 auto; } }
-    @media (max-width: 767px) {
-      .products-section__card--medium {
-        display: none; } }
-    @media (max-width: 767px) {
-      .products-section__card--high {
-        display: none; } }
     .products-section__card-name {
       color: #000;
       font-family: "Montserrat", sans-serif;
@@ -2652,9 +2690,7 @@ body.modal-open {
       .contacts-section__contact-form {
         margin: 50px auto 70px; } }
     .contacts-section__contact-form-title {
-      font-family: "Prata", sans-serif;
       font-size: 2.4rem;
-      font-weight: 400;
       margin-top: 130px;
       text-transform: none; }
       @media (max-width: 1199px) {
@@ -2662,13 +2698,16 @@ body.modal-open {
           margin-top: 0; } }
       @media (max-width: 767px) {
         .contacts-section__contact-form-title {
-          font-size: 2rem;
           font-weight: 500;
           margin-top: 0; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-title {
           font-weight: 400;
           text-align: center; } }
+      @media (max-width: 575px) {
+        .contacts-section__contact-form-title--resp {
+          font-size: 1.5rem;
+          margin-bottom: 80px; } }
     .contacts-section__contact-form-text {
       color: #40573d;
       font-family: "Prata", sans-serif;
@@ -2716,7 +2755,7 @@ body.modal-open {
           -webkit-align-items: center;
               -ms-flex-align: center;
                   align-items: center;
-          margin: 20px 0 60px;
+          margin: 20px 0 20px 10px;
           padding: 0 60px;
           text-align: center; } }
       .contacts-section__social-list-item {
@@ -2726,6 +2765,17 @@ body.modal-open {
         @media (max-width: 575px) {
           .contacts-section__social-list-item {
             margin: 0 auto; } }
+  @media (max-width: 575px) {
+    .contacts-section--reverse {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
 
 .footer-section {
   background-color: #77917e;
