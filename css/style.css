@@ -14,7 +14,8 @@ body {
   background-color: #fffaf4;
   color: #333;
   font: 400 1rem "Prata", sans-serif;
-  overflow: hidden; }
+  overflow-x: hidden;
+  overflow-y: scroll !important; }
   @media (max-width: 575px) {
     body {
       background-color: #fff; } }
@@ -875,6 +876,7 @@ select:-webkit-autofill:focus {
   display: -ms-flexbox;
   display: flex;
   opacity: 1;
+  overflow: hidden;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s; }
@@ -1351,7 +1353,16 @@ select:-webkit-autofill:focus {
   width: 100%; }
 
 body.modal-open {
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed; }
+
+.modal {
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 .modal {
   display: none;
