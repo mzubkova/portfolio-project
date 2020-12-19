@@ -14,8 +14,7 @@ body {
   background-color: #fffaf4;
   color: #333;
   font: 400 1rem "Prata", sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll !important; }
+  overflow-x: hidden; }
   @media (max-width: 575px) {
     body {
       background-color: #fff; } }
@@ -1052,12 +1051,16 @@ select:-webkit-autofill:focus {
 
 .carousel-control-prev-icon {
   background: url(../images/arrow-left.svg) no-repeat; }
+  .carousel-control-prev-icon .icon {
+    background-color: red;
+    -webkit-mask-image: url(icon.svg);
+    mask-image: url(icon.svg); }
 
 .carousel-control-next-icon {
   background: url(../images/arrow-right.svg) no-repeat; }
 
 .carousel-indicators {
-  bottom: 0;
+  bottom: -35px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1079,8 +1082,9 @@ select:-webkit-autofill:focus {
     -o-transition: opacity 0.6s ease;
     transition: opacity 0.6s ease;
     background-clip: padding-box;
-    background-color: #bab5b5;
+    background-color: #333;
     border-bottom: 10px solid transparent;
+    border-radius: 50%;
     border-top: 10px solid transparent;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
@@ -1089,12 +1093,12 @@ select:-webkit-autofill:focus {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-    height: 5px;
-    margin-left: 3px;
-    margin-right: 3px;
+    height: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
     opacity: 0.5;
     text-indent: -999px;
-    width: 30px; }
+    width: 12px; }
     @media (prefers-reduced-motion: reduce) {
       .carousel-indicators li {
         -webkit-transition: none;
