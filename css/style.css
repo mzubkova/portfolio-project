@@ -267,6 +267,7 @@ select:-webkit-autofill:focus {
 
 .container-fluid {
   margin-left: auto;
+  margin-right: auto;
   max-width: 1305px;
   padding-left: 0;
   padding-right: 0; }
@@ -290,7 +291,7 @@ select:-webkit-autofill:focus {
   margin-left: 15px;
   margin-right: 15px;
   width: 100%; }
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
     .row {
       margin: 0; } }
 
@@ -912,9 +913,11 @@ select:-webkit-autofill:focus {
   @media (max-width: 1199px) {
     .carousel-inner {
       height: auto;
+      margin-left: auto;
       width: 530px; } }
   @media (max-width: 991px) {
     .carousel-inner {
+      margin: 0 auto;
       width: 680px; } }
   @media (max-width: 767px) {
     .carousel-inner {
@@ -922,7 +925,7 @@ select:-webkit-autofill:focus {
   @media (max-width: 575px) {
     .carousel-inner {
       margin: 0 auto;
-      width: 345px; } }
+      width: 100%; } }
 
 .carousel-item {
   -webkit-transition: -webkit-transform 0.6s ease-in-out;
@@ -1051,10 +1054,6 @@ select:-webkit-autofill:focus {
 
 .carousel-control-prev-icon {
   background: url(../images/arrow-left.svg) no-repeat; }
-  .carousel-control-prev-icon .icon {
-    background-color: red;
-    -webkit-mask-image: url(icon.svg);
-    mask-image: url(icon.svg); }
 
 .carousel-control-next-icon {
   background: url(../images/arrow-right.svg) no-repeat; }
@@ -1975,7 +1974,10 @@ body.modal-open {
   margin-bottom: 100px; }
   @media (max-width: 1199px) {
     .portfolio-section .container {
-      margin-bottom: 50px; } }
+      margin-bottom: 80px; } }
+  @media (max-width: 575px) {
+    .portfolio-section .container {
+      margin-bottom: 100px; } }
 
 .portfolio-section__header {
   font-size: 3.6rem;
@@ -2123,10 +2125,10 @@ body.modal-open {
     letter-spacing: 1px;
     line-height: 1.36;
     margin: 0 0 75px 15px; }
-    @media (max-width: 1199px) {
+    @media (max-width: 991px) {
       .profit-section__header {
         font-size: 3rem;
-        margin: 0 0 40px 15px; } }
+        margin: 0 0 40px; } }
     @media (max-width: 767px) {
       .profit-section__header {
         font-size: 2rem;
@@ -2209,13 +2211,16 @@ body.modal-open {
   @media (max-width: 767px) {
     .products-section .container {
       margin-bottom: 40px; } }
+  @media (max-width: 1199px) {
+    .products-section .row {
+      margin: 0; } }
   .products-section__header {
     font-size: 3.6rem;
     margin: 0 0 50px 15px; }
-    @media (max-width: 1199px) {
+    @media (max-width: 991px) {
       .products-section__header {
         font-size: 3rem;
-        margin-bottom: 30px; } }
+        margin: 0 0 40px; } }
     @media (max-width: 767px) {
       .products-section__header {
         font-size: 2rem; } }
@@ -2229,6 +2234,7 @@ body.modal-open {
     -webkit-box-shadow: 0 0 25px rgba(119, 145, 126, 0.6);
             box-shadow: 0 0 25px rgba(119, 145, 126, 0.6);
     height: 480px;
+    margin: 0 auto;
     padding: 30px 0 25px;
     position: relative;
     width: 350px; }
@@ -2237,7 +2243,7 @@ body.modal-open {
         width: 290px; } }
     @media (max-width: 991px) {
       .products-section__card {
-        margin-right: 15px;
+        margin: 0 5px;
         padding: 20px 10px;
         width: auto; } }
     @media (max-width: 767px) {
@@ -2249,7 +2255,8 @@ body.modal-open {
         width: 345px; } }
     @media (max-width: 575px) {
       .products-section__card {
-        margin: 0 auto; } }
+        margin: 0 auto;
+        width: 100%; } }
     .products-section__card-name {
       color: #000;
       font-family: "Montserrat", sans-serif;
@@ -2310,6 +2317,13 @@ body.modal-open {
           height: 35px;
           left: 30%;
           width: 150px; } }
+      @media (max-width: 575px) {
+        .products-section__card-btn {
+          bottom: 0;
+          height: auto;
+          left: 0;
+          margin: 0 auto;
+          width: 100%; } }
     .products-section__card--resp {
       display: none; }
 
@@ -2337,7 +2351,7 @@ body.modal-open {
         font-size: 3rem; } }
     @media (max-width: 991px) {
       .addition-section__header {
-        margin: 0 0 0 15px; } }
+        margin: 0; } }
     @media (max-width: 767px) {
       .addition-section__header {
         font-size: 2rem;
@@ -2422,7 +2436,7 @@ body.modal-open {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
-    width: 345px; }
+    width: 100%; }
     @media (min-width: 575px) {
       .addition-section__list {
         display: none; } }
@@ -2436,7 +2450,6 @@ body.modal-open {
       font-family: "Montserrat", sans-serif;
       font-size: 1.6rem;
       font-weight: 500;
-      height: 15px;
       line-height: 26px;
       width: 100%; }
     .addition-section__list--icon {
@@ -2518,10 +2531,10 @@ body.modal-open {
   .charity-section__header {
     font-size: 3.6rem;
     margin-left: 15px; }
-    @media (max-width: 1199px) {
+    @media (max-width: 991px) {
       .charity-section__header {
         font-size: 3rem;
-        margin-bottom: 10px; } }
+        margin: 0 0 10px; } }
     @media (max-width: 767px) {
       .charity-section__header {
         font-size: 2rem; } }
@@ -2545,6 +2558,9 @@ body.modal-open {
     line-height: 1.5;
     margin: 0 0 35px 15px;
     text-transform: none; }
+    @media (max-width: 991px) {
+      .charity-section__desc {
+        margin: 0 0 40px; } }
     @media (max-width: 767px) {
       .charity-section__desc {
         font-size: 1.6rem; } }
@@ -2558,7 +2574,11 @@ body.modal-open {
     margin-bottom: 30px; }
     @media (max-width: 1199px) {
       .charity-section__img {
-        margin-bottom: 30px;
+        margin: 0 auto 10px;
+        width: 95%; } }
+    @media (max-width: 991px) {
+      .charity-section__img {
+        margin: 0 auto 30px;
         width: 90%; } }
     @media (max-width: 767px) {
       .charity-section__img {
@@ -2712,7 +2732,8 @@ body.modal-open {
         width: 345px; } }
     @media (max-width: 575px) {
       .contacts-section__contact-form {
-        margin: 50px auto 70px; } }
+        margin: 50px auto 70px;
+        width: 100%; } }
     .contacts-section__contact-form-title {
       font-size: 2.4rem;
       margin-top: 130px;
@@ -2727,11 +2748,12 @@ body.modal-open {
       @media (max-width: 575px) {
         .contacts-section__contact-form-title {
           font-weight: 400;
-          text-align: center; } }
+          text-align: left; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-title--resp {
           font-size: 1.5rem;
-          margin-bottom: 80px; } }
+          margin-bottom: 80px;
+          text-align: center; } }
     .contacts-section__contact-form-text {
       color: #40573d;
       font-family: "Prata", sans-serif;
