@@ -2574,19 +2574,12 @@ body.modal-open {
 
 .contacts-section {
   overflow: hidden;
-  padding-bottom: 120px;
   position: relative; }
-  @media (max-width: 1199px) {
-    .contacts-section {
-      padding-bottom: 0; } }
   @media (max-width: 575px) {
     .contacts-section {
       padding-bottom: 80px; } }
   .contacts-section .container {
-    margin-bottom: 0; }
-    @media (max-width: 1199px) {
-      .contacts-section .container {
-        margin-bottom: 60px; } }
+    margin-bottom: 100px; }
     @media (max-width: 767px) {
       .contacts-section .container {
         margin-bottom: 30px; } }
@@ -2611,6 +2604,14 @@ body.modal-open {
   .contacts-section__list {
     margin: 20px 0 65px;
     width: 400px; }
+    @media (min-width: 575px) {
+      .contacts-section__list ul {
+        margin: 0;
+        width: 100%; } }
+    @media (max-width: 575px) {
+      .contacts-section__list ul {
+        margin: 0 auto;
+        width: 320px; } }
     .contacts-section__list li {
       margin-bottom: 15px; }
     .contacts-section__list-icon {
@@ -2704,7 +2705,7 @@ body.modal-open {
   .contacts-section .row + .row {
     margin-bottom: 155px; }
   .contacts-section__contact-form {
-    margin: 90px 0 0 100px;
+    margin: 60px 0 0 100px;
     max-width: 360px;
     position: relative;
     width: 100%; }
@@ -2721,19 +2722,14 @@ body.modal-open {
         width: 100%; } }
     .contacts-section__contact-form-title {
       font-size: 2.4rem;
-      margin-top: 130px;
       text-transform: none; }
-      @media (max-width: 1199px) {
-        .contacts-section__contact-form-title {
-          margin-top: 0; } }
       @media (max-width: 767px) {
         .contacts-section__contact-form-title {
-          font-weight: 500;
-          margin-top: 0; } }
+          font-weight: 500; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-title {
           font-weight: 400;
-          text-align: left; } }
+          text-align: center; } }
       @media (max-width: 575px) {
         .contacts-section__contact-form-title--resp {
           font-size: 1.5rem;
