@@ -13,8 +13,7 @@ html {
 body {
   background-color: #fffaf4;
   color: #333;
-  font: 400 1rem "Prata", sans-serif;
-  overflow-x: hidden; }
+  font: 400 1rem "Prata", sans-serif; }
   @media (max-width: 575px) {
     body {
       background-color: #fff; } }
@@ -24,28 +23,35 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  src: url("../webfonts/Montserrat-Regular.woff2") format("woff2"), url("../webfonts/Montserrat-Regular.woff") format("woff"); }
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"); }
 
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("../webfonts/Montserrat-Medium.woff2") format("woff2"), url("../webfonts/Montserrat-Medium.woff") format("woff"); }
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"); }
 
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../webfonts/Montserrat-SemiBold.woff2") format("woff2"), url("../webfonts/Montserrat-SemiBold.woff") format("woff"); }
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"); }
 
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../webfonts/Montserrat-Bold.woff2") format("woff2"), url("../webfonts/Montserrat-Bold.woff") format("woff"); }
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/prata-v13-cyrillic-regular.eot");
+  src: local(""), url("../fonts/prata-v13-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/prata-v13-cyrillic-regular.woff2") format("woff2"), url("../fonts/prata-v13-cyrillic-regular.woff") format("woff"), url("../fonts/prata-v13-cyrillic-regular.ttf") format("truetype"), url("../fonts/prata-v13-cyrillic-regular.svg#Prata") format("svg"); }
 
 ul {
   list-style: none;
@@ -88,143 +94,9 @@ textarea {
   font-size: 1.8rem;
   padding: 15px;
   resize: vertical; }
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #333;
-  font-size: 1.7rem;
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #333;
-  font-size: 1.7rem;
-  opacity: 1;
-  -moz-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #333;
-  font-size: 1.7rem;
-  opacity: 1;
-  -ms-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: #333;
-  font-size: 1.7rem;
-  opacity: 1;
-  -ms-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input::placeholder,
-textarea::placeholder {
-  color: #333;
-  font-size: 1.7rem;
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-  @media (max-width: 991px) {
-    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-      font-size: 1.5rem; }
-    input::-moz-placeholder, textarea::-moz-placeholder {
-      font-size: 1.5rem; }
-    input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-      font-size: 1.5rem; }
-    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-      font-size: 1.5rem; }
-    input::placeholder,
-    textarea::placeholder {
-      font-size: 1.5rem; } }
-
-input::input-placeholder {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input::-webkit-input-placeholder {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input::-moz-placeholder {
-  opacity: 1;
-  -moz-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:-ms-input-placeholder {
-  opacity: 1;
-  -ms-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input::-ms-input-placeholder {
-  opacity: 1;
-  -ms-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input::placeholder {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:placeholder {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:input-placeholder {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:focus::input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:focus::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:focus::-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:focus:-ms-input-placeholder {
-  opacity: 0;
-  -ms-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:focus::-ms-input-placeholder {
-  opacity: 0;
-  -ms-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:focus::placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:focus:placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
-
-input:focus:input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease; }
+  @media (max-width: 575px) {
+    textarea {
+      font-size: 1.2rem; } }
 
 input {
   -webkit-appearance: none;
@@ -734,6 +606,9 @@ select:-webkit-autofill:focus {
       max-width: 360px;
       padding: 0 15px;
       width: 100%; }
+      @media (max-width: 575px) {
+        .contact-form__wrapper-input {
+          font-size: 1.2rem; } }
     .contact-form__wrapper textarea {
       height: 110px;
       width: 360px; }
@@ -2686,7 +2561,7 @@ body.modal-open {
         .contacts-section__img--first {
           margin: 0; } }
     .contacts-section__img--second {
-      margin: 130px 0 0 90px; }
+      margin: 0 0 0 90px; }
       @media (max-width: 1199px) {
         .contacts-section__img--second {
           height: 80%;
