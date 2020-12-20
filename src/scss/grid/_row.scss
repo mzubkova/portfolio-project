@@ -2,7 +2,14 @@
   @include make-row();
   width: 100%;
 
-  @media (max-width: 575px) {
-    margin: 0 auto;
+  @media (max-width: 991px) {
+    margin: 0;
+  }
+}
+
+.row--reverse {
+  @media (max-width: 991px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

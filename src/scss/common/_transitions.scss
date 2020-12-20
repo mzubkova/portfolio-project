@@ -18,3 +18,144 @@
   overflow: hidden;
   position: relative;
 }
+
+.hvr-bounce-in {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  vertical-align: middle;
+}
+
+.hvr-bounce-in:active,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:hover {
+  transform: scale(1.2);
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.hvr-glow {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  transition-property: box-shadow;
+  vertical-align: middle;
+}
+
+.hvr-glow:active,
+.hvr-glow:focus,
+.hvr-glow:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.hvr-underline-from-left {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  vertical-align: middle;
+}
+
+.hvr-underline-from-left::before {
+  background: $text-light-gray;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 100%;
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-property: right;
+  transition-property: right;
+  transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+
+.hvr-underline-from-left:hover::before,
+.hvr-underline-from-left:focus::before,
+.hvr-underline-from-left:active::before {
+  right: 0;
+}
+
+.hvr-underline-from-center {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  vertical-align: middle;
+}
+
+.hvr-underline-from-center::before {
+  background: $text-gray-4;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 51%;
+  position: absolute;
+  right: 51%;
+  transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  transition-property: left, right;
+  transition-property: left, right;
+  transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+
+.hvr-underline-from-center:hover::before,
+.hvr-underline-from-center:focus::before,
+.hvr-underline-from-center:active::before {
+  left: 0;
+  right: 0;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}

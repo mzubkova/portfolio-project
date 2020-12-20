@@ -10,9 +10,11 @@ $text-white: #fff;
 $text-light-gray: #f6f6f6;
 $text-light-gray-2: #fffcf8;
 $text-black: #000;
+$text-pink: #fffaf4;
 
 $html-font-size: 10px;
 $body-font-color: $text-gray;
+$body-bg-color: $text-pink;
 $body-font: $main-font;
 $body-fz: 1rem;
 $body-fw: 400;
@@ -43,32 +45,21 @@ $container-max-width: (
 $displays: none, inline-block, block, flex;
 
 // Titles
-
 $title-ff: $main-font;
 $title-color: $text-gray;
 
-// nav
-$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
-$cubic-transition: 0.55s $ease-in-out-cubic;
-
-$bar-length: 28px;
-$bar-thickness: 4px;
-$nav-item-delay: 0.05s;
-$nav-width: 375px;
-
 // Carousel Bootstrap
-
 $carousel-control-color: $text-white !default;
 $carousel-control-width: 15% !default;
 $carousel-control-opacity: 1 !default;
 $carousel-control-hover-opacity: 1 !default;
 $carousel-control-transition: opacity 0.15s ease !default;
 
-$carousel-indicator-width: 30px !default;
-$carousel-indicator-height: 5px !default;
+$carousel-indicator-width: 12px !default;
+$carousel-indicator-height: 12px !default;
 $carousel-indicator-hit-area-height: 10px !default;
-$carousel-indicator-spacer: 3px !default;
-$carousel-indicator-active-bg: #bab5b5 !default;
+$carousel-indicator-spacer: 10px !default;
+$carousel-indicator-active-bg: #333 !default;
 $carousel-indicator-transition: opacity 0.6s ease !default;
 
 $carousel-caption-width: 70% !default;
@@ -98,7 +89,6 @@ $transition-fade: opacity 0.15s linear !default;
 $transition-collapse: height 0.35s ease !default;
 
 // Modals
-
 $modal-title-line-height: 1;
 $modal-dialog-margin: 0.5rem !default;
 
@@ -117,11 +107,6 @@ $modal-footer-border-width: $modal-header-border-width !default;
 $modal-header-padding-y: 1rem !default;
 $modal-header-padding-x: 1rem !default;
 $modal-header-padding: $modal-header-padding-y $modal-header-padding-x !default;
-
-$modal-xl: 1140px !default;
-$modal-lg: 800px !default;
-$modal-md: 500px !default;
-$modal-sm: 300px !default;
 
 $modal-fade-transform: translate(0, -50px) !default;
 $modal-show-transform: none !default;

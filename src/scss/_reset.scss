@@ -12,37 +12,45 @@ html {
 }
 
 body {
+  background-color: $body-bg-color;
   color: $body-font-color;
   font: $body-fw $body-fz/$body-lh $body-font;
-  overflow: hidden;
+  overflow-x: hidden;
+
+  @media (max-width: 575px) {
+    background-color: $text-white;
+  }
 }
 
-// /** Montserrat Regular **/
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   src: url("../webfonts/Montserrat-Regular.woff2") format("woff2"),
     url("../webfonts/Montserrat-Regular.woff") format("woff");
 }
-/** Montserrat Medium **/
+
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   src: url("../webfonts/Montserrat-Medium.woff2") format("woff2"),
     url("../webfonts/Montserrat-Medium.woff") format("woff");
 }
-/** Montserrat SemiBold **/
+
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   src: url("../webfonts/Montserrat-SemiBold.woff2") format("woff2"),
     url("../webfonts/Montserrat-SemiBold.woff") format("woff");
 }
-/** Montserrat Bold **/
+
 @font-face {
+  font-display: swap;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -57,7 +65,7 @@ ul {
 
 img {
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -75,9 +83,10 @@ h6 {
 
 button {
   background-color: transparent;
-  border: 0;
+  border-style: none;
   cursor: pointer;
   outline: 0 !important;
+  text-decoration: none;
 }
 
 p {
@@ -95,12 +104,8 @@ textarea {
 textarea {
   font-family: $second-font;
   font-size: 1.8rem;
-  padding: 20px 15px 0;
-  resize: none;
-
-  @media (max-width: 767px) {
-    padding: 10px;
-  }
+  padding: 15px;
+  resize: vertical;
 }
 
 input::placeholder,
@@ -113,10 +118,50 @@ textarea::placeholder {
   @media (max-width: 991px) {
     font-size: 1.5rem;
   }
+}
 
-  @media (max-width: 575px) {
-    font-size: 1.2rem;
-  }
+input::input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input::placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input {
+  appearance: none;
 }
 
 input:-webkit-autofill,
@@ -128,18 +173,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 0;
   box-shadow: 0 0 0 1000px #fff inset;
   -webkit-text-fill-color: #000;
   transition: background-color 5000s ease-in-out 0s;
-
-  @media (max-width: 575px) {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .row {
-    margin: 0;
-  }
 }

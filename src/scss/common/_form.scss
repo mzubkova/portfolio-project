@@ -1,8 +1,17 @@
 .contact-form {
+  max-width: 385px;
+  position: relative;
+
+  @media (max-width: 575px) {
+    height: auto;
+    margin: 0 auto;
+    max-width: 330px;
+    padding: 20px 30px;
+  }
+
   &__wrapper {
     border: 2px solid $text-gray-3;
     margin: 10px auto 20px;
-    max-width: 385px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -14,18 +23,12 @@
 
     @media (max-width: 767px) {
       margin: 10px 0 15px;
-      width: 240px;
+      width: 250px;
     }
 
     @media (max-width: 575px) {
-      margin: 0 0 10px;
-      width: 280px;
-
-      textarea {
-        font-size: 1rem;
-        height: 7rem;
-        width: 50rem;
-      }
+      margin: 10px 0 15px;
+      width: 100%;
     }
 
     &-input {
@@ -36,10 +39,11 @@
       max-width: 360px;
       padding: 0 15px;
       width: 100%;
+    }
 
-      @media (max-width: 767px) {
-        height: 25px;
-      }
+    textarea {
+      height: 110px;
+      width: 360px;
     }
   }
 
@@ -48,14 +52,10 @@
     font-family: $second-font;
     font-size: 1.5rem;
     line-height: 1;
-    margin: 0 0 10px 50px;
+    margin-bottom: 10px;
 
     @media (max-width: 991px) {
       margin: 0 0 10px;
-    }
-
-    @media (max-width: 575px) {
-      font-size: 1rem;
     }
   }
 
@@ -65,34 +65,67 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1.7rem;
     margin-bottom: 10px;
-    margin-left: 10%;
 
     @media (max-width: 991px) {
       font-size: 1.5rem;
       margin: 0;
     }
+  }
+}
 
-    @media (max-width: 575px) {
-      font-size: 1.3rem;
+.options {
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  &__header {
+    font-family: $second-font;
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+    font-family: $second-font;
+    font-size: 1.5rem;
+    line-height: 0;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      background-color: transparent;
+      border: 1px solid #77917e;
+      border-radius: 50%;
+      content: "";
+      height: 25px;
+      margin: 0 auto;
+      width: 25px;
+    }
+
+    &::after {
+      background-color: #77917e;
+      border-radius: 50%;
+      content: "";
+      height: 15px;
+      position: absolute;
+      top: 5px;
+      transform: scale(0);
+      transition: all 0.3s ease-in;
+      width: 15px;
     }
   }
 
-  &__button {
-    cursor: pointer;
-    text-align: center;
+  &__input:checked + &__label::after {
+    transform: scale(1);
+  }
 
-    @media (max-width: 575px) {
-      margin: 0;
-    }
-
-    &-modal {
-      margin-bottom: 35px;
-      margin-left: 10%;
-
-      @media (max-width: 991px) {
-        margin-left: 0;
-      }
-    }
+  &__title {
+    margin-top: 25px;
   }
 }
 
@@ -128,11 +161,6 @@
     width: 500px;
     z-index: 999;
 
-    @media (max-width: 575px) {
-      padding: 60px 24px 0;
-      width: 305px;
-    }
-
     &-text {
       box-sizing: border-box;
       font-family: "Montserrat", sans-serif;
@@ -141,26 +169,39 @@
       margin: 0 auto;
       max-width: 360px;
       width: 100%;
-
-      @media (max-width: 575px) {
-        font-size: 1.7rem;
-      }
     }
+  }
+
+  &__button {
+    background-color: $text-gray-3;
+    color: $text-white;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    height: 50px;
+    margin-top: 38px;
+    max-width: 200px;
+    text-align: center;
+    text-transform: none;
+    transition: all 0.2s ease-in;
+    width: 200px;
   }
 }
 
 .popup.active {
   display: flex;
   opacity: 1;
+  overflow: hidden;
   transition: opacity 1s;
 }
 
 .close {
+  background: url(../images/close-btn-icon.svg) no-repeat;
   cursor: pointer;
-  font-family: "Montserrat";
-  font-size: 2.7rem;
-  font-weight: 500;
+  height: 18px;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 30px;
+  top: 20px;
+  width: 19px;
+  z-index: 999;
 }
