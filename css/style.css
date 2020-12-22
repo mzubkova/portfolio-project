@@ -161,12 +161,8 @@ select:-webkit-autofill:focus {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-right: -15px;
   width: 100%; }
-  @media (max-width: 991px) {
-    .row {
-      margin: 0; } }
 
 @media (max-width: 991px) {
   .row--reverse {
@@ -519,7 +515,7 @@ select:-webkit-autofill:focus {
   color: #333; }
 
 .btn-intro {
-  background-color: #77917e;
+  background-color: #771867;
   color: #fff;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
@@ -542,7 +538,7 @@ select:-webkit-autofill:focus {
       font-size: 1.8rem; } }
 
 .btn-product {
-  background-color: #77917e;
+  background-color: #771867;
   color: #fff;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
@@ -558,7 +554,7 @@ select:-webkit-autofill:focus {
   transition: all 0.2s ease-in;
   width: 100%; }
   .btn-product:hover {
-    background-color: #495a4e; }
+    background-color: #4c1042; }
 
 .btn-form {
   cursor: pointer;
@@ -581,7 +577,7 @@ select:-webkit-autofill:focus {
       max-width: 330px;
       padding: 20px 30px; } }
   .contact-form__wrapper {
-    border: 2px solid #77917e;
+    border: 2px solid #771867;
     margin: 10px auto 20px;
     overflow: hidden;
     position: relative;
@@ -671,14 +667,14 @@ select:-webkit-autofill:focus {
     text-align: center; }
     .options__label::before {
       background-color: transparent;
-      border: 1px solid #77917e;
+      border: 1px solid #771867;
       border-radius: 50%;
       content: "";
       height: 25px;
       margin: 0 auto;
       width: 25px; }
     .options__label::after {
-      background-color: #77917e;
+      background-color: #771867;
       border-radius: 50%;
       content: "";
       height: 15px;
@@ -742,7 +738,7 @@ select:-webkit-autofill:focus {
       max-width: 360px;
       width: 100%; }
   .popup__button {
-    background-color: #77917e;
+    background-color: #771867;
     color: #fff;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
@@ -1012,6 +1008,10 @@ select:-webkit-autofill:focus {
   transition: all 0.25s ease-in-out;
   width: 40px;
   z-index: 9999; }
+  @media (max-width: 1400px) {
+    .navBurger {
+      right: 20px;
+      top: 20px; } }
   @media (max-width: 1199px) {
     .navBurger {
       right: 20px;
@@ -1055,7 +1055,7 @@ select:-webkit-autofill:focus {
   z-index: 999; }
 
 .navBurger.active::before {
-  background: #eee;
+  background: #fffcf8;
   top: 0;
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
@@ -1063,7 +1063,7 @@ select:-webkit-autofill:focus {
   width: 110%; }
 
 .navBurger.active::after {
-  background: #eee;
+  background: #fffcf8;
   bottom: 0;
   -webkit-transform: rotate(-135deg);
       -ms-transform: rotate(-135deg);
@@ -1071,7 +1071,7 @@ select:-webkit-autofill:focus {
   width: 110%; }
 
 .overlay {
-  background: #77917e;
+  background: #771867;
   height: 100%;
   opacity: 0;
   overflow: hidden;
@@ -1136,7 +1136,7 @@ select:-webkit-autofill:focus {
           animation-delay: 0.8s; }
 
 .overlayMenu {
-  background-color: #77917e;
+  background-color: #771867;
   max-width: 375px;
   padding: 100px 0 100px 150px;
   position: absolute;
@@ -1162,7 +1162,7 @@ select:-webkit-autofill:focus {
 .overlayMenu ul li a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #f2f2f2;
+  color: #fff;
   display: inline-block;
   font-family: "Prata", sans-serif;
   font-size: 1.8rem;
@@ -1610,38 +1610,6 @@ body.modal-open {
 .intro-author {
   margin-left: auto;
   position: relative; }
-  .intro-author__phone {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    color: #fffaf4;
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.8rem;
-    line-height: 1.66;
-    position: absolute;
-    -webkit-transform: translateX(440px) translateY(47px);
-        -ms-transform: translateX(440px) translateY(47px);
-            transform: translateX(440px) translateY(47px);
-    z-index: 99; }
-    @media (max-width: 1199px) {
-      .intro-author__phone {
-        -webkit-transform: translateX(280px) translateY(20px);
-            -ms-transform: translateX(280px) translateY(20px);
-                transform: translateX(280px) translateY(20px); } }
-    @media (max-width: 991px) {
-      .intro-author__phone {
-        display: none; } }
-    .intro-author__phone-logo {
-      background: url(../images/phone-icon-header.svg) no-repeat;
-      color: #fff;
-      display: block;
-      height: 24px;
-      position: absolute;
-      -webkit-transform: translateX(-35px) translateY(3px);
-          -ms-transform: translateX(-35px) translateY(3px);
-              transform: translateX(-35px) translateY(3px);
-      width: 24px;
-      width: 100px; }
   .intro-author__img {
     position: relative;
     z-index: 1; }
@@ -1661,6 +1629,9 @@ body.modal-open {
 
 .intro-content {
   width: 540px; }
+  @media (max-width: 1400px) {
+    .intro-content {
+      margin: 0 auto; } }
   @media (max-width: 1199px) {
     .intro-content {
       margin: 0 0 0 30px;
@@ -1967,7 +1938,7 @@ body.modal-open {
     float: left; }
 
 .profit-section {
-  background-color: #77917e;
+  background-color: #771867;
   overflow: hidden;
   padding: 56px 0 50px;
   position: relative; }
@@ -1995,7 +1966,7 @@ body.modal-open {
     font-size: 3.6rem;
     letter-spacing: 1px;
     line-height: 1.36;
-    margin: 0 0 75px 15px; }
+    margin: 0 0 75px; }
     @media (max-width: 991px) {
       .profit-section__header {
         font-size: 3rem;
@@ -2218,7 +2189,7 @@ body.modal-open {
       margin-bottom: 50px; } }
   .addition-section__header {
     font-size: 3.6rem;
-    margin: 0 0 70px 15px; }
+    margin: 0 0 70px; }
     @media (max-width: 1199px) {
       .addition-section__header {
         font-size: 3rem; } }
@@ -2314,7 +2285,7 @@ body.modal-open {
       .addition-section__list {
         display: none; } }
     .addition-section__list--item {
-      border-top: 1px solid #77917e;
+      border-top: 1px solid #771867;
       padding: 15px 0;
       position: relative;
       width: 100%; }
@@ -2405,8 +2376,7 @@ body.modal-open {
       .charity-section .container {
         margin-bottom: 40px; } }
   .charity-section__header {
-    font-size: 3.6rem;
-    margin-left: 15px; }
+    font-size: 3.6rem; }
     @media (max-width: 991px) {
       .charity-section__header {
         font-size: 3rem;
@@ -2432,7 +2402,7 @@ body.modal-open {
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.5;
-    margin: 0 0 35px 15px;
+    margin: 0 0 35px;
     text-transform: none; }
     @media (max-width: 991px) {
       .charity-section__desc {
@@ -2479,8 +2449,7 @@ body.modal-open {
       .contacts-section .container {
         margin-bottom: 0; } }
   .contacts-section__header {
-    font-size: 3.6rem;
-    margin-left: 15px; }
+    font-size: 3.6rem; }
     @media (max-width: 1199px) {
       .contacts-section__header {
         font-size: 3rem; } }
@@ -2548,55 +2517,68 @@ body.modal-open {
           .contacts-section__list-text span {
             display: none; } }
   .contacts-section__img {
+    height: 525px;
     position: relative;
+    width: 428px;
     z-index: 1; }
-    .contacts-section__img::before {
-      background-image: url(../images/photographer-image-4.jpg);
+    @media (max-width: 991px) {
+      .contacts-section__img {
+        width: 90%; } }
+    @media (max-width: 575px) {
+      .contacts-section__img {
+        width: 100%; } }
+    .contacts-section__img--first::before {
+      background-image: url(../images/kvk-studio-image-2.jpg);
       bottom: -25px;
       content: "";
       display: block;
       height: 525px;
+      left: 25px;
       opacity: 0.5;
       position: absolute;
-      right: 25px;
-      width: 429px;
+      width: 428px;
       z-index: -2; }
       @media (max-width: 1199px) {
-        .contacts-section__img::before {
+        .contacts-section__img--first::before {
           height: 100%;
           right: 65px;
-          width: 80%; } }
+          width: 100%; } }
       @media (max-width: 991px) {
-        .contacts-section__img::before {
+        .contacts-section__img--first::before {
           display: none; } }
-    @media (max-width: 1199px) {
-      .contacts-section__img--first {
-        height: 80%;
-        width: 80%; } }
-    @media (max-width: 991px) {
-      .contacts-section__img--first {
-        width: 90%; } }
-    @media (max-width: 575px) {
-      .contacts-section__img--first {
-        width: 100%; } }
-    .contacts-section__img--second {
+    .contacts-section__img--second::before {
+      background-image: url(../images/photographer-image-5.jpg);
+      bottom: -25px;
+      content: "";
+      display: block;
+      height: 525px;
+      left: 25px;
+      opacity: 0.5;
+      position: absolute;
+      width: 428px;
+      z-index: -2; }
+      @media (max-width: 1199px) {
+        .contacts-section__img--second::before {
+          height: 100%;
+          right: 65px;
+          width: 100%; } }
+      @media (max-width: 991px) {
+        .contacts-section__img--second::before {
+          display: none; } }
+    .contacts-section__img--contact {
       margin: 0 0 0 90px; }
       @media (max-width: 1199px) {
-        .contacts-section__img--second {
-          height: 80%;
-          margin: 0 0 0 50px;
-          width: 80%; } }
+        .contacts-section__img--contact {
+          margin: 0 0 0 50px; } }
       @media (max-width: 991px) {
-        .contacts-section__img--second {
-          margin-left: 35px;
-          width: 90%; } }
+        .contacts-section__img--contact {
+          margin-left: 35px; } }
       @media (max-width: 767px) {
-        .contacts-section__img--second {
+        .contacts-section__img--contact {
           margin: 0 0 0 25px; } }
       @media (max-width: 575px) {
-        .contacts-section__img--second {
-          margin: 0 auto;
-          width: 100%; } }
+        .contacts-section__img--contact {
+          margin: 0 auto; } }
   .contacts-section .row + .row {
     margin-bottom: 155px; }
   .contacts-section__contact-form {
@@ -2703,7 +2685,7 @@ body.modal-open {
               flex-direction: column-reverse; } }
 
 .footer-section {
-  background-color: #77917e;
+  background-color: #771867;
   overflow: hidden;
   padding: 58px 0 0;
   position: relative; }
