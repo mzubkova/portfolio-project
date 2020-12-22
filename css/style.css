@@ -2526,6 +2526,7 @@ body.modal-open {
         width: 90%; } }
     @media (max-width: 575px) {
       .contacts-section__img {
+        height: auto;
         width: 100%; } }
     .contacts-section__img--first::before {
       background-image: url(../images/kvk-studio-image-2.jpg);
