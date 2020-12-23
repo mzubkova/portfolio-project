@@ -565,6 +565,10 @@ select:-webkit-autofill:focus {
     height: 50px;
     margin-bottom: 35px;
     width: 200px; }
+    @media (max-width: 320px) {
+      .btn-form--modal {
+        height: 35px;
+        width: 150px; } }
 
 .contact-form {
   max-width: 385px;
@@ -575,6 +579,9 @@ select:-webkit-autofill:focus {
       margin: 0 auto;
       max-width: 330px;
       padding: 20px 30px; } }
+  @media (max-width: 320px) {
+    .contact-form {
+      padding: 10px 15px; } }
   .contact-form__wrapper {
     border: 2px solid #854777;
     margin: 10px auto 20px;
@@ -593,6 +600,10 @@ select:-webkit-autofill:focus {
       .contact-form__wrapper {
         margin: 10px 0 15px;
         width: 100%; } }
+    @media (max-width: 320px) {
+      .contact-form__wrapper {
+        margin: 5px 0 10px;
+        width: 100%; } }
     .contact-form__wrapper-input {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -609,6 +620,9 @@ select:-webkit-autofill:focus {
         .contact-form__wrapper-input {
           font-size: 1.2rem;
           height: 40px; } }
+      @media (max-width: 320px) {
+        .contact-form__wrapper-input {
+          height: 30px; } }
     .contact-form__wrapper textarea {
       height: 110px;
       width: 360px; }
@@ -618,7 +632,7 @@ select:-webkit-autofill:focus {
           width: auto; } }
       @media (max-width: 575px) {
         .contact-form__wrapper textarea {
-          height: 110px; } }
+          height: 60px; } }
   .contact-form__error {
     color: #e93223;
     font-family: "Montserrat", sans-serif;
@@ -650,6 +664,12 @@ select:-webkit-autofill:focus {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     margin-bottom: 22px; }
+    @media (max-width: 575px) {
+      .options__header {
+        margin-bottom: 10px; } }
+    @media (max-width: 320px) {
+      .options__header {
+        font-size: 1.3rem; } }
   .options__input {
     display: none; }
   .options__label {
@@ -1364,6 +1384,9 @@ body.modal-open {
   @media (max-width: 767px) {
     .modal-content {
       width: 330px; } }
+  @media (max-width: 320px) {
+    .modal-content {
+      width: 100%; } }
 
 .modal-backdrop {
   background-color: #000;
@@ -2637,6 +2660,14 @@ body.modal-open {
         .contacts-section__contact-form-text {
           font-size: 2rem;
           margin: 0 0 32px; } }
+      @media (max-width: 575px) {
+        .contacts-section__contact-form-text {
+          font-size: 2rem;
+          margin: 0 0 15px; } }
+      @media (max-width: 320px) {
+        .contacts-section__contact-form-text {
+          font-size: 1.8rem;
+          margin: 0 0 10px; } }
       .contacts-section__contact-form-text--second {
         color: #40573d;
         font-family: "Montserrat", sans-serif;
