@@ -1707,7 +1707,10 @@ body.modal-open {
         padding: 0 8px;
         text-align: center; } }
   .intro-content__button {
-    margin: 30px 0 0; }
+    bottom: 0;
+    left: 0;
+    margin: 30px 0 0;
+    max-width: 100%; }
     @media (max-width: 991px) {
       .intro-content__button {
         margin-bottom: 0; } }
