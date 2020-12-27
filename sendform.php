@@ -6,7 +6,8 @@ $message = trim($_POST['message']);
 $price = trim($_POST['price']);
 $fromMail = '_mainaccount@kvkstudio.com.ua';
 $fromName = 'Поступила заявка с сайта';
-$emailTo = 'kvk.creative.studio@gmail.com';
+$emailTo = 'violamars777@gmail.com';
+// kvk.creative.studio@gmail.com
 $subject = 'Форма обратной связи kvkstudio.com.ua';
 $subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
 $headers = "Content-type: text/plain; charset=\"utf-8\"\r\n";

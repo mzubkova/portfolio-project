@@ -46,6 +46,14 @@
     <script>
       new WOW().init();
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <title>
       Фото/Видео студия Ксении Кишишьян | Заказать портфолио, видео- фотосъемку,
       фото книги и флешки, печать фотографий на футболке, ретушь
@@ -103,10 +111,9 @@
               </p>
               <div class="intro-content__button">
                 <button
-                  class="btn-intro hvr-glow"
+                  class="btn-intro hvr-glow js-open-modal "
                   type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
+                  data-modal="modal-top"
                 >
                   Заказать съёмку
                 </button>
@@ -779,7 +786,7 @@
             >
               <p class="products-section__card-name">пакет</p>
               <p class="products-section__card-title">light</p>
-              <p class="products-section__card-price">3 500 ₴ / 108 €</p>
+              <p class="products-section__card-price">3 500 грн</p>
               <ul class="products-section__card-list">
                 <li>- 10 фотографий в ретуши</li>
                 <li>- 1 созданный образ и стиль</li>
@@ -788,10 +795,9 @@
               </ul>
               <div class="products-section__card-btn">
                 <button
-                  class="btn-product align-items-center"
+                  class="btn-product align-items-center js-open-modal"
                   type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
+                  data-modal="modal-price"
                 >
                   Купить
                 </button>
@@ -806,7 +812,7 @@
             >
               <p class="products-section__card-name">пакет</p>
               <p class="products-section__card-title">medium</p>
-              <p class="products-section__card-price">4 500 ₴ / 138 €</p>
+              <p class="products-section__card-price">4 500 грн</p>
               <ul class="products-section__card-list">
                 <li>- 20 фотографий в ретуши</li>
                 <li>- 2 созданных образа и стиля</li>
@@ -816,10 +822,9 @@
               </ul>
               <div class="products-section__card-btn">
                 <button
-                  class="btn-product align-items-center"
+                  class="btn-product align-items-center js-open-modal"
                   type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
+                  data-modal="modal-price"
                 >
                   Купить
                 </button>
@@ -834,7 +839,7 @@
             >
               <p class="products-section__card-name">пакет</p>
               <p class="products-section__card-title">all inclusive</p>
-              <p class="products-section__card-price">6 000 ₴ / 184 €</p>
+              <p class="products-section__card-price">6 000 грн</p>
               <ul class="products-section__card-list">
                 <li>- 30 фотографий в ретуши</li>
                 <li>- 3 созданных образа и стиля</li>
@@ -844,34 +849,9 @@
               </ul>
               <div class="products-section__card-btn">
                 <button
-                  class="btn-product align-items-center"
+                  class="btn-product align-items-center js-open-modal"
                   type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
-                >
-                  Купить
-                </button>
-              </div>
-            </div>
-            <!-- /.products-section__card -->
-            <div
-              class="products-section__card products-section__card--resp flex-column align-items-center"
-            >
-              <p class="products-section__card-name">пакет</p>
-              <p class="products-section__card-title">light</p>
-              <p class="products-section__card-price">3 500 ₴ / 108 €</p>
-              <ul class="products-section__card-list">
-                <li>- 10 фотографий в ретуши</li>
-                <li>- 1 созданный образ и стиль</li>
-                <li>- стоимость работы стилиста и парикмахера</li>
-                <li>- стоимость аренды студии</li>
-              </ul>
-              <div class="products-section__card-btn">
-                <button
-                  class="btn-product align-items-center"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#ModalForm"
+                  data-modal="modal-price" name="price"
                 >
                   Купить
                 </button>
@@ -1044,7 +1024,7 @@
     <!-- /.addition-section -->
     <section class="charity-section" id="projects-block">
       <div class="container">
-        <h1 class="title charity-section__header">Проект «На Крильях мечты»</h1>
+        <h1 class="title charity-section__header">Проект «На Крыльях мечты»</h1>
         <h2 class="title charity-section__desc">
           <span>«На крыльях мечты»</span> — благотворительный проект в поддержку
           женщин с онкологией
@@ -1138,7 +1118,7 @@
                 Остались вопросы?
               </h2>
               <div>
-                <form id="formOnPage">
+                <form class="js-form-validate">
                   <p class="contacts-section__contact-form-text--second">
                     Оставьте заявку и я свяжусь с вами, чтобы уточнить детали
                     фотосессии
@@ -1519,25 +1499,12 @@
     </footer>
     <!-- /.footer-section -->
 
-    <div
-      class="modal fade"
-      id="ModalForm"
-      aria-labelledby="ModalLabel"
-      aria-hidden="true"
-      data-backdrop="static"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
+    <div class="modal modal-top" data-modal="modal-top">
+      <button
+          type="button"
+              class="modal-close js-modal-close"
             ></button>
-          </div>
-          <div class="modal-body">
-            <form class="contact-form" id="ModalLabel">
+            <form class="contact-form js-form-validate">
               <p class="contacts-section__contact-form-text">Заказать съемку</p>
               <div class="options__header">Выберите удобный пакет:</div>
               <div class="options d-flex">
@@ -1598,7 +1565,6 @@
                 />
               </div>
               <div class="contact-form__error"></div>
-              <!-- Name -->
               <label for="inputTel" id="telHelp" class="contact-form__label"
                 >Телефон</label
               >
@@ -1612,7 +1578,6 @@
                 />
               </div>
               <div class="contact-form__error"></div>
-              <!-- Tel -->
               <label for="inputEmail" id="emailHelp" class="contact-form__label"
                 >E-mail</label
               >
@@ -1626,7 +1591,6 @@
                 />
               </div>
               <div class="contact-form__error"></div>
-              <!-- E-mail -->
               <label for="textarea" class="contact-form__label"
                 >Сообщение</label
               >
@@ -1645,11 +1609,78 @@
                 value="Отправить"
               />
             </form>
-          </div>
-        </div>
       </div>
     </div>
     <!-- modal -->
+
+    <div class="modal modal-price" data-modal="modal-price">
+      <button
+          type="button"
+              class="modal-close js-modal-close"
+            ></button>
+            <form class="contact-form js-form-validate">
+              <p class="contacts-section__contact-form-text">Заказать съемку</p>
+              <label for="inputName" id="namePrice" class="contact-form__label"
+                >Имя</label
+              >
+              <div class="contact-form__wrapper">
+                <input
+                  name="name"
+                  type="text"
+                  class="contact-form__wrapper-input required"
+                  id="inputNamePrice"
+                  aria-describedby="namePrice"
+                />
+              </div>
+              <div class="contact-form__error"></div>
+              <label for="inputTel" id="telPrice" class="contact-form__label"
+                >Телефон</label
+              >
+              <div class="contact-form__wrapper">
+                <input
+                  name="tel"
+                  type="tel"
+                  class="contact-form__wrapper-input required"
+                  id="inputTelPrice"
+                  aria-describedby="telPrice"
+                />
+              </div>
+              <div class="contact-form__error"></div>
+              <label for="inputEmail" id="emailPrice" class="contact-form__label"
+                >E-mail</label
+              >
+              <div class="contact-form__wrapper">
+                <input
+                  name="email"
+                  type="email"
+                  class="contact-form__wrapper-input required"
+                  id="inputEmailPrice"
+                  aria-describedby="emailPrice"
+                />
+              </div>
+              <div class="contact-form__error"></div>
+              <label for="textarea" class="contact-form__label"
+                >Сообщение</label
+              >
+              <div class="contact-form__wrapper">
+                <textarea
+                  name="message"
+                  id="textareaPrice"
+                  cols="10"
+                  rows="3"
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                name="submit"
+                class="btn-form--modal btn-intro hvr-glow required"
+                value="Отправить"
+              />
+            </form>
+      </div>
+    </div>
+    <!-- modal -->
+    <div class="modal-overlay js-overlay-modal"></div>
 
     <div class="popup">
       <div class="popup__overlay"></div>
@@ -1668,9 +1699,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $("#ModalForm").modal("hide");
-    </script>
+    <script src="js/modal.js"></script>
 
     <script src="js/jquery.validate.min.js"></script>
     <script>
