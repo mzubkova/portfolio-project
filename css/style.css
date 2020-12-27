@@ -7,13 +7,14 @@
   padding: 0; }
 
 html {
-  font-size: 10px;
-  overflow-x: hidden; }
+  font-size: 10px; }
 
 body {
   background-color: #fffaf4;
   color: #333;
-  font: 400 1rem "Prata", sans-serif; }
+  font: 400 1rem "Prata", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll !important; }
   @media (max-width: 575px) {
     body {
       background-color: #fff; } }
@@ -1326,6 +1327,11 @@ select:-webkit-autofill:focus {
 .modal-overlay.active {
   opacity: 1;
   visibility: visible; }
+
+body.modal.active,
+.modal-overlay.active {
+  overflow: hidden;
+  position: fixed; }
 
 .fade {
   -webkit-transition: opacity 0.15s linear;
