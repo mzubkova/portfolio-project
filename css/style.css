@@ -1295,6 +1295,9 @@ select:-webkit-autofill:focus {
     z-index: 20; }
   .modal-top {
     height: 742px; }
+    @media (max-width: 767px) {
+      .modal-top {
+        height: auto; } }
   .modal-price {
     height: auto;
     padding: 0 70px 35px; }
