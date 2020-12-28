@@ -35,6 +35,13 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+    <link
+      rel="preload"
+      href="fonts/Montserrat-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -181,6 +188,7 @@
     <main class="main" id="portfolio-block">
       <section class="portfolio-section">
         <div class="container">
+          <h1 class="title portfolio-section__header">Портфолио</h1>
           <div class="row row--reverse">
             <div class="col col-7 col-lg-12 col-sm-12">
               <div
@@ -1319,7 +1327,7 @@
       <!-- /.container -->
     </section>
     <!-- /.contacts-section -->
-    <footer class="footer-section">
+    <footer class="footer-section" id="footer">
       <div class="container">
         <div class="row">
           <div class="col col-3 col-sm-6">
@@ -1678,7 +1686,7 @@
           Ваша заявка отправлена, <br> в ближайшее время с Вами свяжется наш менеджер
           для уточнения деталей.
         </p>
-        <button class="popup__button" aria-label="Close">Ok</button>
+        <button class="popup__button hvr-glow" aria-label="Close">Ok</button>
       </div>
     </div>
 
@@ -1697,7 +1705,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("#menu").on("click", "a", function (event) {
+        $("#menu, #footer").on("click", "a", function (event) {
           event.preventDefault();
           var id = $(this).attr("href"),
             top = $(id).offset().top;
