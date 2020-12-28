@@ -7,17 +7,112 @@
   padding: 0; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  height: 100%; }
 
 body {
   background-color: #fffaf4;
   color: #333;
   font: 400 1rem "Prata", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  margin: 0;
   overflow-x: hidden;
-  overflow-y: scroll !important; }
+  overflow-y: scroll !important;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-decoration-skip: objects;
+          text-decoration-skip: objects;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
   @media (max-width: 575px) {
     body {
       background-color: #fff; } }
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0;
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+button,
+input,
+textarea {
+  background-color: transparent;
+  border-radius: 0;
+  border-style: none;
+  color: inherit;
+  letter-spacing: inherit;
+  margin: 0;
+  outline: 0 !important;
+  padding: 0;
+  text-decoration: none; }
+  button:focus,
+  input:focus,
+  textarea:focus {
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+    outline: none; }
+
+button {
+  cursor: pointer; }
+
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  overflow: auto;
+  padding: 15px;
+  resize: vertical; }
+  @media (max-width: 575px) {
+    textarea {
+      font-size: 1.2rem; } }
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+          box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-text-fill-color: #000;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s; }
 
 @font-face {
   font-display: swap;
@@ -54,71 +149,6 @@ body {
   font-weight: 400;
   src: url("../fonts/prata-v13-cyrillic-regular.eot");
   src: local(""), url("../fonts/prata-v13-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/prata-v13-cyrillic-regular.woff2") format("woff2"), url("../fonts/prata-v13-cyrillic-regular.woff") format("woff"), url("../fonts/prata-v13-cyrillic-regular.ttf") format("truetype"), url("../fonts/prata-v13-cyrillic-regular.svg#Prata") format("svg"); }
-
-ul {
-  list-style: none;
-  margin: 0; }
-
-img {
-  height: auto;
-  max-width: 100%; }
-
-a {
-  text-decoration: none; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0; }
-
-button {
-  background-color: transparent;
-  border-style: none;
-  cursor: pointer;
-  outline: 0 !important;
-  text-decoration: none; }
-
-p {
-  margin: 0;
-  padding: 0; }
-
-input,
-textarea {
-  background-color: transparent;
-  border: 0;
-  outline: none; }
-
-textarea {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  padding: 15px;
-  resize: vertical; }
-  @media (max-width: 575px) {
-    textarea {
-      font-size: 1.2rem; } }
-
-input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px #fff inset;
-          box-shadow: 0 0 0 1000px #fff inset;
-  -webkit-text-fill-color: #000;
-  -webkit-transition: background-color 5000s ease-in-out 0s;
-  transition: background-color 5000s ease-in-out 0s; }
 
 .container {
   margin-left: auto;
@@ -586,7 +616,6 @@ select:-webkit-autofill:focus {
   .contact-form__wrapper {
     border: 2px solid #854777;
     margin: 10px auto 15px;
-    overflow: hidden;
     position: relative;
     width: 100%; }
     @media (max-width: 991px) {
@@ -625,8 +654,8 @@ select:-webkit-autofill:focus {
         .contact-form__wrapper-input {
           height: 30px; } }
     .contact-form__wrapper textarea {
-      height: 110px;
-      width: 360px; }
+      min-height: 110px;
+      width: 100%; }
       @media (max-width: 767px) {
         .contact-form__wrapper textarea {
           height: auto;
@@ -946,6 +975,13 @@ select:-webkit-autofill:focus {
   display: inline-block;
   height: 40px;
   width: 40px; }
+  .carousel-control-prev-icon:focus, .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:focus,
+  .carousel-control-next-icon:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px 5px rgba(133, 71, 119, 0.72);
+            box-shadow: 0 0 20px 5px rgba(133, 71, 119, 0.72);
+    outline: 0; }
   @media (max-width: 575px) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
