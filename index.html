@@ -109,7 +109,7 @@
               </p>
               <div class="intro-content__button">
                 <button
-                  class="btn-intro hvr-glow js-open-modal "
+                  class="btn-intro hvr-glow js-open-modal"
                   type="button"
                   data-modal="modal-top"
                 >
@@ -796,7 +796,8 @@
                 <button
                   class="btn-product align-items-center js-open-modal"
                   type="button"
-                  data-modal="modal-price" data-info="Light Price"
+                  data-modal="modal-price"
+                  data-info="Light Price"
                 >
                   Купить
                 </button>
@@ -823,7 +824,8 @@
                 <button
                   class="btn-product align-items-center js-open-modal"
                   type="button"
-                  data-modal="modal-price" data-info="Medium Price"
+                  data-modal="modal-price"
+                  data-info="Medium Price"
                 >
                   Купить
                 </button>
@@ -850,7 +852,8 @@
                 <button
                   class="btn-product align-items-center js-open-modal"
                   type="button"
-                  data-modal="modal-price" data-info="All inclusive Price"
+                  data-modal="modal-price"
+                  data-info="All inclusive Price"
                 >
                   Купить
                 </button>
@@ -1499,181 +1502,157 @@
     <!-- /.footer-section -->
 
     <div class="modal modal-top" data-modal="modal-top">
-      <button
-          type="button"
-              class="modal-close js-modal-close"
-            ></button>
-            <form class="contact-form js-form-validate">
-              <p class="contacts-section__contact-form-text">Заказать съемку</p>
-              <div class="options__header">Выберите удобный пакет:</div>
-              <div class="options d-flex">
-                <div class="options__item">
-                  <input
-                    type="radio"
-                    name="price"
-                    id="lightPrice"
-                    value="Light Price"
-                    class="options__input"
-                    checked
-                  />
-                  <label
-                    for="lightPrice"
-                    class="options__label d-flex flex-column"
-                    ><span class="options__title">Light</span></label
-                  >
-                </div>
-                <div class="options__item">
-                  <input
-                    type="radio"
-                    name="price"
-                    id="mediumPrice"
-                    value="Medium Price"
-                    class="options__input"
-                  />
-                  <label
-                    for="mediumPrice"
-                    class="options__label d-flex flex-column"
-                    ><span class="options__title">Medium</span></label
-                  >
-                </div>
-                <div class="options__item">
-                  <input
-                    type="radio"
-                    name="price"
-                    id="highPrice"
-                    value="All Inclusive Price"
-                    class="options__input"
-                  />
-                  <label
-                    for="highPrice"
-                    class="options__label d-flex flex-column"
-                    ><span class="options__title"> All Inclusive </span></label
-                  >
-                </div>
-              </div>
-              <label for="inputName" id="nameHelp" class="contact-form__label"
-                >Имя</label
-              >
-              <div class="contact-form__wrapper">
-                <input
-                  name="name"
-                  type="text"
-                  class="contact-form__wrapper-input required"
-                  id="inputName"
-                  aria-describedby="nameHelp"
-                />
-              </div>
-              <div class="contact-form__error"></div>
-              <label for="inputTel" id="telHelp" class="contact-form__label"
-                >Телефон</label
-              >
-              <div class="contact-form__wrapper">
-                <input
-                  name="tel"
-                  type="tel"
-                  class="contact-form__wrapper-input required"
-                  id="inputTel"
-                  aria-describedby="telHelp"
-                />
-              </div>
-              <div class="contact-form__error"></div>
-              <label for="inputEmail" id="emailHelp" class="contact-form__label"
-                >E-mail</label
-              >
-              <div class="contact-form__wrapper">
-                <input
-                  name="email"
-                  type="email"
-                  class="contact-form__wrapper-input required"
-                  id="inputEmail"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="contact-form__error"></div>
-              <label for="textarea" class="contact-form__label"
-                >Сообщение</label
-              >
-              <div class="contact-form__wrapper">
-                <textarea
-                  name="message"
-                  id="textarea"
-                ></textarea>
-              </div>
-              <input
-                type="submit"
-                name="submit"
-                class="btn-form--modal btn-intro hvr-glow required"
-                value="Отправить"
-              />
-            </form>
-      </div>
+      <button type="button" class="modal-close js-modal-close"></button>
+      <form class="contact-form js-form-validate">
+        <p class="contacts-section__contact-form-text">Заказать съемку</p>
+        <div class="options__header">Выберите удобный пакет:</div>
+        <div class="options d-flex">
+          <div class="options__item">
+            <input
+              type="radio"
+              name="price"
+              id="lightPrice"
+              value="Light Price"
+              class="options__input"
+              checked
+            />
+            <label for="lightPrice" class="options__label d-flex flex-column"
+              ><span class="options__title">Light</span></label
+            >
+          </div>
+          <div class="options__item">
+            <input
+              type="radio"
+              name="price"
+              id="mediumPrice"
+              value="Medium Price"
+              class="options__input"
+            />
+            <label for="mediumPrice" class="options__label d-flex flex-column"
+              ><span class="options__title">Medium</span></label
+            >
+          </div>
+          <div class="options__item">
+            <input
+              type="radio"
+              name="price"
+              id="highPrice"
+              value="All Inclusive Price"
+              class="options__input"
+            />
+            <label for="highPrice" class="options__label d-flex flex-column"
+              ><span class="options__title"> All Inclusive </span></label
+            >
+          </div>
+        </div>
+        <label for="inputName" id="nameHelp" class="contact-form__label"
+          >Имя</label
+        >
+        <div class="contact-form__wrapper">
+          <input
+            name="name"
+            type="text"
+            class="contact-form__wrapper-input required"
+            id="inputName"
+            aria-describedby="nameHelp"
+          />
+        </div>
+        <div class="contact-form__error"></div>
+        <label for="inputTel" id="telHelp" class="contact-form__label"
+          >Телефон</label
+        >
+        <div class="contact-form__wrapper">
+          <input
+            name="tel"
+            type="tel"
+            class="contact-form__wrapper-input required"
+            id="inputTel"
+            aria-describedby="telHelp"
+          />
+        </div>
+        <div class="contact-form__error"></div>
+        <label for="inputEmail" id="emailHelp" class="contact-form__label"
+          >E-mail</label
+        >
+        <div class="contact-form__wrapper">
+          <input
+            name="email"
+            type="email"
+            class="contact-form__wrapper-input required"
+            id="inputEmail"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="contact-form__error"></div>
+        <label for="textarea" class="contact-form__label">Сообщение</label>
+        <div class="contact-form__wrapper">
+          <textarea name="message" id="textarea"></textarea>
+        </div>
+        <input
+          type="submit"
+          name="submit"
+          class="btn-form--modal btn-intro hvr-glow required"
+          value="Отправить"
+        />
+      </form>
     </div>
     <!-- modal-top -->
 
     <div class="modal modal-price" data-modal="modal-price" id="modalForm">
-      <button
-          type="button"
-              class="modal-close js-modal-close"
-            ></button>
-            <form class="contact-form js-form-validate">
-              <p class="contacts-section__contact-form-text">Заказать съемку</p>
-              <label for="inputName" id="namePrice" class="contact-form__label"
-                >Имя</label
-              >
-              <div class="contact-form__wrapper">
-                <input
-                  name="name"
-                  type="text"
-                  class="contact-form__wrapper-input required"
-                  id="inputNamePrice"
-                  aria-describedby="namePrice"
-                />
-              </div>
-              <div class="contact-form__error"></div>
-              <label for="inputTel" id="telPrice" class="contact-form__label"
-                >Телефон</label
-              >
-              <div class="contact-form__wrapper">
-                <input
-                  name="tel"
-                  type="tel"
-                  class="contact-form__wrapper-input required"
-                  id="inputTelPrice"
-                  aria-describedby="telPrice"
-                />
-              </div>
-              <div class="contact-form__error"></div>
-              <label for="inputEmail" id="emailPrice" class="contact-form__label"
-                >E-mail</label
-              >
-              <div class="contact-form__wrapper">
-                <input
-                  name="email"
-                  type="email"
-                  class="contact-form__wrapper-input required"
-                  id="inputEmailPrice"
-                  aria-describedby="emailPrice"
-                />
-              </div>
-              <div class="contact-form__error"></div>
-              <label for="textarea" class="contact-form__label"
-                >Сообщение</label
-              >
-              <div class="contact-form__wrapper">
-                <textarea
-                  name="message"
-                  id="textareaPrice"
-                ></textarea>
-              </div>
-              <input type="hidden" name="price" id="input-type-hide" value="">
-              <input
-                type="submit"
-                name="submit"
-                class="btn-form--modal btn-intro hvr-glow required"
-                value="Отправить"
-              />
-            </form>
-      </div>
+      <button type="button" class="modal-close js-modal-close"></button>
+      <form class="contact-form js-form-validate">
+        <p class="contacts-section__contact-form-text">Заказать съемку</p>
+        <label for="inputName" id="namePrice" class="contact-form__label"
+          >Имя</label
+        >
+        <div class="contact-form__wrapper">
+          <input
+            name="name"
+            type="text"
+            class="contact-form__wrapper-input required"
+            id="inputNamePrice"
+            aria-describedby="namePrice"
+          />
+        </div>
+        <div class="contact-form__error"></div>
+        <label for="inputTel" id="telPrice" class="contact-form__label"
+          >Телефон</label
+        >
+        <div class="contact-form__wrapper">
+          <input
+            name="tel"
+            type="tel"
+            class="contact-form__wrapper-input required"
+            id="inputTelPrice"
+            aria-describedby="telPrice"
+          />
+        </div>
+        <div class="contact-form__error"></div>
+        <label for="inputEmail" id="emailPrice" class="contact-form__label"
+          >E-mail</label
+        >
+        <div class="contact-form__wrapper">
+          <input
+            name="email"
+            type="email"
+            class="contact-form__wrapper-input required"
+            id="inputEmailPrice"
+            aria-describedby="emailPrice"
+          />
+        </div>
+        <div class="contact-form__error"></div>
+        <label for="textarea" class="contact-form__label">Сообщение</label>
+        <div class="contact-form__wrapper">
+          <textarea name="message" id="textareaPrice"></textarea>
+        </div>
+        <input type="hidden" name="price" id="input-type-hide" value="" />
+        <input
+          type="submit"
+          name="submit"
+          class="btn-form--modal btn-intro hvr-glow required"
+          value="Отправить"
+        />
+      </form>
     </div>
     <!-- modal-price -->
     <div class="modal-overlay js-overlay-modal"></div>
@@ -1683,8 +1662,8 @@
       <div class="popup__thanks">
         <a class="close"></a>
         <p class="popup__thanks-text">
-          Ваша заявка отправлена, <br> в ближайшее время с Вами свяжется наш менеджер
-          для уточнения деталей.
+          Ваша заявка отправлена, <br />
+          в ближайшее время с Вами свяжется наш менеджер для уточнения деталей.
         </p>
         <button class="popup__button hvr-glow" aria-label="Close">Ok</button>
       </div>
@@ -1697,9 +1676,9 @@
     ></script>
     <script src="js/modal.js"></script>
     <script>
-      $('.btn-product').click(function() {
-        $('[type="hidden"]').val($(this).data('info'));
-        });
+      $(".btn-product").click(function () {
+        $('[type="hidden"]').val($(this).data("info"));
+      });
     </script>
 
     <script src="js/jquery.validate.min.js"></script>
