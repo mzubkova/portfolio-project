@@ -8,67 +8,38 @@
 
 html {
   font-size: $html-font-size;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 body {
   background-color: $body-bg-color;
   color: $body-font-color;
   font: $body-fw $body-fz/$body-lh $body-font;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  margin: 0;
   overflow-x: hidden;
+  overflow-y: scroll !important;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration-skip: objects;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
 
   @media (max-width: 575px) {
     background-color: $text-white;
   }
 }
 
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../webfonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../webfonts/Montserrat-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../webfonts/Montserrat-Medium.woff2") format("woff2"),
-    url("../webfonts/Montserrat-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../webfonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("../webfonts/Montserrat-SemiBold.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../webfonts/Montserrat-Bold.woff2") format("woff2"),
-    url("../webfonts/Montserrat-Bold.woff") format("woff");
-}
-
-ul {
+ul,
+li {
   list-style: none;
   margin: 0;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
+  padding: 0;
 }
 
 a {
+  background-color: transparent;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -78,15 +49,9 @@ h3,
 h4,
 h5,
 h6 {
+  font-size: inherit;
+  font-weight: inherit;
   margin: 0;
-}
-
-button {
-  background-color: transparent;
-  border-style: none;
-  cursor: pointer;
-  outline: 0 !important;
-  text-decoration: none;
 }
 
 p {
@@ -94,70 +59,47 @@ p {
   padding: 0;
 }
 
+img {
+  border: 0;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+button,
 input,
 textarea {
   background-color: transparent;
-  border: 0;
-  outline: none;
+  border-radius: 0;
+  border-style: none;
+  color: inherit;
+  letter-spacing: inherit;
+  margin: 0;
+  outline: 0 !important;
+  padding: 0;
+  text-decoration: none;
+
+  &:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+    outline: none;
+  }
+}
+
+button {
+  cursor: pointer;
 }
 
 textarea {
   font-family: $second-font;
   font-size: 1.8rem;
+  overflow: auto;
   padding: 15px;
   resize: vertical;
-}
 
-input::placeholder,
-textarea::placeholder {
-  color: $text-gray;
-  font-size: 1.7rem;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-
-  @media (max-width: 991px) {
-    font-size: 1.5rem;
+  @media (max-width: 575px) {
+    font-size: 1.2rem;
   }
-}
-
-input::input-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-input::placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-input:placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-input:input-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-input:focus::input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-input:focus::placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-input:focus:placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-input:focus:input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 input {
@@ -176,4 +118,55 @@ select:-webkit-autofill:focus {
   box-shadow: 0 0 0 1000px #fff inset;
   -webkit-text-fill-color: #000;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/prata-v13-cyrillic-regular.eot");
+  src: local(""),
+    url("../fonts/prata-v13-cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/prata-v13-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/prata-v13-cyrillic-regular.woff") format("woff"),
+    url("../fonts/prata-v13-cyrillic-regular.ttf") format("truetype"),
+    url("../fonts/prata-v13-cyrillic-regular.svg#Prata") format("svg");
 }

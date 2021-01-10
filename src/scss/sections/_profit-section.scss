@@ -1,5 +1,5 @@
 .profit-section {
-  background-color: $text-gray-3;
+  background-color: $text-purple;
   overflow: hidden;
   padding: 56px 0 50px;
   position: relative;
@@ -27,8 +27,8 @@
     color: $text-white;
     font-size: 3.6rem;
     letter-spacing: 1px;
-    line-height: 1.36;
-    margin: 0 0 75px 15px;
+    line-height: 1.35;
+    margin: 0 0 75px;
 
     @media (max-width: 991px) {
       font-size: 3rem;
@@ -57,6 +57,11 @@
 
     &-img {
       margin-bottom: 42px;
+
+      @media (max-width: 991px) {
+        height: auto;
+        width: 55px;
+      }
 
       @media (max-width: 767px) {
         height: 55px;

@@ -22,37 +22,6 @@
   margin-left: auto;
   position: relative;
 
-  &__phone {
-    box-sizing: border-box;
-    color: $text-pink;
-    cursor: pointer;
-    font-family: $second-font;
-    font-size: 1.8rem;
-    line-height: 1.66;
-    position: absolute;
-    transform: translateX(440px) translateY(47px);
-    z-index: 99;
-
-    @media (max-width: 1199px) {
-      transform: translateX(280px) translateY(20px);
-    }
-
-    @media (max-width: 991px) {
-      display: none;
-    }
-
-    &-logo {
-      background: url(../images/phone-icon-header.svg) no-repeat;
-      color: $text-white;
-      display: block;
-      height: 24px;
-      position: absolute;
-      transform: translateX(-35px) translateY(3px);
-      width: 24px;
-      width: 100px;
-    }
-  }
-
   &__img {
     position: relative;
     z-index: 1;
@@ -78,6 +47,10 @@
 .intro-content {
   width: 540px;
 
+  @media (max-width: 1400px) {
+    margin: 0 auto;
+  }
+
   @media (max-width: 1199px) {
     margin: 0 0 0 30px;
     width: auto;
@@ -95,6 +68,7 @@
   &__title {
     font-size: 3.6rem;
     letter-spacing: 4px;
+    line-height: 1.35;
     margin: 45px 0 20px;
     text-align: left;
 
@@ -148,7 +122,10 @@
   }
 
   &__button {
+    bottom: 0;
+    left: 0;
     margin: 30px 0 0;
+    max-width: 100%;
 
     @media (max-width: 991px) {
       margin-bottom: 0;

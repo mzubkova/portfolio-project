@@ -1,5 +1,5 @@
 .footer-section {
-  background-color: $text-gray-3;
+  background-color: $text-purple;
   overflow: hidden;
   padding: 58px 0 0;
   position: relative;
@@ -13,11 +13,16 @@
   }
 
   &-design {
-    border-top: 1px solid #fffaf4;
+    border-top: 1px solid $text-pink;
     height: 60px;
     margin: 0 auto;
     padding: 20px 0;
     width: 100%;
+
+    @media (max-width: 575px) {
+      height: 40px;
+      padding: 10px 0;
+    }
 
     &__title {
       color: $text-light-gray-2;

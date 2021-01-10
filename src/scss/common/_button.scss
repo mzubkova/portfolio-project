@@ -1,5 +1,5 @@
 .btn-intro {
-  background-color: $text-gray-3;
+  background-color: $text-purple;
   color: $text-white;
   display: inline-block;
   font-family: $second-font;
@@ -26,7 +26,7 @@
 }
 
 .btn-product {
-  background-color: $text-gray-3;
+  background-color: $text-purple;
   color: $text-white;
   display: inline-block;
   font-family: $second-font;
@@ -41,7 +41,7 @@
   width: 100%;
 
   &:hover {
-    background-color: #495a4e;
+    background-color: #4c1042;
   }
 }
 
@@ -56,5 +56,10 @@
     height: 50px;
     margin-bottom: 35px;
     width: 200px;
+
+    @media (max-width: 320px) {
+      height: 35px;
+      width: 150px;
+    }
   }
 }

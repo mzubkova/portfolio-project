@@ -23,7 +23,8 @@
 
   &__header {
     font-size: 3.6rem;
-    margin: 0 0 70px 15px;
+    line-height: 1.35;
+    margin: 0 0 70px;
 
     @media (max-width: 1199px) {
       font-size: 3rem;
@@ -35,7 +36,7 @@
 
     @media (max-width: 767px) {
       font-size: 2rem;
-      margin: 0 15px 30px;
+      margin: 0 0 30px;
     }
 
     @media (max-width: 575px) {
@@ -46,9 +47,10 @@
   }
 
   &__title {
-    color: $text-gray-4;
+    color: $text-gray-3;
     font-family: $second-font;
     font-size: 2.4rem;
+    font-weight: $body-fw-md;
     margin: 0 0 30px;
     width: 355px;
 
@@ -144,19 +146,19 @@
     }
 
     &--item {
-      border-top: 1px solid $text-gray-3;
+      border-top: 1px solid $text-purple;
       padding: 15px 0;
       position: relative;
       width: 100%;
     }
 
     &--text {
-      color: $text-gray-4;
+      color: $text-gray-3;
       font-family: $second-font;
       font-size: 1.6rem;
       font-weight: $body-fw-md;
       line-height: 1.62;
-      width: 100%;
+      width: 270px;
     }
 
     &--icon {

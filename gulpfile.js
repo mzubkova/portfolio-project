@@ -2,6 +2,7 @@ const { task, src, watch, dest } = require("gulp");
 const autoprefixer = require("gulp-autoprefixer");
 const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
+const regeneratorRuntime = require("regenerator-runtime");
 
 sass.compiler = require("node-sass");
 

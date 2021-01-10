@@ -14,6 +14,11 @@
   width: 40px;
   z-index: 9999;
 
+  @media (max-width: 1400px) {
+    right: 20px;
+    top: 20px;
+  }
+
   @media (max-width: 1199px) {
     right: 20px;
     top: 20px;
@@ -61,21 +66,21 @@
 }
 
 .navBurger.active::before {
-  background: #eee;
+  background: $text-light-gray-2;
   top: 0;
   transform: rotate(135deg);
   width: 110%;
 }
 
 .navBurger.active::after {
-  background: #eee;
+  background: $text-light-gray-2;
   bottom: 0;
   transform: rotate(-135deg);
   width: 110%;
 }
 
 .overlay {
-  background: #77917e;
+  background: $text-purple;
   height: 100%;
   opacity: 0;
   overflow: hidden;
@@ -87,6 +92,10 @@
   visibility: hidden;
   width: 392px;
   z-index: 999;
+
+  @media (max-width: 991px) {
+    width: 300px;
+  }
 
   @media (max-width: 575px) {
     transform-origin: right top;
@@ -128,16 +137,24 @@
   animation-delay: 0.8s;
 }
 
-.overlayMenu {
-  background-color: #77917e;
-  max-width: 375px;
+.overlay-menu {
+  background-color: $text-purple;
   padding: 100px 0 100px 150px;
   position: absolute;
   transition: 0.5s linear 0.25s;
-  width: 100%;
+
+  @media (max-width: 991px) {
+    padding: 100px 50px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 50px 0 0;
+    text-align: center;
+    width: 100%;
+  }
 }
 
-.overlayMenu ul {
+.overlay-menu ul {
   display: block;
   height: 100%;
   list-style: none;
@@ -146,16 +163,16 @@
   position: relative;
 }
 
-.overlayMenu ul li {
+.overlay-menu ul li {
   display: block;
   opacity: 0;
   position: relative;
   width: 100%;
 }
 
-.overlayMenu ul li a {
+.overlay-menu ul li a {
   box-sizing: border-box;
-  color: #f2f2f2;
+  color: $text-white;
   display: inline-block;
   font-family: "Prata", sans-serif;
   font-size: 1.8rem;
@@ -169,9 +186,9 @@
   will-change: transform, opacity;
 }
 
-.overlayMenu ul li a:hover,
-.overlayMenu ul li a:active,
-.overlayMenu ul li a:focus {
+.overlay-menu ul li a:hover,
+.overlay-menu ul li a:active,
+.overlay-menu ul li a:focus {
   text-decoration: underline;
 }
 

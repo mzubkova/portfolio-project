@@ -1,10 +1,5 @@
 .row {
   @include make-row();
-  width: 100%;
-
-  @media (max-width: 991px) {
-    margin: 0;
-  }
 }
 
 .row--reverse {

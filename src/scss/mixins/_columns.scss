@@ -4,7 +4,8 @@
   $breakpoints: $grid-breakpoints
 ) {
   .col {
-    padding: 0;
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
     position: relative;
     width: 100%;
   }

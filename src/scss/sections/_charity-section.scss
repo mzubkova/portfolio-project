@@ -6,6 +6,10 @@
     padding: 60px 0 0;
   }
 
+  @media (max-width: 767px) {
+    padding: 20px 0 0;
+  }
+
   @media (max-width: 575px) {
     padding: 50px 0 35px;
   }
@@ -22,7 +26,7 @@
 
   &__header {
     font-size: 3.6rem;
-    margin-left: 15px;
+    line-height: 1.35;
 
     @media (max-width: 991px) {
       font-size: 3rem;
@@ -56,7 +60,7 @@
     font-family: $second-font;
     font-size: 1.8rem;
     line-height: 1.5;
-    margin: 0 0 35px 15px;
+    margin: 0 0 35px;
     text-transform: none;
 
     @media (max-width: 991px) {
@@ -96,6 +100,7 @@
 
     @media (max-width: 575px) {
       margin: 0 auto 25px;
+      width: 100%;
     }
   }
 }

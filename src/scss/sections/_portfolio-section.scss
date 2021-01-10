@@ -13,9 +13,9 @@
 
 .portfolio-section {
   .container {
-    margin-bottom: 100px;
+    margin-bottom: 170px;
     @media (max-width: 1199px) {
-      margin-bottom: 80px;
+      margin-bottom: 100px;
     }
 
     @media (max-width: 575px) {
@@ -25,7 +25,8 @@
 
   &__header {
     font-size: 3.6rem;
-    margin: 0 15px 50px;
+    line-height: 1.35;
+    margin: 0 0 100px;
     @media (max-width: 1199px) {
       font-size: 3rem;
       margin-bottom: 10px;
@@ -46,11 +47,11 @@
   padding: 0;
 
   &__title {
-    color: $text-gray-4;
+    color: $text-gray-3;
     font-family: $second-font;
     font-size: 1.8rem;
     line-height: 1.66;
-    margin: 0 0 40px 75px;
+    margin: 0 0 36px 75px;
     text-transform: inherit;
 
     @media (max-width: 1199px) {
@@ -61,7 +62,7 @@
       border-top: 2px solid #4e6655;
       content: "";
       height: 0;
-      left: 0;
+      left: 15px;
       max-width: 50px;
       position: absolute;
       top: 15px;
@@ -88,13 +89,13 @@
       }
 
       @media (max-width: 991px) {
-        left: 0;
+        left: 15px;
       }
     }
   }
 
   &--right {
-    margin-left: 105px;
+    margin-left: 90px;
     width: 400px;
 
     @media (max-width: 1199px) {
@@ -130,7 +131,7 @@
       font-size: 1.8rem;
       font-weight: $body-fw-md;
       line-height: 1.66;
-      margin-bottom: 15px;
+      margin-bottom: 35px;
       text-transform: inherit;
 
       @media (max-width: 575px) {
