@@ -1937,7 +1937,6 @@ body.modal.active,
         width: 290px; } }
     @media (max-width: 991px) {
       .addition-section-box {
-        margin-bottom: 60px;
         padding: 0 10px 0 0;
         width: 100%; } }
     @media (max-width: 767px) {
@@ -2051,6 +2050,9 @@ body.modal.active,
     .charity-section__box--resp {
       display: flex;
       position: relative; } }
+  @media (max-width: 767px) {
+    .charity-section__box--resp img {
+      margin-right: 60px; } }
   @media (max-width: 575px) {
     .charity-section__box--resp {
       display: inline-block; } }
@@ -2076,11 +2078,10 @@ body.modal.active,
     margin-bottom: 30px; }
     @media (max-width: 1199px) {
       .charity-section__img {
-        margin: 0 auto 10px;
+        margin: 0 auto 40px;
         width: 95%; } }
     @media (max-width: 991px) {
       .charity-section__img {
-        margin: 0 auto 30px;
         width: 90%; } }
     @media (max-width: 767px) {
       .charity-section__img {
@@ -2189,6 +2190,10 @@ body.modal.active,
     position: relative;
     width: 428px;
     z-index: 1; }
+    @media (max-width: 575px) {
+      .contacts-section__img img {
+        margin: 0 auto;
+        width: 100%; } }
     @media (max-width: 1199px) {
       .contacts-section__img {
         height: auto;
@@ -2198,7 +2203,7 @@ body.modal.active,
         width: 80%; } }
     @media (max-width: 575px) {
       .contacts-section__img {
-        width: 95%; } }
+        width: 100%; } }
     .contacts-section__img--first::before {
       background-image: url(../images/kvk-studio-image-2.jpg);
       bottom: -25px;
@@ -2218,6 +2223,9 @@ body.modal.active,
         .contacts-section__img--first::before {
           bottom: -15px;
           left: 15px; } }
+      @media (max-width: 575px) {
+        .contacts-section__img--first::before {
+          display: none; } }
     .contacts-section__img--second::before {
       background-image: url(../images/photographer-image-5.jpg);
       bottom: -25px;
@@ -2237,6 +2245,9 @@ body.modal.active,
         .contacts-section__img--second::before {
           bottom: -15px;
           left: 15px; } }
+      @media (max-width: 575px) {
+        .contacts-section__img--second::before {
+          display: none; } }
     .contacts-section__img--contact {
       margin: 0 0 0 90px; }
       @media (max-width: 1199px) {

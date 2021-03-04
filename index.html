@@ -49,8 +49,7 @@
       crossorigin="anonymous"
     ></script>
     <title>
-      Фото/Видео студия Ксении Кишишьян | Заказать портфолио, видео- фотосъемку,
-      фото книги и флешки, печать фотографий на футболке, ретушь
+      Фото/Видео студия Ксении Кишишьян | Заказать портфолио, видео- фотосъемку
     </title>
   </head>
   <body>
@@ -86,22 +85,22 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col col-6 col-sm-12">
-            <div class="intro-content flex-column d-flex">
-              <a href="index.html" role="banner">
+            <div class="intro-content flex-column d-flex"                   role="banner">
+              <a href="#intro-block">
                 <img
                   width="240"
                   height="139"
                   src="images/kvk-logo.svg"
                   alt="kvkstudio логотип"
                   class="logo-kvk lazyload"
+
                 />
               </a>
-
               <h1 class="title intro-content__title">
                 Фото/Видео студия Ксении Кишишьян
               </h1>
               <h2 class="intro-content__title--responsive">Ксения Кишишьян</h2>
-              <p class="intro-content__text">
+              <p class="intro-content__text" role="note">
                 Cохраню для вас прекрасные моменты в фотографиях, чтобы вы могли
                 просматривать их снова и снова.
               </p>
@@ -110,6 +109,7 @@
                   class="btn-intro hvr-glow js-open-modal"
                   type="button"
                   data-modal="modal-top"
+                  role="button"
                 >
                   Заказать съёмку
                 </button>
@@ -137,7 +137,7 @@
       <!-- /.container-fluid -->
     </section>
     <!-- /.intro-section -->
-    <section class="author-section" id="author-block" role="note">
+    <section class="author-section" id="author-block">
       <div class="container">
         <div class="row">
           <div class="col col-7 col-md-12 col-lg-7 col-xl-7 col-sm-12 d-flex">
@@ -183,7 +183,7 @@
       </div>
     </section>
     <!-- /.author-section -->
-    <main class="main" id="portfolio-block" role="main">
+    <main class="main" id="portfolio-block">
       <section class="portfolio-section">
         <div class="container">
           <h1 class="title portfolio-section__header">Портфолио</h1>
@@ -660,7 +660,7 @@
       <!-- /.portfolio-section -->
     </main>
     <!-- .main -->
-    <section class="profit-section">
+    <section class="profit-section" role="status">
       <div class="container">
         <h1 class="title profit-section__header">Мои преимущества</h1>
         <div class="row">
