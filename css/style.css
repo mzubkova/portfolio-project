@@ -814,12 +814,6 @@ select:-webkit-autofill:focus {
   display: inline-block;
   height: 40px;
   width: 40px; }
-  .carousel-control-prev-icon:focus, .carousel-control-prev-icon:hover,
-  .carousel-control-next-icon:focus,
-  .carousel-control-next-icon:hover {
-    border-radius: 50%;
-    box-shadow: 0 0 20px 5px rgba(133, 71, 119, 0.72);
-    outline: 0; }
   @media (max-width: 575px) {
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
