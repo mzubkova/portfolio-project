@@ -57,7 +57,7 @@ img {
   border: 0;
   display: block;
   height: auto;
-  max-width: 100%; }
+  width: 100%; }
 
 button,
 input,
@@ -832,7 +832,7 @@ select:-webkit-autofill:focus {
   background: url(../images/arrow-right.svg) no-repeat; }
 
 .carousel-indicators {
-  bottom: -35px;
+  bottom: -45px;
   display: flex;
   justify-content: center;
   left: 0;
@@ -1373,7 +1373,8 @@ body.modal.active,
 
 .logo-kvk {
   margin: 113px auto 0;
-  padding: 0; }
+  padding: 0;
+  width: 240px; }
   @media (max-width: 1199px) {
     .logo-kvk {
       height: auto;
@@ -1418,7 +1419,7 @@ body.modal.active,
       margin: 0 0 10px; } }
 
 .author-content__blockquote {
-  color: #40573d;
+  color: #1d191f;
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   line-height: 1.66;
@@ -1516,7 +1517,7 @@ body.modal.active,
 .portfolio-content {
   padding: 0; }
   .portfolio-content__title {
-    color: #40573d;
+    color: #1d191f;
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     line-height: 1.66;
@@ -1883,7 +1884,7 @@ body.modal.active,
         margin: 0 0 34px;
         text-align: center; } }
   .addition-section__title {
-    color: #40573d;
+    color: #1d191f;
     font-family: "Montserrat", sans-serif;
     font-size: 2.4rem;
     font-weight: 500;
@@ -1954,19 +1955,19 @@ body.modal.active,
     @media (min-width: 575px) {
       .addition-section__list {
         display: none; } }
-    .addition-section__list--item {
+    .addition-section__list-item {
       border-top: 1px solid #854777;
       padding: 15px 0;
       position: relative;
       width: 100%; }
-    .addition-section__list--text {
-      color: #40573d;
+    .addition-section__list-text {
+      color: #1d191f;
       font-family: "Montserrat", sans-serif;
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 1.62;
       width: 270px; }
-    .addition-section__list--icon {
+    .addition-section__list-icon {
       background-image: url(../images/open-icon.svg);
       background-size: 100%;
       content: "";
@@ -1976,20 +1977,20 @@ body.modal.active,
       right: 0;
       top: 15px;
       width: 30px; }
-    .addition-section__list--desc {
+    .addition-section__list-desc {
       color: #333;
       font-family: "Montserrat", sans-serif;
       font-size: 1.6rem;
       line-height: 1.6; }
 
-.close-card .addition-section__list--desc {
+.close-card .addition-section__list-desc {
   display: block;
   float: left;
   height: 0;
   transform: scaleY(0);
   transition: height 1s ease-out; }
 
-.open .addition-section__list--desc {
+.open .addition-section__list-desc {
   box-sizing: border-box;
   color: #333;
   display: block;
@@ -2001,7 +2002,7 @@ body.modal.active,
   transition: transform 0.4s ease;
   width: 100%; }
 
-.open .addition-section__list--icon {
+.open .addition-section__list-icon {
   background-image: url(../images/close-icon.svg);
   background-size: 100%;
   content: "";
@@ -2052,7 +2053,7 @@ body.modal.active,
       position: relative; } }
   @media (max-width: 767px) {
     .charity-section__box--resp img {
-      margin-right: 60px; } }
+      margin-right: 40px; } }
   @media (max-width: 575px) {
     .charity-section__box--resp {
       display: inline-block; } }
@@ -2080,9 +2081,6 @@ body.modal.active,
       .charity-section__img {
         margin: 0 auto 40px;
         width: 95%; } }
-    @media (max-width: 991px) {
-      .charity-section__img {
-        width: 90%; } }
     @media (max-width: 767px) {
       .charity-section__img {
         margin-right: 30px; } }
@@ -2155,7 +2153,8 @@ body.modal.active,
       margin-bottom: 15px; }
     .contacts-section__list-icon {
       display: block;
-      position: absolute; }
+      position: absolute;
+      width: 29px; }
       @media (max-width: 767px) {
         .contacts-section__list-icon {
           height: 25px;
@@ -2300,7 +2299,7 @@ body.modal.active,
           margin-bottom: 80px;
           text-align: center; } }
     .contacts-section__contact-form-text {
-      color: #40573d;
+      color: #1d191f;
       font-family: "Prata", sans-serif;
       font-size: 2.4rem;
       font-weight: 400;
@@ -2323,7 +2322,7 @@ body.modal.active,
           font-size: 1.8rem;
           margin: 0 0 10px; } }
       .contacts-section__contact-form-text--second {
-        color: #40573d;
+        color: #1d191f;
         font-family: "Montserrat", sans-serif;
         font-size: 1.8rem;
         line-height: 1.5;
