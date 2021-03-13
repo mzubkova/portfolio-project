@@ -182,14 +182,16 @@
   text-decoration: none;
   text-transform: uppercase;
   transform: translateY(100%);
-  transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.5s;
   will-change: transform, opacity;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
 }
 
 .overlay-menu ul li a:hover,
 .overlay-menu ul li a:active,
 .overlay-menu ul li a:focus {
-  text-decoration: underline;
+  border-bottom: 2px solid #fff;
 }
 
 .locked {

@@ -2,7 +2,7 @@
   position: relative;
 
   @media (max-width: 1199px) {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 
@@ -19,19 +19,13 @@
 
   @media (max-width: 1199px) {
     height: auto;
-    margin-left: auto;
+    margin: 0 auto;
     width: 530px;
-  }
-
-  @media (max-width: 991px) {
-    width: 100%;
-  }
-
-  @media (max-width: 767px) {
   }
 
   @media (max-width: 575px) {
     margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -47,6 +41,10 @@
 
 .carousel-image {
   object-fit: cover;
+
+  @media (max-width: 991px) {
+    margin: 0 auto;
+  }
 }
 
 .carousel-item.active,
@@ -90,7 +88,7 @@
 .carousel-control-prev,
 .carousel-control-next {
   @include transition($carousel-control-transition);
-  align-items: center; // 2. vertically center contents
+  align-items: center;
   bottom: 0;
   color: $carousel-control-color;
   display: flex;
@@ -146,7 +144,7 @@
 }
 
 .carousel-indicators {
-  bottom: -35px;
+  bottom: -45px;
   display: flex;
   justify-content: center;
   left: 0;

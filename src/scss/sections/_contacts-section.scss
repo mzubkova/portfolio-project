@@ -87,6 +87,7 @@
     &-icon {
       display: block;
       position: absolute;
+      width: 29px;
 
       @media (max-width: 767px) {
         height: 25px;
@@ -135,6 +136,13 @@
     width: 428px;
     z-index: 1;
 
+    img {
+      @media (max-width: 575px) {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
     @media (max-width: 1199px) {
       height: auto;
       width: 90%;
@@ -145,7 +153,7 @@
     }
 
     @media (max-width: 575px) {
-      width: 95%;
+      width: 100%;
     }
 
     &--first::before {
@@ -169,6 +177,10 @@
         bottom: -15px;
         left: 15px;
       }
+
+      @media (max-width: 575px) {
+        display: none;
+      }
     }
 
     &--second::before {
@@ -191,6 +203,10 @@
       @media (max-width: 991px) {
         bottom: -15px;
         left: 15px;
+      }
+
+      @media (max-width: 575px) {
+        display: none;
       }
     }
 

@@ -1,11 +1,11 @@
-$main-font: 'Prata', sans-serif;
-$second-font: 'Montserrat', sans-serif;
+$main-font: "Prata", sans-serif;
+$second-font: "Montserrat", sans-serif;
 
 // Text Colors
 $text-purple: #854777;
 $text-gray: #333;
 $text-gray-2: #666;
-$text-gray-3: #40573d;
+$text-gray-3: #1d191f;
 $text-white: #fff;
 $text-light-gray: #f6f6f6;
 $text-light-gray-2: #fffcf8;
@@ -62,9 +62,6 @@ $carousel-indicator-spacer: 10px !default;
 $carousel-indicator-active-bg: #854777 !default;
 $carousel-indicator-transition: opacity 0.6s ease !default;
 
-$carousel-caption-width: 70% !default;
-$carousel-caption-color: $text-white !default;
-
 $carousel-control-icon-width: 40px !default;
 
 $carousel-transition-duration: 0.6s !default;
@@ -73,17 +70,17 @@ $carousel-transition: transform $carousel-transition-duration ease-in-out !defau
 $enable-caret: true !default;
 $enable-rounded: true !default;
 $enable-shadows: false !default;
+$enable-gradients: false !default;
 $enable-transitions: true !default;
-$enable-prefers-reduced-motion-media-query: true !default;
-$enable-hover-media-query: false !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
 $enable-grid-classes: true !default;
-$enable-pointer-cursor-for-buttons: true !default;
-$enable-print-styles: true !default;
-$enable-responsive-font-sizes: false !default;
+$enable-button-pointers: true !default;
+$enable-rfs: true !default;
 $enable-validation-icons: true !default;
+$enable-negative-margins: false !default;
 $enable-deprecation-messages: true !default;
+$enable-important-utilities: true !default;
 
-$transition-base: all 0.2s ease-in-out !default;
 $transition-fade: opacity 0.15s linear !default;
 $transition-collapse: height 0.35s ease !default;
-

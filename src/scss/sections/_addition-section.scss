@@ -121,7 +121,6 @@
     }
 
     @media (max-width: 991px) {
-      margin-bottom: 60px;
       padding: 0 10px 0 0;
       width: 100%;
     }
@@ -145,14 +144,14 @@
       display: none;
     }
 
-    &--item {
+    &-item {
       border-top: 1px solid $text-purple;
       padding: 15px 0;
       position: relative;
       width: 100%;
     }
 
-    &--text {
+    &-text {
       color: $text-gray-3;
       font-family: $second-font;
       font-size: 1.6rem;
@@ -161,7 +160,7 @@
       width: 270px;
     }
 
-    &--icon {
+    &-icon {
       background-image: url(../images/open-icon.svg);
       background-size: 100%;
       content: "";
@@ -173,7 +172,7 @@
       width: 30px;
     }
 
-    &--desc {
+    &-desc {
       color: $text-gray;
       font-family: $second-font;
       font-size: 1.6rem;
@@ -182,7 +181,7 @@
   }
 }
 
-.close-card .addition-section__list--desc {
+.close-card .addition-section__list-desc {
   display: block;
   float: left;
   height: 0;
@@ -190,7 +189,7 @@
   transition: height 1s ease-out;
 }
 
-.open .addition-section__list--desc {
+.open .addition-section__list-desc {
   box-sizing: border-box;
   color: #333;
   display: block;
@@ -203,7 +202,7 @@
   width: 100%;
 }
 
-.open .addition-section__list--icon {
+.open .addition-section__list-icon {
   background-image: url(../images/close-icon.svg);
   background-size: 100%;
   content: "";

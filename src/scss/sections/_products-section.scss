@@ -64,8 +64,10 @@
     }
 
     @media (max-width: 991px) {
-      margin: 0 5px;
+      display: flex;
+      margin: 0;
       padding: 20px 10px;
+      text-align: center;
       width: auto;
     }
 
@@ -126,6 +128,9 @@
 
       li {
         margin-bottom: 10px;
+        @media (max-width: 991px) {
+          margin-bottom: 5px;
+        }
       }
 
       @media (max-width: 991px) {
@@ -146,14 +151,13 @@
 
       @media (max-width: 991px) {
         height: 40px;
-        left: 25%;
+        left: initial;
         width: 120px;
       }
 
       @media (max-width: 767px) {
         bottom: 10%;
         height: 35px;
-        left: 30%;
         width: 150px;
       }
 
