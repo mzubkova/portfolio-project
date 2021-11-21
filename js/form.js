@@ -39,7 +39,7 @@ $(document).ready(function () {
       submitHandler: function (form) {
         $.ajax({
           type: "POST",
-          url: "sendform.php",
+          url: "/sendform.php",
           data: $(form).serialize(),
           success: function () {
             $(".popup").addClass("active");

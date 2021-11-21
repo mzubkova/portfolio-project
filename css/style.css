@@ -1096,18 +1096,6 @@ select:-webkit-autofill:focus {
     @media (max-width: 767px) {
       .modal-top {
         height: auto; } }
-  .modal-price {
-    height: auto;
-    padding: 0 70px 35px; }
-    @media (max-width: 991px) {
-      .modal-price {
-        padding: 0 30px; } }
-    @media (max-width: 767px) {
-      .modal-price {
-        padding: 20px 40px; } }
-    @media (max-width: 575px) {
-      .modal-price {
-        padding: 0; } }
   .modal-close {
     background: url(../images/close-btn-icon.svg) no-repeat;
     cursor: pointer;
@@ -1723,6 +1711,9 @@ body.modal.active,
   @media (max-width: 767px) {
     .products-section .container {
       margin-bottom: 40px; } }
+  @media (max-width: 575px) {
+    .products-section .container {
+      margin-bottom: 0; } }
   @media (max-width: 1199px) {
     .products-section .row {
       margin: 0; } }
@@ -1747,7 +1738,7 @@ body.modal.active,
   .products-section__card {
     background-color: #fffcf8;
     box-shadow: 0 0 25px rgba(119, 145, 126, 0.6);
-    height: 480px;
+    height: 420px;
     margin: 0 auto;
     padding: 30px 0 25px;
     position: relative;
@@ -1764,13 +1755,11 @@ body.modal.active,
         width: auto; } }
     @media (max-width: 767px) {
       .products-section__card {
-        box-shadow: none;
-        height: 400px;
+        height: 360px;
         margin: 30px auto;
         width: 345px; } }
     @media (max-width: 575px) {
       .products-section__card {
-        margin: 0 auto;
         width: 100%; } }
     .products-section__card-name {
       color: #000;
@@ -1792,14 +1781,6 @@ body.modal.active,
       @media (max-width: 991px) {
         .products-section__card-title {
           font-size: 2.2rem; } }
-    .products-section__card-price {
-      color: #000;
-      font-family: "Montserrat", sans-serif;
-      font-size: 2rem;
-      font-weight: 400;
-      line-height: 1.5;
-      margin-bottom: 25px;
-      text-align: center; }
     .products-section__card-list {
       color: #000;
       font-family: "Montserrat", sans-serif;
@@ -1836,9 +1817,6 @@ body.modal.active,
           width: 150px; } }
       @media (max-width: 575px) {
         .products-section__card-btn {
-          bottom: 0;
-          height: auto;
-          left: 0;
           margin: 0 auto;
           width: 100%; } }
 
